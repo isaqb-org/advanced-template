@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2.2'
+        classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.16'
+    }
+}
+plugins {
+  id "org.asciidoctor.convert" version "1.5.9.2"
+
+}
+
+
+ext {
+    currentDate = new Date().format("d. MMM yyyy")
+}
+
+asciidoctor {
+   backends 'pdf'
+   sourceDir = file("./docs/")
+   sources {
+      include "foundation-curriculum.adoc"
+   }
+  outputDir = file("build")
+
+  println "outputDir = " + outputDir
+  println "sourceDir = " + sourceDir
+
+  attributes = [
+      doctype       : 'book',
+      icons         : 'font',
+      currentDate   : '$currentDate',
+
+      debug_adoc         : true,
+      'document-version' : "5.0 DRAFT ($currentDate)",
+      'withRemarks'      : true,
+      'language'         : 'EN',
+      'pdf-stylesdir'    : '../style/themes',
+      'pdf-style'        : 'isaqb'
+  ]
+}
+
+defaultTasks 'asciidoctor'

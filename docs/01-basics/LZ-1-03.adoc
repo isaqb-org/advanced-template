@@ -1,0 +1,13 @@
+==== LZ 1-3: Softwarearchitektur in Software-Lebenszyklus einordnen (R2)
+
+Softwarearchitektur in die gesamte Entwicklung von IT-Systemen einordnen:
+
+* Zusammenhang mit Geschäfts- und Betriebsprozessen für beispielsweise Informationssysteme und Entscheidungsunterstützungssysteme (Data Warehouse, Management Information Systems) oder anderen Arten von Systemen herstellen.
+* Konsequenzen von Änderungen bei Anforderungen, Qualitätszielen, Technologien oder der Systemumgebung im Bezug auf die Softwarearchitektur erkennen.
+
+ifdef::withRemarks[]
+[NOTE]
+====
+RR: I’m not sure myself what these points are getting at.
+====
+endif::withRemarks[]

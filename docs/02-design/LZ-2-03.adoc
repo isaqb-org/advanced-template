@@ -1,0 +1,18 @@
+==== LZ 2-3: Einflussfaktoren auf Softwarearchitektur erheben und berücksichtigen können (R1)
+
+Softwarearchitekten können Einflussfaktoren (Randbedingungen) als Einschränkungen der Entwurfsfreiheit erarbeiten und berücksichtigen
+
+Sie erkennen und berücksichtigen:
+
+* den Einfluss von Qualitätsanforderungen
+* den Einfluss technischer Entscheidungen und Konzepte
+* den (möglichen) Einfluss organisatorischer und juristischer Faktoren (R2)
+* den Einfluss verschiedener Stakeholder
+
+
+ifdef::withRemarks[]
+[NOTE]
+====
+RR: Stakeholder sind neu. Ich finde dies wichtig zu berücksichtigen, ist ein oft nicht dokumentierter Einflussfaktor
+====
+endif::withRemarks[]
