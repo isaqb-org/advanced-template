@@ -19,7 +19,7 @@ ext {
 }
 
 asciidoctor {
-   backends 'pdf'
+   backends 'pdf', 'html5'
    sourceDir = file("./docs/")
    sources {
       include "template-curriculum.adoc"

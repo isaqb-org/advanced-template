@@ -1,11 +1,23 @@
 = Template for https://isaqb.org[iSAQB] Curricula
 
+:toc:
+:toc-placement!:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
 *DRAFT* version!!
 
 This repository contains a template for iSAQB *curricula* in AsciiDoc. 
 
 This is <<copyrighted,copyrighted work>>.
 
+
+toc::[]
 == How to contribute or participate
 Create an issue, a merge- or pull-request
 
@@ -115,7 +127,7 @@ For that purpose we define a variable named `include_configuration` in the file 
 File `template-curriculum.adoc` (excerpts):
 
 [source,asciidoc]
-....
+----
 = Template Curriculum: CPSA Certified Professional for Software Architecture® 
 :doctype: book
 
@@ -133,7 +145,7 @@ include::00-preamble/copyright.adoc[{include_configuration}] // <4>
 :sectnums!:
 include::00-preamble/00-introduction.adoc[] //<6>
 
-....
+----
 <1>: we propose to put asciidoc configuration in this special file
 <2>: you can set a version, but may override in the build process
 <3>: you can turn section numbering on and off (here: off)
