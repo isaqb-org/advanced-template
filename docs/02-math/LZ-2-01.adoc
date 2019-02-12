@@ -9,3 +9,7 @@ Sie sollen immer in etwa wissen, was die Artikel in ihrem Einkaufskorb zusammen 
 You should always know approximately how much the items in their shopping basket cost together.
 
 // end::EN[]
+
+
+// tag::REMARK[]
+// end::REMARK[]

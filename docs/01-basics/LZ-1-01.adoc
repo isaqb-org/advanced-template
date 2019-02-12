@@ -16,3 +16,6 @@ You know the definition of natural and integer numbers, in particular:
 * you know zero as an integer
 // end::EN[]
 
+
+// tag::REMARK[]
+// end::REMARK[]

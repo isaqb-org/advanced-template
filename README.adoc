@@ -52,7 +52,109 @@ Create an issue, a merge- or pull-request
 
 === How to organize files?
 
+==== Prerequisite: AsciiDoc include
+You should know some details about the AsciiDoc include statement.
+
+If the Asciidoctor processor encounters a statement like the one below:
+
+[source,asciidoc]
+----
+   include::directory/file.adoc[]
+----
+
+It will replace this include statement with the contents of `file.adoc`. That's easy and straightforward.
+
+But there's more. We can tell AsciiDoc what parts of a file shall be included via the `tag` syntax. See below:
+
+[source,asciidoc]
+----
+   include::directory/file.adoc[tags=X42]
+----
+
+Now AsciiDoctor will include everything from `file.adoc` which is contained between the opening and closing of tag `X42`. Let's look into our `file.adoc`:
+
+[source,asciidoc]
+----
+some content that will be ignored...
+
+   // tag::X42[]
+   this content will be included with `include::directory/file.adoc[tags=X42]`
+   // end::X42[]
+
+and this content will be ignored again
+
+   // tag::REMARK[]
+   a comment from a reviewer that should be handled later
+   // end::REMARK[]
+----
+
+You are thinking of using tags for i18n languages? Well done...
+
+
+Now we're going one final step: We can enhance the include statement by *several* tags, so we can include multiple parts of a single file. I'll show the syntax and you know what I mean:
+
+[source,asciidoc]
+----
+   include::directory/file.adoc[tags=X42;REMARK]
+----
+
+As you imagined, now both X42 and REMARK-tagged content will be included in the output.
+
+=== Content and Structure files
+As we are writing i18n we need to strictly distiguish between two
+kind of files:
+
+* *content* files, they contain text, tables or diagrams that shall be included in the output. 
+* *structure* files, containing only include-statements, configuration information. Structure files include both content-files and other structure files.
+
+For content files, specific parts will be included via the tag-syntax described above.
+For that purpose we define a variable named `include_configuration` in the file `config/setup.adoc`.
+
+==== Structure File Example
+
+File `template-curriculum.adoc` (excerpts):
+
+[source,asciidoc]
+....
+= Template Curriculum: CPSA Certified Professional for Software Architecture® 
+:doctype: book
+
+include::config/setup.adoc[]  // <1>
+
+:document-version: 2.0-DRAFT 2019 // <2>
+
+:sectnums!: // <3>
+include::00-preamble/copyright.adoc[{include_configuration}] // <4>
+
+<<< // <5>
+:toc:
+
+<<<
+:sectnums!:
+include::00-preamble/00-introduction.adoc[] //<6>
+
+....
+<1>: we propose to put asciidoc configuration in this special file
+<2>: you can set a version, but may override in the build process
+<3>: you can turn section numbering on and off (here: off)
+<4>: this includes parts of the copyright.adoc file.
+<5>: The `<<<` will create a pagebreak in pdf's.
+
+
+==== Suggestions
+
+
 === How to build (aka: how to convert asciidoc to pdf)?
+
+The simple solution is to install a Java runtime and simply call:
+
+[source,shell]
+====
+./gradlew.sh // or gradlew.bat if you're on Windows
+====
+
+The output file(s) are written to the `/build` directory.
+
 
 == Maintainers
 

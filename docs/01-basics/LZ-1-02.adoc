@@ -1,4 +1,5 @@
 // tag::DE[]
+
 ==== LZ 1-2: Addition (R1)
 
 Sie können zwei Zahlen addieren.
@@ -8,6 +9,7 @@ Sie können zwei Zahlen addieren.
 // end::DE[]
 
 // tag::EN[]
+
 ==== LG 1-2: Addition (R1)
 You can add two numbers.
 

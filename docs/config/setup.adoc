@@ -27,6 +27,7 @@ ifeval::[{language} == "all"]
 == THIS CURRENTLY DOES NOT WORK...
 endif::[]
 
+// you might want to output some internal information...
 ifdef::debug_adoc[]
 [NOTE]
 ====

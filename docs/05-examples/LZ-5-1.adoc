@@ -17,5 +17,9 @@
 
 
 // tag::REMARK[]
+
+[IMPORTANT]
+====
 das war jetzt wirklich schwierig. Hier sollten keine weiteren Lernziele mehr kommen, sonst wird's zuviel.
+====
 // end::REMARK[]

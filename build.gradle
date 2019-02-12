@@ -36,8 +36,16 @@ asciidoctor {
 
       debug_adoc         : true,
       'document-version' : "5.0 DRAFT ($currentDate)",
+      
+      // if you want to render the comments/remarks?
+      //    then uncomment the following line;
+      //    else comment the following line
       'withRemarks'      : true,
-      'language'         : "DE;EN",
+
+      // what language(s) do you want to render? DE, EN?
+      'language'         : "DE;EN",  // options are "DE", "EN" or "DE;EN"
+
+      // where are the (custom) pdf style definitions and fonts located
       'pdf-stylesdir'    : '../style/themes',
       'pdf-style'        : 'isaqb'
   ]

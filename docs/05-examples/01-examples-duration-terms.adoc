@@ -22,3 +22,6 @@ Supermarkt, Berechnung, Preise, Einkaufskorb, Großpackung
 === Essential terms
 supermarket, calculation, prices, shopping basket, bulk packaging
 // end::EN[]
+
+// tag::REMARK[]
+// end::REMARK[]
