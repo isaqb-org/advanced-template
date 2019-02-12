@@ -19,7 +19,7 @@ Create an issue, a merge- or pull-request
 
 === Requirements and (our) solutions
 
-[cols="1,2",options="header"]
+[cols="1,2a",options="header"]
 |===
 |Requirement
 |Solution
@@ -31,9 +31,28 @@ Create an issue, a merge- or pull-request
 |highly modularized content: Small chunks, like learning-goals or subsections, are contained in their own asciidoc-files.
 
 |Multiple languages, at least EN and DE (i18n)
-|Every piece of text is enclosed in _tags_ like `tag::EN[]`: The build process collects all parts for the desired language.
+|Every piece of text is enclosed in _tags_ like `tag::EN[]` The build process collects all parts for the desired language.
 
+|Authors want to comment on specific parts of the text
+|You can create a comment within every single adoc file by writing:
+
+[source,asciidoc]
+----
+  // tag::REMARK[]
+  your comment goes here, with all styling and formatting options.
+  // end::REMARK[]
+----
+
+|Simple conversion from asciidoc to pdf (and html)
+|There are several options available:
+
+* Gradle based build, requiring a local Java runtime.
+* Docker based build, requiring a local Docker installation
 |===
+
+=== How to organize files?
+
+=== How to build (aka: how to convert asciidoc to pdf)?
 
 == Maintainers
 

@@ -1,7 +1,18 @@
-==== LZ 1-1: Definitionen von Softwarearchitektur diskutieren (R1)
-Softwarearchitekten kennen mehrerer Definitionen von Softwarearchitektur (u. a. ISO 42010/IEEE 1471, SEI, Booch etc.) und können deren Gemeinsamkeiten benennen:
+// tag::DE[]
+==== LZ 1-1: Zahlen (R1)
+Sie kennen die Definition von natürlichen und ganzen Zahlen, insbesondere:
 
-*	Komponenten/Bausteine mit Schnittstellen und Beziehungen
-*	Bausteine als allgemeiner Begriff, Komponenten als eine spezielle Ausprägung davon
-*	Strukturen, Querschnittskonzepte, Prinzipien
-*	Architekturentscheidungen mit systemweiten oder den gesamten Lebenszyklus betreffenden Konsequenzen
+* können Sie von 1 an aufwärts zählen
+* können Sie von minus 1 an abwärts zählen
+* kennen Sie die Null als ganze Zahl
+// end::DE[]
+
+// tag::EN[]
+==== LG 1-1: Numbers (R1)
+You know the definition of natural and integer numbers, in particular:
+
+* you can count from 1 upwards
+* you can count downwards from minus 1
+* you know zero as an integer
+// end::EN[]
+

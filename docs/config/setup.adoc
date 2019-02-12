@@ -21,12 +21,14 @@ endif::withRemarks[]
 // additional markers might be configured here!
 :include_configuration: tags={language}{remarks}
 
-
+ifeval::[{language} == all]
+:language: DE,EN
+endif::[]
 
 ifdef::debug_adoc[]
 [NOTE]
 ====
-Document generation configuration:
+Current configuration:
 
 * Language(s): {language}
 * Document version: {document-version}

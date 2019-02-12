@@ -1,11 +1,11 @@
-= Curriculum für CPSA Certified Professional for Software Architecture® : - *Foundation Level* -
+= Template Curriculum: CPSA Certified Professional for Software Architecture® : - *Template* -
 :doctype: book
 
 // handle numerous attributes. Successful inclusion of this file
 // is ABSOLUTELY NECESSARY!!
 include::config/setup.adoc[]
 
-:document-version: 5.0-DRAFT 2019
+:document-version: 2.0-DRAFT 2019
 
 // define terms for toc, learning_goals
 include::config/i18n-definitions.adoc[{language}]
@@ -28,16 +28,13 @@ include::00-preamble/00-introduction.adoc[]
 
 <<<
 :sectnums:
-include::01-basics/00-basic-concepts.adoc[]
+// don't use {include_configuration} here, otherwise nothing gets included
+include::01-basics/00-basics.adoc[] 
 
 <<<
-include::02-design/00-design.adoc[]
+// don't use {include_configuration} here, otherwise nothing gets included
+include::02-math/00-math.adoc[]
 
 <<<
-include::03-documentation/00-documentation.adoc[]
-
-<<<
-include::04-quality/00-quality.adoc[]
-
-<<<
+// don't use {include_configuration} here, otherwise nothing gets included
 include::05-examples/00-examples.adoc[]

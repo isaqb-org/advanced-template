@@ -4,12 +4,14 @@
 // tag::DE[]
 == Rechtliches
 
+**THIS IS ONLY A TEMPLATE - PLEASE CHECK CAREFULLY**
+
 © (Copyright), International Software Architecture Qualification Board e. V.
 (iSAQB® e. V.) 2009-2019
 
 Die Nutzung des Lehrplans ist nur unter den nachfolgenden Voraussetzungen erlaubt:
 
-1.	Sie möchten das Zertifikat zum „CPSA Certified Professional for Software Architecture Foundation Level®“ erwerben.
+1.	Sie möchten das Zertifikat zum „CPSA Certified Professional for Software Architecture®“ erwerben.
 Für den Erwerb des Zertifikats ist es gestattet, die Textdokumente und/oder Lehrpläne zu nutzen, indem eine Arbeitskopie für den eigenen Rechner erstellt wird. Soll eine darüber hinaus gehende Nutzung der Dokumente und/oder Lehrpläne erfolgen, zum Beispiel zur Weiterverbreitung an Dritte, Werbung etc., bitte unter contact@isaqb.org nachfragen.
 Es müsste dann ein eigener Lizenzvertrag geschlossen werden.
 
@@ -29,6 +31,8 @@ Alle Rechte an diesen Copyrights stehen ausschließlich dem International Softwa
 // tag::EN[]
 
 == Legal Notice
+
+**THIS IS ONLY A TEMPLATE - PLEASE CHECK CAREFULLY**
 
 © (Copyright), International Software Architecture Qualification Board e. V.
 (iSAQB® e. V.) 2009-2019

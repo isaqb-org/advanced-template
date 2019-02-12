@@ -1,0 +1,24 @@
+// tag::DE[]
+== Beispiele
+
+|===
+| Dauer: 120 Min. | Übungszeit: keine
+|===
+
+
+=== Wesentliche Begriffe
+Supermarkt, Berechnung, Preise, Einkaufskorb, Großpackung
+// end::DE[]
+
+
+// tag::EN[]
+== Examples
+
+|===
+| Duration: 120 min. Exercise time: none
+|===
+
+
+=== Essential terms
+supermarket, calculation, prices, shopping basket, bulk packaging
+// end::EN[]

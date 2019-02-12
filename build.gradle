@@ -22,7 +22,7 @@ asciidoctor {
    backends 'pdf'
    sourceDir = file("./docs/")
    sources {
-      include "foundation-curriculum.adoc"
+      include "template-curriculum.adoc"
    }
   outputDir = file("build")
 
@@ -37,7 +37,7 @@ asciidoctor {
       debug_adoc         : true,
       'document-version' : "5.0 DRAFT ($currentDate)",
       'withRemarks'      : true,
-      'language'         : 'EN',
+      'language'         : 'all',
       'pdf-stylesdir'    : '../style/themes',
       'pdf-style'        : 'isaqb'
   ]

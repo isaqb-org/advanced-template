@@ -1,13 +1,7 @@
-== Beispiele für Softwarearchitekturen
+include::./01-examples-duration-terms.adoc[{include_configuration}]
 
-|===
-| Dauer: 60 Min. | Übungszeit: Keine.
-|===
+== {learning_goals}
 
-Dieser Abschnitt ist nicht prüfungsrelevant.
+include::./LZ-5-1.adoc[{include_configuration}]
 
-=== Lernziele
 
-include::./LZ-5-1.adoc[]
-
-include::./LZ-5-2.adoc[]

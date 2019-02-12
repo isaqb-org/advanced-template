@@ -1,0 +1,15 @@
+// header file for curriculum section 1: Math Concepts
+// (c) iSAQB e.V. (https://isaqb.org)
+// ====================================================
+include::./01-math-duration-terms.adoc[{include_configuration}]
+
+=== {learning_goals}
+
+include::./LZ-2-01.adoc[{include_configuration}]
+
+// by now you should know how it works.
+// include::./LZ-2-02.adoc[]
+
+
+
+

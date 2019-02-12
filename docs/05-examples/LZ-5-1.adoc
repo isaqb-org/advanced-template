@@ -1,6 +1,21 @@
 // tag::DE[]
 
-==== LZ 5-1: Bezug von Anforderungen zu Lösung erfassen (R3)
-Softwarearchitekten haben an mindestens einem Beispiel den Bezug von Anforderungen und Randbedingungen zu Lösungsentscheidungen erkannt und nachvollzogen.
+==== LZ 5-1: Beispiel-Addition (R3)
 
+* 40+1 = 41
+* 40+2 = 42. qed.
 // end::DE[]
+
+
+// tag::DE[]
+
+==== LZ 5-1: Sample-Addition (R3)
+
+* 40+1 = 41
+* 40+2 = 42. qed.
+// end::DE[]
+
+
+// tag::REMARK[]
+das war jetzt wirklich schwierig. Hier sollten keine weiteren Lernziele mehr kommen, sonst wird's zuviel.
+// end::REMARK[]

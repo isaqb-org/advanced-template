@@ -1,0 +1,11 @@
+// tag::DE[]
+==== LZ 2-1: Vorgehen und Heuristiken zur Preisberechnung im Supermarkt (R1)
+Sie sollen immer in etwa wissen, was die Artikel in ihrem Einkaufskorb zusammen kosten.
+
+// end::DE[]
+
+// tag::EN[]
+==== LG 2-1: Approachs to survive in supermarkets
+You should always know approximately how much the items in their shopping basket cost together.
+
+// end::EN[]

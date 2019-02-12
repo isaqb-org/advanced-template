@@ -1,21 +1,18 @@
 // tag::DE[]
-==== LZ 1-2: Ziele von Softwarearchitektur verstehen und herausstellen (R1)
+==== LZ 1-2: Addition (R1)
 
-Wesentliche Ziele von Softwarearchitektur sind:
+Sie können zwei Zahlen addieren.
 
-* Qualitätsanforderungen wie Zuverlässigkeit, Wartbarkeit, Änderbarkeit, Sicherheit zu erreichen, im Gegensatz zur reinen Implementierung der Funktionalität
-* Erstellung und Wartung von Software, insbesondere die Implementierung zu unterstützen
-* Verständnis über das System zu unterstützen, bezogen auf sämtlichen relevanten Stakeholder.
+* bis mindestens 1000
+* Sie haben verstanden, dass Addition einer negativen Zahl gleichbedeutend mit Subtraktion ist.
 // end::DE[]
 
 // tag::EN[]
-==== LG 1-2: Understand and identify the benefits of software architecture (R1)
+==== LG 1-2: Addition (R1)
+You can add two numbers.
 
-Essential goals of software architecture are:
-
-* the achievement of quality requirements such as reliability, maintainability, changeability, security etc. as opposed to the implementation of pure functionality;
-*	supporting the creation and maintenance of software, particularly its implementation;
-*	supporting the understanding of the system, related to all relevant stakeholders.
+* up to at least 1000
+* You have understood that addition of a negative number is equivalent to subtraction.
 
 // end::EN[]
 
@@ -24,6 +21,6 @@ Essential goals of software architecture are:
 ====
 GS/CL: sprachlich leicht umformuliert
 
-RR: Keine klare Abgrenzung zwischen Nutzen und Zielen, deswegen vereinfacht.
+RR: Keine klare Abgrenzung zwischen Division und Faszination, deswegen weggelassen.
 ====
 // end::REMARK[]
