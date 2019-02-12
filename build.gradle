@@ -37,7 +37,7 @@ asciidoctor {
       debug_adoc         : true,
       'document-version' : "5.0 DRAFT ($currentDate)",
       'withRemarks'      : true,
-      'language'         : 'all',
+      'language'         : "DE;EN",
       'pdf-stylesdir'    : '../style/themes',
       'pdf-style'        : 'isaqb'
   ]

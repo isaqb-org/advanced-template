@@ -1,0 +1,16 @@
+// tag::DE[]
+
+// end::DE[]
+
+
+// tag::EN[]
+
+// end::EN[]
+
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+
+====
+// end::REMARK[]

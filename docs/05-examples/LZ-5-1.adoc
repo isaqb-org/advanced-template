@@ -7,13 +7,13 @@
 // end::DE[]
 
 
-// tag::DE[]
+// tag::EN[]
 
 ==== LZ 5-1: Sample-Addition (R3)
 
 * 40+1 = 41
 * 40+2 = 42. qed.
-// end::DE[]
+// end::EN[]
 
 
 // tag::REMARK[]

@@ -21,8 +21,10 @@ endif::withRemarks[]
 // additional markers might be configured here!
 :include_configuration: tags={language}{remarks}
 
-ifeval::[{language} == all]
-:language: DE,EN
+
+ifeval::[{language} == "all"]
+:language: "DE,EN"
+== THIS CURRENTLY DOES NOT WORK...
 endif::[]
 
 ifdef::debug_adoc[]
