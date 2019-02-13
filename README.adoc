@@ -2,6 +2,7 @@
 
 :toc:
 :toc-placement!:
+
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -18,6 +19,7 @@ This is <<copyrighted,copyrighted work>>.
 
 
 toc::[]
+
 == How to contribute or participate
 Create an issue, a merge- or pull-request
 
@@ -161,9 +163,9 @@ include::00-preamble/00-introduction.adoc[] //<6>
 The simple solution is to install a Java runtime and simply call:
 
 [source,shell]
-====
-./gradlew.sh // or gradlew.bat if you're on Windows
-====
+----
+  ./gradlew.sh // or gradlew.bat if you're on Windows
+----
 
 The output file(s) are written to the `/build` directory.
 
