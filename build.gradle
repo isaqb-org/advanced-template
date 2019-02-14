@@ -43,7 +43,7 @@ asciidoctor {
       'withRemarks'      : true,
 
       // what language(s) do you want to render? DE, EN?
-      'language'         : "DE;EN",  // options are "DE", "EN" or "DE;EN"
+      'language'         : "DE",  // options are "DE", "EN" or "DE;EN"
 
       // where are the (custom) pdf style definitions and fonts located
       'pdf-stylesdir'    : '../style/themes',

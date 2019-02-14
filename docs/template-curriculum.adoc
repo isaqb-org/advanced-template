@@ -8,7 +8,7 @@ include::config/setup.adoc[]
 :document-version: 2.0-DRAFT 2019
 
 // define terms for toc, learning_goals
-include::config/i18n-definitions.adoc[{language}]
+include::config/i18n-definitions.adoc[tags={language}]
 
 ifdef::backend-pdf[]
 :title-logo-image: image:isaqb-logo.jpg[pdfwidth=4.25in,align=center]
