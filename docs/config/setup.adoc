@@ -1,8 +1,8 @@
+:doctype: book
 :icons: font
 :sectnumlevels: 1
 
-// table-of-contents
-// placement does not work in pdf, but in html
+// table-of-contents placement does not work in pdf, but in html
 :toc: left
 
 // if the attribute ":withRemarks:" is set, we amend every content-include

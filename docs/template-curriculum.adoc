@@ -1,6 +1,4 @@
 = Template Curriculum: CPSA Certified Professional for Software Architecture® : - *Template* -
-// this enables positioning the ToC where we need it (esp. for pdf version)
-:doctype: book
 
 // handle numerous attributes. Successful include of this file
 // is ABSOLUTELY NECESSARY!!
