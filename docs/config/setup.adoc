@@ -2,8 +2,6 @@
 :icons: font
 :sectnumlevels: 1
 
-// table-of-contents placement does not work in pdf, but in html
-:toc: left
 
 // if the attribute ":withRemarks:" is set, we amend every content-include
 // by ";REMARK", so that the sections tagged "REMARK" are always included.
