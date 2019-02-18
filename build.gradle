@@ -35,7 +35,7 @@ asciidoctor {
       icons         : 'font',
       currentDate   : '$currentDate',
 
-      debug_adoc         : true,
+      debug_adoc         : false, // no debugging info contained in output document
       'document-version' : "0.4.2 DRAFT ($currentDate)",
       
       // if you want to render the comments/remarks?

@@ -25,9 +25,19 @@ Create an issue, a merge- or pull-request
 
 == How to use this template
 
-1. clone or download
+1. clone or download - but include the submodule:
++
+--
+[source,shell]
+----
+git clone git@github.com/username/repository.git --recursive
+----
+--
 2. build it with gradle
-3. look into the file `build.gradle` to see what attributes you may configure.
+3. look into the file `build.gradle` to see what attributes you may configure. Watch for:
+** The `language` attribute, it can be DE, EN or DE;EN
+** The output formats called `backends` (pdf and/or html5)
+** The document version
 
 == How to write iSAQB Curricula with AsciiDoc
 
@@ -133,26 +143,28 @@ File `template-curriculum.adoc` (excerpts):
 = Template Curriculum: CPSA Certified Professional for Software Architecture® 
 :doctype: book
 
-include::config/setup.adoc[]  // <1>
+include::config/setup.adoc[]  // // <1>
 
-:document-version: 2.0-DRAFT 2019 // <2>
+:document-version: 2.0-DRAFT 2019 // //<2>
 
-:sectnums!: // <3>
-include::00-preamble/copyright.adoc[{include_configuration}] // <4>
+:sectnums!: // // <3>
+include::00-preamble/copyright.adoc[{include_configuration}] // // <4>
 
-<<< // <5>
+<<< // // <5>
 :toc:
 
 <<<
 :sectnums!:
-include::00-preamble/00-introduction.adoc[] //<6>
+include::00-preamble/00-introduction.adoc[] // //<6>
 
 ----
-<1>: we propose to put asciidoc configuration in this special file
-<2>: you can set a version, but may override in the build process
-<3>: you can turn section numbering on and off (here: off)
-<4>: this includes parts of the copyright.adoc file.
-<5>: The `<<<` will create a pagebreak in pdf's.
+
+1. we propose to put asciidoc configuration in this special file (`setup.adoc`)
+2. you can set a version, but may override in the build process
+3. you can turn section numbering on and off (here: off)
+4. this includes parts of the copyright.adoc file.
+5. The `<<<` will create a pagebreak in pdf's.
+6. include the whole file 00-introduction.adoc
 
 
 ==== Suggestions
