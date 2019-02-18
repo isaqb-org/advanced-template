@@ -1,10 +1,13 @@
 = Template Curriculum: CPSA Certified Professional for Software Architecture® : - *Template* -
+// this enables positioning the ToC where we need it (esp. for pdf version)
 :doctype: book
 
-// handle numerous attributes. Successful inclusion of this file
+// handle numerous attributes. Successful include of this file
 // is ABSOLUTELY NECESSARY!!
 include::config/setup.adoc[]
 
+// document-version should usually be overwritten by the build process,
+// e.g. build.gradle 
 :document-version: 2.0-DRAFT 2019
 
 // define terms for toc, learning_goals
@@ -19,8 +22,6 @@ endif::[]
 :sectnums!:
 include::00-preamble/copyright.adoc[{include_configuration}]
 
-<<<
-:toc:
 
 <<<
 :sectnums!:
