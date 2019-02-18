@@ -4,12 +4,11 @@ buildscript {
     }
 
     dependencies {
-        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2.2'
         classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.16'
     }
 }
 plugins {
-  id "org.asciidoctor.convert" version "1.5.9.2"
+  id "org.asciidoctor.convert" version "1.6.0"
 
 }
 
@@ -44,7 +43,7 @@ asciidoctor {
       'withRemarks'      : true,
 
       // what language(s) do you want to render? DE, EN or both?
-      'language'         : "EN",  // options are "DE", "EN" or "DE;EN"
+      'language'         : "DE;EN",  // options are "DE", "EN" or "DE;EN"
 
       // where are the (custom) pdf style definitions and fonts located
       'pdf-stylesdir'    : '../pdf-theme/themes',
