@@ -1,3 +1,5 @@
+import org.asciidoctor.gradle.AsciidoctorTask
+
 buildscript {
     repositories {
         jcenter()
@@ -17,38 +19,86 @@ ext {
     currentDate = new Date().format("d. MMM yyyy")
 }
 
+task buildDocs {
+	group 'Documentation'
+	description 'Grouping task for generating all languages in several formats'
+}
+
 asciidoctor {
-   backends 'pdf', 'html5'
-   // backends 'html5'
-   sourceDir = file("./docs/")
-   sources {
+    
+    attributes = [
+
+      icons              : 'font',
+    
+    ]
+    
+}
+
+task renderNoRemarksDE(type: AsciidoctorTask, group: 'Documentation') {
+    description = '.'
+    sourceDir = file("./docs/")
+    sources {
       include "template-curriculum.adoc"
-   }
-  outputDir = file("build")
-
-  println "outputDir = " + outputDir
-  println "sourceDir = " + sourceDir
-
-  attributes = [
-      doctype       : 'book',
-      icons         : 'font',
-      currentDate   : '$currentDate',
-
-      debug_adoc         : false, // no debugging info contained in output document
-      'document-version' : "0.4.2 DRAFT ($currentDate)",
-      
-      // if you want to render the comments/remarks?
-      //    then uncomment the following line;
-      //    else comment the following line
-      'withRemarks'      : true,
-
-      // what language(s) do you want to render? DE, EN or both?
-      'language'         : "DE;EN",  // options are "DE", "EN" or "DE;EN"
+    }
+    outputDir = file("build/DE")
+    backends 'pdf', 'html5'
+	attributes = [
+       'document-version' : "0.4.2 DRAFT ($currentDate)",
+       'withRemarks'      : false,
+       'language'         : "DE",
+       currentDate        : '$currentDate',
+       debug_adoc         : false, 
 
       // where are the (custom) pdf style definitions and fonts located
       'pdf-stylesdir'    : '../pdf-theme/themes',
       'pdf-style'        : 'isaqb'
-  ]
+    ] 
 }
 
-defaultTasks 'asciidoctor'
+
+task renderNoRemarksEN(type: AsciidoctorTask, group: 'Documentation') {
+    description = '.'
+    sourceDir = file("./docs/")
+    sources {
+      include "template-curriculum.adoc"
+    }
+    outputDir = file("build/EN")
+    backends 'pdf'
+	attributes = [
+       'document-version' : "0.4.2 DRAFT ($currentDate)",
+       'withRemarks'      : false,
+       'language'         : "EN",
+       currentDate        : '$currentDate',
+       debug_adoc         : false, 
+
+      // where are the (custom) pdf style definitions and fonts located
+      'pdf-stylesdir'    : '../pdf-theme/themes',
+      'pdf-style'        : 'isaqb'
+    ]
+}
+
+
+task renderPdfRemarksEN(type: AsciidoctorTask, group: 'Documentation') {
+    description = '.'
+    sourceDir = file("./docs/")
+    sources {
+      include "template-curriculum.adoc"
+    }
+    outputDir = file("build/EN")
+    backends 'pdf'
+	attributes = [
+       'document-version' : "0.4.2 DRAFT ($currentDate)",
+       'withRemarks'      : true,
+       'language'         : "EN",
+       currentDate        : '$currentDate',
+       debug_adoc         : false, 
+
+      // where are the (custom) pdf style definitions and fonts located
+      'pdf-stylesdir'    : '../pdf-theme/themes',
+      'pdf-style'        : 'isaqb'
+    ]
+}
+buildDocs.dependsOn renderNoRemarksDE
+buildDocs.dependsOn renderNoRemarksEN
+buildDocs.dependsOn renderPdfRemarksEN
+
