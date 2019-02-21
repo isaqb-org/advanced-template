@@ -13,7 +13,7 @@ endif::[]
 
 *DRAFT* version!!
 
-This repository contains a template for iSAQB *curricula* in AsciiDoc. 
+This repository contains a template for iSAQB *curricula* in AsciiDoc.
 
 This is <<copyrighted,copyrighted work>>.
 
@@ -128,7 +128,7 @@ As you imagined, now both X42 and REMARK-tagged content will be included in the 
 As we are writing i18n we need to strictly distiguish between two
 kind of files:
 
-* *content* files, they contain text, tables or diagrams that shall be included in the output. 
+* *content* files, they contain text, tables or diagrams that shall be included in the output.
 * *structure* files, containing only include-statements, configuration information. Structure files include both content-files and other structure files.
 
 For content files, specific parts will be included via the tag-syntax described above.
@@ -140,7 +140,7 @@ File `template-curriculum.adoc` (excerpts):
 
 [source,asciidoc]
 ----
-= Template Curriculum: CPSA Certified Professional for Software Architecture® 
+= Template Curriculum: CPSA Certified Professional for Software Architecture®
 :doctype: book
 
 include::config/setup.adoc[]  // // <1>
@@ -172,6 +172,8 @@ include::00-preamble/00-introduction.adoc[] // //<6>
 
 === How to build (aka: how to convert asciidoc to pdf)?
 
+==== Local Java Runtime
+
 The simple solution is to install a Java runtime and simply call:
 
 [source,shell]
@@ -181,6 +183,23 @@ The simple solution is to install a Java runtime and simply call:
 
 The output file(s) are written to the `/build` directory.
 
+==== Docker
+
+If you have Docker installed you can also use the Dockerfile from the adoc2pdf submodule.
+
+First you have to build the container locally.
+
+[source,shell]
+----
+   adoc2pdf/build-container.sh
+----
+
+Then you can execute the transformation.
+
+[source,shell]
+----
+   adoc2pdf/adoc2pdf.sh /full/path/to/your/root/document.adoc
+----
 
 == Maintainers
 
