@@ -1,3 +1,8 @@
+// tag::FEEDBACK[]
+:filename: 00-preamble/01-what-to-expect.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
 // tag::DE[]
 === Was vermittelt eine Template-Schulung?
 Lizenzierte Schulungen zum _Certified Professional for Software Architecture – Template Level_ (CPSA-T) vermitteln grundlegende Rechenkenntnisse.
@@ -22,7 +27,7 @@ Licensed Certified Professional for Software Architecture – Template Level (CP
 
 Focus is education and training of the following skills:
 
-* Natural and rational numbers 
+* Natural and rational numbers
 * Independent execution of basic calculations such as addition and subtraction;
 
 In addition, such trainings cover:

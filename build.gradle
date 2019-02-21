@@ -36,11 +36,16 @@ asciidoctor {
 
       debug_adoc         : false, // no debugging info contained in output document
       'document-version' : "0.4.2 DRAFT ($currentDate)",
-      
+
       // if you want to render the comments/remarks?
       //    then uncomment the following line;
       //    else comment the following line
       'withRemarks'      : true,
+
+      // if you want to render the "improve this doc" links
+      //    then uncomment the following line;
+      //    else comment the following line
+      'withFeedback'     : true,
 
       // what language(s) do you want to render? DE, EN or both?
       'language'         : "DE;EN",  // options are "DE", "EN" or "DE;EN"
