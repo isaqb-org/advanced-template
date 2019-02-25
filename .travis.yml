@@ -1,4 +1,5 @@
 script:
+- ./adoc2pdf/build-container.sh
 - ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc DE dev
 - ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc EN dev
 
