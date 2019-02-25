@@ -12,6 +12,7 @@ include::config/setup.adoc[]
 // this is the base URL for the "improve this doc" links that directly link
 // to the source files in your repository; change this accordingly
 :project-repository-docs-edit-link: https://github.com/isaqb-org/curriculum-template/blob/master/docs/
+:project-report-issue-link: https://github.com/isaqb-org/curriculum-template/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:
 
 // define terms for toc, learning_goals
 include::config/i18n-definitions.adoc[tags={language}]
