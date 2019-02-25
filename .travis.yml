@@ -1,0 +1,14 @@
+script:
+- ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc DE dev
+- ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc EN dev
+
+deploy:
+  provider: releases
+  api_key:
+    secure: LiKDXSZCyRvOAQ66/a8bs6rph65KS7qIQUus9DHvxTshosRZfYFMxaxaJYNi5SRqM0HehBapsz/cr6pwL1OmMxyJTLLP4Hcbir+4vuvu6KvdC2935KaoWzVMbAV/fOpm+i3QFXMvQ6F5nlNTDCwjaq7N0jRYDhbShZ/nDZCSGZYvhsGD4/2qDz9LiWRA10UrufkPWr1QytJxrbw3p2Eti7Up+2V2pKqrAc5/tq1HWuCTp7YazxK7ws2ea+q/rfZO1SBxd/PbBAFJUxZ73U0KkWPvpvP68PIO6KSfKTX+woLAqOanlJha1OcZOR90zFDEMHxR8oNG42RCPCLStLj71beqlyVAOcAD0SlAKBsMa29g07SzhrvPhN9hH/YTr+RGPc8zeJ1ybxOehM/68jUA1izAQP6+nHc4u7adf5wsH75WDnwNws8BO065GiAiYeHHcYkhLDJ5aVbSN6SKwLyFtvx1MBsgR7LKp+22qCaF1/XaXOcTuqslYnI5GX0fKYMmDTK8vFsjcsmKieikMAIhUvdaVgpiGeMVTbLMqmh3QR8jCLo7b8NA54IlEWa5W4xkhyUx53pFgjCp/JGJwZ3e31O7WOYPtUcqfHJLIVVVubXQ+OecDMqUxplJJ10Oo8qJen6iubN5FXM5apBsUauqiYtixMFM2UVX8oerYYqcnH0=
+  file:
+    - "build/template-curriculum_DE_dev.pdf"
+    - "build/template-curriculum_EN_dev.pdf"
+  skip_cleanup: true
+  draft: true
+  overwrite: true
