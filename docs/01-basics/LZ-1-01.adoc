@@ -4,6 +4,7 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
+[[LZ-1-1]]
 ==== LZ 1-1: Zahlen (R1)
 Sie kennen die Definition von natürlichen und ganzen Zahlen, insbesondere:
 
@@ -13,6 +14,7 @@ Sie kennen die Definition von natürlichen und ganzen Zahlen, insbesondere:
 // end::DE[]
 
 // tag::EN[]
+[[LG-1-1]]
 ==== LG 1-1: Numbers (R1)
 You know the definition of natural and integer numbers, in particular:
 
