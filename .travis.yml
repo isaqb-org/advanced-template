@@ -2,21 +2,8 @@ language: minimal
 
 script:
 - docker build -t isaqb-adoc2pdf --force-rm adoc2pdf/
-- docker run --rm -v ${PWD}/build:/build -v ${PWD}/docs:/documents:ro --entrypoint asciidoctor isaqb-adoc2pdf -D /build -o index.html /documents/index.adoc
-- docker run --rm -v ${PWD}/build:/build -v ${PWD}/docs:/documents:ro --entrypoint asciidoctor isaqb-adoc2pdf -a language=DE -D /build -o template-curriculum_de.html /documents/template-curriculum.adoc
-- docker run --rm -v ${PWD}/build:/build -v ${PWD}/docs:/documents:ro --entrypoint asciidoctor isaqb-adoc2pdf -a language=EN -D /build -o template-curriculum_en.html /documents/template-curriculum.adoc
-- docker run --rm -v ${PWD}/build:/build -v ${PWD}/docs:/documents:ro --entrypoint asciidoctor isaqb-adoc2pdf -a withRemarks -a language="DE;EN" -D /build -o template-curriculum_de_en_with-remarks.html /documents/template-curriculum.adoc
 - ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc DE prod
 - ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc EN prod
-
-deploy:
-  provider: pages
-  local-dir: build
-  skip-cleanup: true
-  github-token: GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
 
 deploy:
   provider: releases
