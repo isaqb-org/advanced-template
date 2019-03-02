@@ -10,8 +10,8 @@ deploy:
   api_key:
     secure: $GITHUB_TOKEN
   file:
-    - "build/template-curriculum_DE_dev.pdf"
-    - "build/template-curriculum_EN_dev.pdf"
+    - "build/template-curriculum_DE_prod.pdf"
+    - "build/template-curriculum_EN_prod.pdf"
   skip_cleanup: true
   draft: true
   overwrite: true
