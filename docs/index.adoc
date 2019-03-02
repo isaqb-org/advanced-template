@@ -1,13 +1,21 @@
-= Template Curriculum: CPSA Certified Professional for Software Architecture® : - *Template* -
+= image:images/isaqb-logo-150px.jpg[] CPSA Certified Professional for Software Architecture®
+- Template Curriculum -
 
 The international Software Architecture Qualification Board (link:https://isaqb.org[iSAQB]) defines curricula on several levels for software architects.
 
-You can find several versions of the template curriculum:
+You can find the Template Level Curriculum (short: TLC) for the foundation level at <<foundation-curriculum.adoc#>>
 
-* link:template-curriculum_de_en_with-remarks.html[Curriculum in German and English with Comments]
-* link:template-curriculum_de.html[German Curriculum]
-* link:template-curriculum_en.html[English Curriculum]
-* link:template-curriculum_DE_prod.pdf[German Curriculum (PDF)]
-* link:template-curriculum_EN_prod.pdf[English Curriculum (PDF)]
+The terminology used in the iSAQB curricula can be found as a (freely available) ebook, published on https://leanpub.com/isaqbglossary/read[Leanpub]
 
-The terminology used in the iSAQB curricula can be found at https://leanpub.com/isaqbglossary/read
+== Production version
+
+The current productive version (aka: relevant for examinations) is version 4.1 (EN) and 4.2 (DE), both of which are currently only available via the official https://isaqb.org[iSAQB website].
+
+== Development versions
+The Foundation Level curriculum is currently maintained and published in both English (EN) and German (DE). Maintainers from the Foundation-Level-Working-Group and voluntary reviewers collaborate on Github to improve the curriculum.
+
+- link:template-curriculum_de.html[German without Comments]
+- link:template-curriculum_en.html[English without Comments]
+- link:template-curriculum_remarks_de_en.html[German/English with Comments]
+- link:template-curriculum_de.pdf[German without Comments (PDF)]
+- link:template-curriculum_en.pdf[English without Comments (PDF)]
