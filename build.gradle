@@ -1,22 +1,22 @@
 import org.asciidoctor.gradle.AsciidoctorTask
 
 buildscript {
-    repositories {
-        jcenter()
-    }
+  repositories {
+    jcenter()
+  }
 
-    dependencies {
-        classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.16'
-    }
+  dependencies {
+    classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.16'
+  }
 }
 plugins {
   id "org.asciidoctor.convert" version "1.6.0"
-
 }
 
-
 ext {
-    currentDate = new Date().format("d. MMM yyyy")
+  currentDate = new Date().format("d. MMM yyyy")
+  project.version = "0.4.2 DRAFT ($currentDate)"
+  curriculumBaseName = "template-curriculum"
 }
 
 task buildDocs {
@@ -24,81 +24,109 @@ task buildDocs {
 	description 'Grouping task for generating all languages in several formats'
 }
 
-asciidoctor {
-    
-    attributes = [
+task renderIndex(type: AsciidoctorTask, group: 'Documentation') {
+  sourceDir = file("./docs/")
+  sources {
+    include "index.adoc"
+  }
+  outputDir = file("./build/")
+  separateOutputDirs = false
+  backends 'html5'
+	attributes = [
+    'document-version' : "${project.version}",
+    'pdf-stylesdir'    : '../pdf-theme/themes',
+    'pdf-style'        : 'isaqb'
+  ]
 
-      icons              : 'font',
-    
-    ]
-    
+  doLast {
+    file("${buildDir}/${curriculumBaseName}.html")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_de.html"))
+    file("${buildDir}/${curriculumBaseName}.pdf")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_de.pdf"))
+  }
 }
 
 task renderNoRemarksDE(type: AsciidoctorTask, group: 'Documentation') {
-    description = '.'
-    sourceDir = file("./docs/")
-    sources {
-      include "template-curriculum.adoc"
-    }
-    outputDir = file("build/DE")
-    backends 'pdf', 'html5'
+  sourceDir = file("./docs/")
+  sources {
+    include "template-curriculum.adoc"
+  }
+  outputDir = file("./build/")
+  separateOutputDirs = false
+  backends 'pdf', 'html5'
 	attributes = [
-       'document-version' : "0.4.2 DRAFT ($currentDate)",
-       'withRemarks'      : false,
-       'language'         : "DE",
-       currentDate        : '$currentDate',
-       debug_adoc         : false, 
+    'document-version' : "${project.version}",
+    'withRemarks'      : false,
+    'language'         : "DE",
+    'currentDate'      : "$currentDate",
+    'debug_adoc'       : false,
+    'pdf-stylesdir'    : '../pdf-theme/themes',
+    'pdf-style'        : 'isaqb'
+  ]
 
-      // where are the (custom) pdf style definitions and fonts located
-      'pdf-stylesdir'    : '../pdf-theme/themes',
-      'pdf-style'        : 'isaqb'
-    ] 
+  doLast {
+    file("${buildDir}/${curriculumBaseName}.html")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_de.html"))
+    file("${buildDir}/${curriculumBaseName}.pdf")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_de.pdf"))
+  }
 }
-
 
 task renderNoRemarksEN(type: AsciidoctorTask, group: 'Documentation') {
-    description = '.'
-    sourceDir = file("./docs/")
-    sources {
-      include "template-curriculum.adoc"
-    }
-    outputDir = file("build/EN")
-    backends 'pdf'
+  sourceDir = file("./docs/")
+  sources {
+    include "template-curriculum.adoc"
+  }
+  outputDir = file("./build/")
+  separateOutputDirs = false
+  backends 'pdf', 'html5'
 	attributes = [
-       'document-version' : "0.4.2 DRAFT ($currentDate)",
-       'withRemarks'      : false,
-       'language'         : "EN",
-       currentDate        : '$currentDate',
-       debug_adoc         : false, 
+    'document-version' : "${project.version}",
+    'withRemarks'      : false,
+    'language'         : "EN",
+    'currentDate'      : "$currentDate",
+    'debug_adoc'       : false,
+    'pdf-stylesdir'    : '../pdf-theme/themes',
+    'pdf-style'        : 'isaqb'
+  ]
 
-      // where are the (custom) pdf style definitions and fonts located
-      'pdf-stylesdir'    : '../pdf-theme/themes',
-      'pdf-style'        : 'isaqb'
-    ]
+  doLast {
+    file("${buildDir}/${curriculumBaseName}.html")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_en.html"))
+    file("${buildDir}/${curriculumBaseName}.pdf")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_en.pdf"))
+  }
 }
 
-
-task renderPdfRemarksEN(type: AsciidoctorTask, group: 'Documentation') {
-    description = '.'
-    sourceDir = file("./docs/")
-    sources {
-      include "template-curriculum.adoc"
-    }
-    outputDir = file("build/EN")
-    backends 'pdf'
+task renderWithRemarksDE_EN(type: AsciidoctorTask, group: 'Documentation') {
+  sourceDir = file("./docs/")
+  sources {
+    include "template-curriculum.adoc"
+  }
+  outputDir = file("./build/")
+  separateOutputDirs = false
+  backends 'pdf', 'html5'
 	attributes = [
-       'document-version' : "0.4.2 DRAFT ($currentDate)",
-       'withRemarks'      : true,
-       'language'         : "EN",
-       currentDate        : '$currentDate',
-       debug_adoc         : false, 
+    'icons'            : 'font',
+    'document-version' : "${project.version}",
+    'withRemarks'      : true,
+    'language'         : "DE;EN",
+    'currentDate'      : "$currentDate",
+    'debug_adoc'       : false,
+    'pdf-stylesdir'    : '../pdf-theme/themes',
+    'pdf-style'        : 'isaqb'
+  ]
 
-      // where are the (custom) pdf style definitions and fonts located
-      'pdf-stylesdir'    : '../pdf-theme/themes',
-      'pdf-style'        : 'isaqb'
-    ]
+  doLast {
+    file("${buildDir}/${curriculumBaseName}.html")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_remarks_de_en.html"))
+    file("${buildDir}/${curriculumBaseName}.pdf")
+      .renameTo(file("${buildDir}/${curriculumBaseName}_remarks_de_en.pdf"))
+  }
 }
+
+buildDocs.dependsOn renderIndex
 buildDocs.dependsOn renderNoRemarksDE
 buildDocs.dependsOn renderNoRemarksEN
-buildDocs.dependsOn renderPdfRemarksEN
+buildDocs.dependsOn renderWithRemarksDE_EN
 

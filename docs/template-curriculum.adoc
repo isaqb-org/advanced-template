@@ -6,7 +6,7 @@
 include::config/setup.adoc[]
 
 // document-version should usually be overwritten by the build process,
-// e.g. build.gradle 
+// e.g. build.gradle
 :document-version: 2.0-DRAFT 2019
 
 // define terms for toc, learning_goals
@@ -29,7 +29,7 @@ include::00-preamble/00-introduction.adoc[]
 <<<
 :sectnums:
 // don't use {include_configuration} here, otherwise nothing gets included
-include::01-basics/00-basics.adoc[] 
+include::01-basics/00-basics.adoc[]
 
 <<<
 // don't use {include_configuration} here, otherwise nothing gets included
