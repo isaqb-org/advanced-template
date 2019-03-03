@@ -29,16 +29,12 @@ ext {
 }
 
 class RenderCurriculumTask extends AsciidoctorTask {
-  final String currentDate
-  final String language
-  final boolean withRemarks
-
   @Inject
-  RenderCurriculumTask(String currentDate, String language, boolean withRemarks) {
+  RenderCurriculumTask(String curriculumBaseName, String currentDate, String language, boolean withRemarks) {
     sourceDir = new File("./docs/")
     sources {
       include "index.adoc"
-      include "template-curriculum.adoc"
+      include "${curriculumBaseName}.adoc"
     }
     outputDir = new File("./build/")
     separateOutputDirs = false
@@ -49,6 +45,7 @@ class RenderCurriculumTask extends AsciidoctorTask {
       'currentDate'      : currentDate,
       'language'         : language,
       'withRemarks'      : withRemarks,
+      'withFeedback'     : true,
       'debug_adoc'       : false,
       'pdf-stylesdir'    : '../pdf-theme/themes',
       'pdf-style'        : 'isaqb'
@@ -59,27 +56,28 @@ class RenderCurriculumTask extends AsciidoctorTask {
 task buildDocs {
 	group 'Documentation'
 	description 'Grouping task for generating all languages in several formats'
+  dependsOn "renderNoRemarksDE", "renderNoRemarksEN", "renderWithRemarksDE_EN"
 }
 
-task renderNoRemarksDE(type: RenderCurriculumTask, constructorArgs: [currentDate, "DE", false]) {
+task renderNoRemarksDE(type: RenderCurriculumTask,
+    constructorArgs: [curriculumBaseName, currentDate, "DE", false]) {
   doLast {
     addSuffixToCurriculum("_de")
   }
 }
 
-task renderNoRemarksEN(type: RenderCurriculumTask, constructorArgs: [currentDate, "EN", false]) {
+task renderNoRemarksEN(type: RenderCurriculumTask,
+    constructorArgs: [curriculumBaseName, currentDate, "EN", false]) {
   doLast {
     addSuffixToCurriculum("_en")
   }
 }
 
-task renderWithRemarksDE_EN(type: RenderCurriculumTask, constructorArgs: [currentDate, "DE;EN", true]) {
+task renderWithRemarksDE_EN(type: RenderCurriculumTask,
+    constructorArgs: [curriculumBaseName, currentDate, "DE;EN", true]) {
   doLast {
     addSuffixToCurriculum("_remarks_de_en")
   }
 }
 
-buildDocs.dependsOn renderNoRemarksDE
-buildDocs.dependsOn renderNoRemarksEN
-buildDocs.dependsOn renderWithRemarksDE_EN
-
+defaultTasks "buildDocs"
