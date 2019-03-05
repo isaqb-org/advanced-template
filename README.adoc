@@ -74,6 +74,12 @@ git clone git@github.com/username/repository.git --recursive
 * Docker based build, requiring a local Docker installation
 |===
 
+- - -
+
+**TODO:** Add explanation for keywords and general procedure when creating a new Advanced Level Curriculum.
+
+- - -
+
 === How to organize files?
 
 ==== Prerequisite: AsciiDoc include
