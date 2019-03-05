@@ -1,4 +1,4 @@
-= Template for https://isaqb.org[iSAQB] Curricula
+= Template for https://isaqb.org[iSAQB] Advanced Level Curricula
 
 :toc:
 :toc-placement!:
@@ -13,7 +13,7 @@ endif::[]
 
 *DRAFT* version!!
 
-This repository contains a template for iSAQB *curricula* in AsciiDoc.
+This repository contains a template for iSAQB Advanced Level *curricula* in AsciiDoc.
 
 This is <<copyrighted,copyrighted work>>.
 
@@ -39,7 +39,7 @@ git clone git@github.com/username/repository.git --recursive
 ** The output formats called `backends` (pdf and/or html5)
 ** The document version
 
-== How to write iSAQB Curricula with AsciiDoc
+== How to write iSAQB Advanced Level Curricula with AsciiDoc
 
 === Requirements and (our) solutions
 
@@ -203,7 +203,7 @@ Then you can execute the transformation.
 
 == Maintainers
 
-This repository is currently maintained by Gernot Starke.
+This repository is currently maintained by Benjamin Wolf
 
 
 [[copyrighted]]
