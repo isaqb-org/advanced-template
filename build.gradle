@@ -17,7 +17,7 @@ plugins {
 ext {
   currentDate = new Date().format("d. MMM yyyy")
   project.version = "0.4.2 DRAFT ($currentDate)"
-  curriculumBaseName = "template-curriculum"
+  curriculumBaseName = "advanced-curriculum"
   addSuffixToCurriculum = { suffix ->
     for (extension in ["html", "pdf"]) {
       File source = new File("${buildDir}/${curriculumBaseName}.${extension}")

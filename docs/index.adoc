@@ -14,8 +14,8 @@ The current productive version (aka: relevant for examinations) is version 4.1 (
 == Development versions
 The Foundation Level curriculum is currently maintained and published in both English (EN) and German (DE). Maintainers from the Foundation-Level-Working-Group and voluntary reviewers collaborate on Github to improve the curriculum.
 
-- link:template-curriculum_de.html[German without Comments]
-- link:template-curriculum_en.html[English without Comments]
-- link:template-curriculum_remarks_de_en.html[German/English with Comments]
-- link:template-curriculum_de.pdf[German without Comments (PDF)]
-- link:template-curriculum_en.pdf[English without Comments (PDF)]
+- link:advanced-curriculum_de.html[German without Comments]
+- link:advanced-curriculum_en.html[English without Comments]
+- link:advanced-curriculum_remarks_de_en.html[German/English with Comments]
+- link:advanced-curriculum_de.pdf[German without Comments (PDF)]
+- link:advanced-curriculum_en.pdf[English without Comments (PDF)]
