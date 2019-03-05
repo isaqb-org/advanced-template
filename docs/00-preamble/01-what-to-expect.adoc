@@ -4,8 +4,8 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-=== Was vermittelt eine Template-Schulung?
-Lizenzierte Schulungen zum _Certified Professional for Software Architecture – Template Level_ (CPSA-T) vermitteln grundlegende Rechenkenntnisse.
+=== Was vermittelt eine Advanced-Schulung?
+Lizenzierte Schulungen zum _Certified Professional for Software Architecture – Advanced Level_ (CPSA-A) vermitteln grundlegende Rechenkenntnisse.
 Dadurch können die Teilnehmenden im Supermarkt die Preise ihres Warenkorbes berechnen.
 
 Im Mittelpunkt steht der Erwerb folgender Fähigkeiten:
