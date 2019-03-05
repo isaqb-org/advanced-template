@@ -1,10 +1,10 @@
-= Curriculum für CPSA Certified Professional for Software Architecture®pass:q[<br>]- Advanced Level -
-
-:toc: left
-
 // handle numerous attributes. Successful include of this file
 // is ABSOLUTELY NECESSARY!!
 include::config/setup.adoc[]
+
+= Curriculum fürpass:q[<br>]CPSA Certified Professional forpass:q[<br>]Software Architecture®pass:q[<br>]- Advanced Level -pass:q[<br>]pass:q[<br>]Modul:pass:q[<br>]{curriculum_short}pass:q[<br>]{curriculum_name}
+
+:toc: left
 
 // document-version should usually be overwritten by the build process,
 // e.g. build.gradle
