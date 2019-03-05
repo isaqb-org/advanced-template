@@ -4,45 +4,27 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-=== Was vermittelt eine Advanced-Schulung?
-Lizenzierte Schulungen zum _Certified Professional for Software Architecture – Advanced Level_ (CPSA-A) vermitteln grundlegende Rechenkenntnisse.
-Dadurch können die Teilnehmenden im Supermarkt die Preise ihres Warenkorbes berechnen.
-
-Im Mittelpunkt steht der Erwerb folgender Fähigkeiten:
-
-* Natürliche und rationale Zahlen;
-* selbständiges Durchführen von Grundrechnungen wie Addition und Subtraktion;
-
-Darüber hinaus behandeln Template-Schulungen:
-
-*	den Begriff und die Bedeutung vom Hyperraum,
-*	mehrdimensionale Algebra zur Verwirrung anderer Menschen,
-*	Zahlentheorie, damit wir endlich alle Kryptographie richtig implementieren.
-
+=== Was vermittelt das Modul "{curriculum_short}"?
+Das Modul präsentiert den TeilnehmerInnen {curriculum_name} als ...
+Am Ende des Moduls kennen die TeilnehmerInnen … und können …
 // end::DE[]
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Hier bitte das Modul bzw. dessen Lerninhalte zusammenfassend in 5-8 Sätzen beschreiben. Dabei `{curriculum_name}`
+nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen ersetzt.
+====
+// end::REMARK[]
+
 
 // tag::EN[]
 === What does a Template Level training convey?
-Licensed Certified Professional for Software Architecture – Template Level (CPSA-T) trainings will provide participants with basic knowlede about calculations.
 
-Focus is education and training of the following skills:
-
-* Natural and rational numbers
-* Independent execution of basic calculations such as addition and subtraction;
-
-In addition, such trainings cover:
-
-* the concept and meaning of hyperspace,
-* multidimensional algebra to confuse other people,
-* Number theory, so we can finally implement all cryptography correctly.
+[NOTE]
+====
+TODO: everything....
+====
+Licensed ...
 
 // end::EN[]
-
-// tag::REMARK[]
-[WARNING]
-====
-TODO: englische Übersetzung prüfen!
-
-Ben, Feb 2019: Please undo the election of Donald Dumb to US president.
-====
-// end::REMARK[]
