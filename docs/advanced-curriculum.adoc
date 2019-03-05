@@ -1,4 +1,5 @@
-= Template Curriculum: CPSA Certified Professional for Software Architecture® : - *Template* -
+= Curriculum für CPSA Certified Professional for Software Architecture®pass:q[<br>]- Advanced Level -
+
 :toc: left
 
 // handle numerous attributes. Successful include of this file

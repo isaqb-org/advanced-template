@@ -2,16 +2,16 @@ language: minimal
 
 script:
 - docker build -t isaqb-adoc2pdf --force-rm adoc2pdf/
-- ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc DE prod
-- ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/template-curriculum.adoc EN prod
+- ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/advanced-curriculum.adoc DE prod
+- ./adoc2pdf/adoc2pdf.sh ${PWD}/docs/advanced-curriculum.adoc EN prod
 
 deploy:
   provider: releases
   api_key:
     secure: $GITHUB_TOKEN
   file:
-    - "build/template-curriculum_DE_prod.pdf"
-    - "build/template-curriculum_EN_prod.pdf"
+    - "build/advanced-curriculum_DE_prod.pdf"
+    - "build/advanced-curriculum_EN_prod.pdf"
   skip_cleanup: true
   draft: true
   overwrite: true

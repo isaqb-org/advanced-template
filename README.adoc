@@ -136,7 +136,7 @@ For that purpose we define a variable named `include_configuration` in the file 
 
 ==== Structure File Example
 
-File `template-curriculum.adoc` (excerpts):
+File `advanced-curriculum.adoc` (excerpts):
 
 [source,asciidoc]
 ----
