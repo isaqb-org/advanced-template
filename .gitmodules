@@ -1,6 +1,3 @@
 [submodule "pdf-theme"]
 	path = pdf-theme
 	url = https://github.com/isaqb-org/pdf-theme
-[submodule "adoc2pdf"]
-	path = adoc2pdf
-	url = https://github.com/isaqb-org/adoc2pdf.git
