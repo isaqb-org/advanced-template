@@ -176,35 +176,28 @@ include::00-preamble/00-introduction.adoc[] // //<6>
 ==== Suggestions
 
 
-=== How to build (aka: how to convert asciidoc to pdf)?
+== How to build the documents
 
-==== Local Java Runtime
+Prerequisite: You need a Java Runtime(tm) installed.
 
-The simple solution is to install a Java runtime and simply call:
+You build the output documents with gradle. That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration. 
 
-[source,shell]
+In case you want to change that, adjust the following part of `build.gradle`:
+
+[source,groovy]
 ----
-  ./gradlew.sh // or gradlew.bat if you're on Windows
-----
-
-The output file(s) are written to the `/build` directory.
-
-==== Docker
-
-If you have Docker installed you can also use the Dockerfile from the adoc2pdf submodule.
-
-First you have to build the container locally.
-
-[source,shell]
-----
-   adoc2pdf/build-container.sh
+task buildDocs {
+  group 'Documentation'
+  description 'Grouping task for generating all languages in several formats'
+  dependsOn "renderNoRemarksDE", "renderNoRemarksEN", "renderWithRemarksDE_EN"
+}
 ----
 
-Then you can execute the transformation.
+In the "renderNoRemarksDE" certain attributes (aka variables) are defined that configure the corresponding output. 
 
-[source,shell]
-----
-   adoc2pdf/adoc2pdf.sh /full/path/to/your/root/document.adoc
+
+=== Legacy build
+There is a Docker-based build available in https://github.com/isaqb-org/adoc2pdf[its own repository], in case you cannot build with gradle.
 ----
 
 == Maintainers
