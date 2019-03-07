@@ -202,7 +202,9 @@ There is a Docker-based build available in https://github.com/isaqb-org/adoc2pdf
 
 == Maintainers
 
-This repository is currently maintained by Benjamin Wolf
+This repository is currently maintained by Benjamin Wolf.
+It was forked from https://github.com/isaqb-org/curriculum-template,
+so the contributors of that project basically contributed to this one, too.
 
 
 [[copyrighted]]
