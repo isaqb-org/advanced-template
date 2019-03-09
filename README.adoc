@@ -11,12 +11,20 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+== Status
 *DRAFT* version!!
 
-This repository contains a template for iSAQB Advanced Level *curricula* in AsciiDoc.
+image:https://travis-ci.org/isaqb-org/advanced-template.svg?branch=master["Build Status", link="https://travis-ci.org/isaqb-org/advanced-template"]
+image:https://img.shields.io/github/last-commit/isaqb-org/advanced-template/master.svg["Last commit"]
+image:https://img.shields.io/github/contributors/isaqb-org/advanced-template.svg["Contributors",link="https://github.com/isaqb-org/advanced-template/graphs/contributors"]
+image:https://img.shields.io/github/issues/isaqb-org/advanced-template.svg["Issues",link="https://github.com/isaqb-org/advanced-template/issues"]
+image:https://img.shields.io/github/issues-closed/isaqb-org/advanced-template.svg["Issues closed",link="https://github.com/isaqb-org/advanced-template/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
+
 
 This is <<copyrighted,copyrighted work>>.
 
+== Content
+This repository contains a template for iSAQB Advanced Level *curricula* in AsciiDoc.
 
 toc::[]
 
@@ -173,8 +181,9 @@ include::00-preamble/00-introduction.adoc[] // //<6>
 6. include the whole file 00-introduction.adoc
 
 
-==== Suggestions
+=== Suggestions
 
+TBD.
 
 == How to build the documents
 
@@ -198,7 +207,7 @@ In the "renderNoRemarksDE" certain attributes (aka variables) are defined that c
 
 === Legacy build
 There is a Docker-based build available in https://github.com/isaqb-org/adoc2pdf[its own repository], in case you cannot build with gradle.
-----
+
 
 == Maintainers
 
