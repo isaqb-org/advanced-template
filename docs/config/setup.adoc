@@ -35,8 +35,8 @@ endif::[]
 // additional markers might be configured here!
 :include_configuration: tags={language}{remarks}{feedback}
 
-:curriculum_short: MODULKUERZEL
-:curriculum_name: MODULNAME IN VOLLER LAENGE
+:curriculum-short: MODULKUERZEL
+:curriculum-name: MODULNAME IN VOLLER LAENGE
 
 // you might want to output some internal information...
 ifdef::debug_adoc[]
