@@ -4,7 +4,7 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-=== Voraussetzungen
+=== Voraussetzungen für {curriculum-name}
 Teilnehmer sollten folgende Kenntnisse und/oder Erfahrung mitbringen:
 
 * Algebra
