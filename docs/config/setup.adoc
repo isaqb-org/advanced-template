@@ -1,6 +1,6 @@
 :doctype: book
 :icons: font
-:sectnumlevels: 1
+:sectnumlevels: 3
 
 
 // if the attribute ":withRemarks:" is set, we amend every content-include
