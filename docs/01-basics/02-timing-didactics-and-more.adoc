@@ -1,18 +1,28 @@
 // tag::FEEDBACK[]
-:filename: 01-basics/01-basics-duration-terms.adoc
+:filename: 01-basics/02-timing-didactics-and-more.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
+// tag::REMARK[]
+[IMPORTANT]
+====
+Bitte die Anzahl der Tage sowie der erreichbaren Punkte unten bei den **?** einsetzen.
+====
+// end::REMARK[]
+
 // tag::DE[]
-== Grundbegriffe
+=== Dauer, Didaktik und weitere Details
 
-|===
-| Dauer: 120 Min. | Übungszeit: keine
-|===
+Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul {curriculum_short} sollte mindestens **?** Tage betragen, kann aber länger sein. Anbieter können sich durch Dauer, Didaktik, Art- und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden. Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.
 
+Lizenzierte Schulungen zu {curriculum_short} tragen zur Zulassung zur abschließenden Advanced Level Zertifizierungsprüfung folgende Punkte (Credit Points) bei:
+ 
+Methodische Kompetenz:	**?** Punkte
 
-=== Wesentliche Begriffe
-Zahlen, Rechnen, Operation, Summe, Produkt, Addition, Faszination
+Technische Kompetenz:		**?** Punkte
+
+Kommunikative Kompetenz:	**?** Punkte
+
 
 // end::DE[]
 
