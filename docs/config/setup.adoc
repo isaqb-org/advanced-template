@@ -1,6 +1,6 @@
 :doctype: book
 :icons: font
-:sectnumlevels: 3
+:sectnumlevels: 2
 :imagesdir: images
 
 
