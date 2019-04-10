@@ -4,15 +4,14 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-== Grundbegriffe
+=== Struktur des Lehrplans und empfohlene zeitliche Aufteilung
 
 |===
-| Dauer: 120 Min. | Übungszeit: keine
+| Thema | Mindestdauer
 |===
 
 
-=== Wesentliche Begriffe
-Zahlen, Rechnen, Operation, Summe, Produkt, Addition, Faszination
+*Imagine Excel pie chart here!*
 
 // end::DE[]
 
