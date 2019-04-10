@@ -6,7 +6,6 @@ include::../config/_feedback.adoc[]
 [discrete]
 
 // tag::DE[]
-*THIS IS ONLY A TEMPLATE - PLEASE CHECK CAREFULLY*
 [.text-center]
 *© (Copyright), International Software Architecture Qualification Board e. V.
 (iSAQB® e. V.) 2009-2019*
