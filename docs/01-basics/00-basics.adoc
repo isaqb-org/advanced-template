@@ -6,8 +6,6 @@ include::./01-basics-duration-terms.adoc[{include_configuration}]
 
 === {learning_goals}
 
-include::./LZ-1-01.adoc[{include_configuration}]
 
-include::./LZ-1-02.adoc[{include_configuration}]
 
 
