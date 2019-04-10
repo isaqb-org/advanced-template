@@ -9,4 +9,3 @@ include::03-advanced-level-knowledge.adoc[{include_configuration}]
 <<<
 include::04-prerequisites.adoc[{include_configuration}]
 
-include::05-structure-timing-didactics.adoc[{include_configuration}]
