@@ -1,7 +1,9 @@
-// header file for curriculum section 1: Math Concepts
+// header file for curriculum section 1: iSAQB certification basics
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
-include::./01-math-duration-terms.adoc[{include_configuration}]
+== Einführung in das iSAQB-Zertifizierungsprogramm
+
+include::./01-intro-duration-terms.adoc[{include_configuration}]
 
 === {learning_goals}
 

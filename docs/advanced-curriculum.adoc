@@ -40,7 +40,7 @@ include::01-basics/00-basics.adoc[]
 
 <<<
 // don't use {include_configuration} here, otherwise nothing gets included
-include::02-math/00-math.adoc[]
+include::02-introduction-to-isaqb/00-intro.adoc[]
 
 <<<
 // don't use {include_configuration} here, otherwise nothing gets included

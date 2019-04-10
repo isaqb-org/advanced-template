@@ -1,0 +1,24 @@
+// tag::FEEDBACK[]
+:filename: 02-math/01-intro-duration-terms.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+|===
+| Unterrichtszeit: 15 Min (optional) | Übungszeit: keine
+|===
+
+Dieser Abschnitt ist nicht prüfungsrelevant. Falls Teilnehmer bereits CPSA-F zertifiziert sind, kann dieser Abschnitt entfallen.
+
+=== Begriffe und Konzepte
+iSAQB, Advanced-Level-Zertifizierung und Voraussetzung dazu.
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D.
+// end::EN[]
+
+
+// tag::REMARK[]
+// end::REMARK[]
