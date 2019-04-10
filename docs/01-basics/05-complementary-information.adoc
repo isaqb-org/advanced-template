@@ -1,33 +1,20 @@
 // tag::FEEDBACK[]
-:filename: 01-basics/01-basics-duration-terms.adoc
+:filename: 01-basics/05-complementary-information.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-== Grundbegriffe
+=== Ergänzende Informationen, Begriffe, Übersetzungen
 
-|===
-| Dauer: 120 Min. | Übungszeit: keine
-|===
-
-
-=== Wesentliche Begriffe
-Zahlen, Rechnen, Operation, Summe, Produkt, Addition, Faszination
+Soweit für das Verständnis des Lehrplans erforderlich, haben wir Fachbegriffe ins iSAQB Glossar aufgenommen, definiert und bei Bedarf durch die Übersetzungen der Originalliteratur ergänzt.
 
 // end::DE[]
 
 // tag::EN[]
-== Basic terms
-
-|===
-| Duration: 120 min. | Exercise time: none
-|===
-
-
-=== Essential terms
-Numbers, Calculation, Operation, Sum, Product, Addition, Fascination
-
+T.B.D
 // end::EN[]
+
+
 
 
 // tag::REMARK[]
