@@ -2,6 +2,8 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
+== Grundlegendes
+
 include::01-curriculum-structure-and-chronological-breakdown.adoc[{include_configuration}]
 
 include::02-timing-didactics-and-more.adoc[{include_configuration}]
