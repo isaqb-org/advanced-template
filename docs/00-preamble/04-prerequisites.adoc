@@ -17,3 +17,6 @@ include::../config/_feedback.adoc[]
 // tag::EN[]
 T.B.D
 // end::EN[]
+
+// tag::REMARK[]
+// end::REMARK[]
