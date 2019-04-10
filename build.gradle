@@ -66,6 +66,13 @@ task renderNoRemarksDE(type: RenderCurriculumTask,
   }
 }
 
+task renderWithRemarksDE(type: RenderCurriculumTask,
+     constructorArgs: [curriculumBaseName, currentDate, "DE", true]) {
+   doLast {
+     addSuffixToCurriculum("_de")
+   }
+ }
+
 task renderNoRemarksEN(type: RenderCurriculumTask,
     constructorArgs: [curriculumBaseName, currentDate, "EN", false]) {
   doLast {
