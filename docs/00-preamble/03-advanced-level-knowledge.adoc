@@ -6,11 +6,11 @@ include::../config/_feedback.adoc[]
 // tag::DE[]
 === Was können Absolventen des CPSA-Advanced Level?
 CPSA-A Absolventen können:
+
 - Eigenständig und methodisch fundiert mittlere bis große IT-Systeme entwerfen.
 - In IT-Systemen mittlerer bis hoher Kritikalität technische und inhaltliche Verantwortung übernehmen.
 - Maßnahmen zur Erreichung nichtfunktionaler Anforderungen konzeptionieren, entwerfen und dokumentieren. Entwicklungsteams bei der Umsetzung dieser Maßnahmen begleiten. 
 - Architekturrelevante Kommunikation in mittleren bis großen Entwicklungsteams steuern und durchführen
-
 
 // end::DE[]
 
