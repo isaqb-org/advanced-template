@@ -4,7 +4,10 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::REMARK[]
+[IMPORTANT]
+====
 Kenntnisgruppen sowie Voraussetzungen bitte entsprechend ausformulieren!
+====
 // end::REMARK[]
 
 // tag::DE[]
