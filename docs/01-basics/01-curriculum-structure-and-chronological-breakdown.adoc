@@ -17,16 +17,7 @@ Zahlen, Rechnen, Operation, Summe, Produkt, Addition, Faszination
 // end::DE[]
 
 // tag::EN[]
-== Basic terms
-
-|===
-| Duration: 120 min. | Exercise time: none
-|===
-
-
-=== Essential terms
-Numbers, Calculation, Operation, Sum, Product, Addition, Fascination
-
+T.B.D
 // end::EN[]
 
 
