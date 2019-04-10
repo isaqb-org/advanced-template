@@ -26,6 +26,8 @@ endif::[]
 :sectnums!:
 include::00-preamble/copyright.adoc[{include_configuration}]
 
+<<<
+toc::[]
 
 <<<
 :sectnums!:
