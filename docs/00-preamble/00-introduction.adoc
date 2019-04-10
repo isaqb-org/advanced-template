@@ -2,10 +2,8 @@
 
 include::01-what-to-expect-of-this-module.adoc[{include_configuration}]
 
-<<<
 include::02-what-to-expect-of-an-advanced-level-module.adoc[{include_configuration}]
 
-<<<
 include::03-advanced-level-knowledge.adoc[{include_configuration}]
 
 <<<
