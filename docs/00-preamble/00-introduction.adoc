@@ -1,4 +1,4 @@
-== {introduction}
+== {introduction}: Allgemeines zum iSAQB Advanced Level
 
 include::01-what-to-expect-of-this-module.adoc[{include_configuration}]
 
@@ -6,6 +6,5 @@ include::02-what-to-expect-of-an-advanced-level-module.adoc[{include_configurati
 
 include::03-advanced-level-knowledge.adoc[{include_configuration}]
 
-<<<
 include::04-prerequisites.adoc[{include_configuration}]
 
