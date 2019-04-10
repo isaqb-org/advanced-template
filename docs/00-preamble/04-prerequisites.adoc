@@ -17,10 +17,3 @@ include::../config/_feedback.adoc[]
 // tag::EN[]
 T.B.D
 // end::EN[]
-
-// tag::REMARK[]
-[WARNING]
-====
-GS: we should add some more prerequisites, like Pi, Pythagoras and Symmetric-Encryption
-====
-// end::REMARK[]
