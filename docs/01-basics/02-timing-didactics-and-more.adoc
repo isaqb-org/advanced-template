@@ -3,26 +3,16 @@
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
-// tag::REMARK[]
-[IMPORTANT]
-====
-Bitte die Anzahl der Tage sowie der erreichbaren Punkte unten bei den **?** einsetzen.
-====
-// end::REMARK[]
-
 // tag::DE[]
 === Dauer, Didaktik und weitere Details
 
-Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul {curriculum_short} sollte mindestens **?** Tage betragen, kann aber länger sein. Anbieter können sich durch Dauer, Didaktik, Art- und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden. Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.
+Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul {curriculum-short} sollte mindestens **?** Tage betragen, kann aber länger sein. Anbieter können sich durch Dauer, Didaktik, Art- und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden. Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.
 
-Lizenzierte Schulungen zu {curriculum_short} tragen zur Zulassung zur abschließenden Advanced Level Zertifizierungsprüfung folgende Punkte (Credit Points) bei:
+Lizenzierte Schulungen zu {curriculum-short} tragen zur Zulassung zur abschließenden Advanced Level Zertifizierungsprüfung folgende Punkte (Credit Points) bei:
  
-Methodische Kompetenz:	**?** Punkte
-
-Technische Kompetenz:		**?** Punkte
-
+Methodische Kompetenz:	**?** Punkte +
+Technische Kompetenz:		**?** Punkte +
 Kommunikative Kompetenz:	**?** Punkte
-
 
 // end::DE[]
 
@@ -30,8 +20,9 @@ Kommunikative Kompetenz:	**?** Punkte
 T.B.D
 // end::EN[]
 
-
-
-
 // tag::REMARK[]
+[IMPORTANT]
+====
+Bitte die Anzahl der Tage sowie der erreichbaren Punkte oben bei den **?** einsetzen.
+====
 // end::REMARK[]
