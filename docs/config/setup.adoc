@@ -1,6 +1,7 @@
 :doctype: book
 :icons: font
 :sectnumlevels: 3
+:imagesdir: images
 
 
 // if the attribute ":withRemarks:" is set, we amend every content-include
