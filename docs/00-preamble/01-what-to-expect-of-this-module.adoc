@@ -1,12 +1,12 @@
 // tag::FEEDBACK[]
-:filename: 00-preamble/01-what-to-expect.adoc
+:filename: 00-preamble/01-what-to-expect-of-this-module.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
 === Was vermittelt das Modul "{curriculum-short}"?
-Das Modul präsentiert den TeilnehmerInnen {curriculum-name} als ...
-Am Ende des Moduls kennen die TeilnehmerInnen … und können …
+Das Modul präsentiert den Teilnehmerinnen und Teilnehmern {curriculum-name} als ...
+Am Ende des Moduls kennen die Teilnehmerinnen und Teilnehmer … und können …
 // end::DE[]
 
 // tag::REMARK[]
@@ -19,12 +19,6 @@ nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen e
 
 
 // tag::EN[]
-=== What does a Template Level training convey?
-
-[NOTE]
-====
-TODO: everything....
-====
-Licensed ...
+T.B.D.
 
 // end::EN[]

@@ -1,0 +1,26 @@
+// tag::FEEDBACK[]
+:filename: 00-preamble/04-prerequisites.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+=== Voraussetzungen zur CPSA-A Zertifizierung
+- Eine erfolgreiche Ausbildung und Zertifizierung zum CPSA-F (Certified Professional for Software Architecture, Foundation Level)
+- Mindestens drei Jahre Vollzeit-Berufserfahrung in der IT-Branche, dabei Mitarbeit an Entwurf und Entwicklung von mindestens zwei unterschiedlichen IT-Systemen
+- Ausnahmen auf Antrag zulässig (etwa: Mitarbeit in OpenSource Projekten)
+- Aus- und Weiterbildung im Rahmen von iSAQB-Advanced Level Schulungen im Umfang von mindestens 70 Credit-Points aus mindestens zwei unterschiedlichen Kompetenzbereichen (detailliert geregelt in Abschnitt ).
+- Bestehende Zertifizierungen (etwa Sun/Oracle Java-Architect, Microsoft-CSA o. ä.) können auf Antrag auf diese Credit-Points angerechnet werden.
+- Erfolgreiche Bearbeitung der CPSA-A Zertifizierungsprüfung. 
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D
+// end::EN[]
+
+// tag::REMARK[]
+[WARNING]
+====
+GS: we should add some more prerequisites, like Pi, Pythagoras and Symmetric-Encryption
+====
+// end::REMARK[]
