@@ -1,0 +1,36 @@
+// tag::FEEDBACK[]
+:filename: 04-second-learning-unit/01-second-unit-duration-terms.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+
+|===
+| Dauer: XXX Min. | Übungszeit: XX Min.
+|===
+
+=== Wesentliche Begriffe
+Begriff 1, Begriff 2, Begriff 3, ...
+
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D.
+
+// end::EN[]
+
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Überschrift sinnvoll ersetzen
+====
+// end::REMARK[]
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
+====
+// end::REMARK[]

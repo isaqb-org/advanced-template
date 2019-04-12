@@ -1,0 +1,39 @@
+// tag::FEEDBACK[]
+:filename: 04-second-learning-unit/LZ-4-03.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+[[LZ-4-3]]
+==== LZ 4-3: Dies ist das erste dritte Lernziel, in Kategorie xy (R1)
+- Was sollen die Teilnehmer können?
+   * Fähigkeit 1
+   * Fähigkeit 2
+   * Fähigkeit 3
+   * etc.
+
+- Was sollen die Teilnehmer verstehen?
+  * Aussage 1
+  * Behauptung 2
+  * Erfahrung 3
+  * Zusammenhang 4
+  * etc.
+- Was sollen die Teilnehmer kennen?
+  * Zusammenhang Nr. 1
+  * Norm Nr. 2
+  * Buch Nr. 3
+  * etc.
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D.
+
+// end::EN[]
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
+====
+// end::REMARK[]

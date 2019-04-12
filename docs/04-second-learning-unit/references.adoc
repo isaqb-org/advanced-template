@@ -1,0 +1,20 @@
+// tag::FEEDBACK[]
+:filename: 04-second-learning-unit/references.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+=== {references}
+- Quelle Nr. 1
+- Quelle Nr. 2
+- etc.
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D.
+// end::EN[]
+
+
+// tag::REMARK[]
+// end::REMARK[]
