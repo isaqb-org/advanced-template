@@ -4,4 +4,6 @@ include::01-examples-duration-terms.adoc[{include_configuration}]
 
 include::LZ-98-1.adoc[{include_configuration}]
 
+include::references.adoc[{include_configuration}]
+
 
