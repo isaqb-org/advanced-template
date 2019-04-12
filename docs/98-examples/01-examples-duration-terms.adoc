@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 05-examples/01-examples-duration-terms.adoc
+:filename: 98-examples/01-examples-duration-terms.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
