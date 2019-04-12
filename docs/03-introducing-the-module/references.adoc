@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 03-introducing-the-module/LZ-3-02.adoc
+:filename: 03-introducing-the-module/references.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
