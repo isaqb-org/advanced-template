@@ -3,6 +3,7 @@
 :lang: DE
 :toc-title: Inhaltsverzeichnis
 :learning-goals: Lernziele
+:references: Referenzen
 :introduction: Einleitung
 :page: Seite
 :of: von
@@ -12,6 +13,7 @@
 :lang: EN
 :toc-title: Table of Contents
 :learning-goals: Learning goals
+:references: References
 :introduction: Introduction
 :page: Page
 :of: of
