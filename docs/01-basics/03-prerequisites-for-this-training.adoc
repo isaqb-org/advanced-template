@@ -14,11 +14,11 @@ Teilnehmerinnen und Teilnehmer **sollten** folgende Kenntnisse und/oder Erfahrun
 **Hilfreich** für das Verständnis einiger Konzepte sind darüber hinaus:
 
 - Kenntnisgruppe 1:
-  - Kenntnis 1
-  - Erfahrung 2
-  - Kenntnis 3
-  - Erfahrung 4
-  - Wissen 5
+  * Kenntnis 1
+  * Erfahrung 2
+  * Kenntnis 3
+  * Erfahrung 4
+  * Wissen 5
 
 // end::DE[]
 

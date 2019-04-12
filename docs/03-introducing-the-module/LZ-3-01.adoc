@@ -7,20 +7,22 @@ include::../config/_feedback.adoc[]
 [[LZ-3-1]]
 ==== LZ 3-1: Dies ist das erste Lernziel, in Kategorie xy (R1)
 - Was sollen die Teilnehmer können?
-  - Fähigkeit 1
-  - Fähigkeit 2
-  - Fähigkeit 3, etc.
+   * Fähigkeit 1
+   * Fähigkeit 2
+   * Fähigkeit 3
+   * etc.
+
 - Was sollen die Teilnehmer verstehen?
-  - Aussage 1
-  - Behauptung 2
-  - Erfahrung 3
-  - Zusammenhang 4
-  - etc.
+  * Aussage 1
+  * Behauptung 2
+  * Erfahrung 3
+  * Zusammenhang 4
+  * etc.
 - Was sollen die Teilnehmer kennen?
-  - Zusammenhang Nr. 1
-  - Norm Nr. 2
-  - Buch Nr. 3
-  - etc.
+  * Zusammenhang Nr. 1
+  * Norm Nr. 2
+  * Buch Nr. 3
+  * etc.
 
 // end::DE[]
 
