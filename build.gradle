@@ -69,7 +69,7 @@ task renderNoRemarksDE(type: RenderCurriculumTask,
 task renderWithRemarksDE(type: RenderCurriculumTask,
      constructorArgs: [curriculumBaseName, currentDate, "DE", true]) {
    doLast {
-     addSuffixToCurriculum("remarks_de")
+     addSuffixToCurriculum("_remarks_de")
    }
  }
 
@@ -83,7 +83,7 @@ task renderNoRemarksEN(type: RenderCurriculumTask,
 task renderWithRemarksEN(type: RenderCurriculumTask,
      constructorArgs: [curriculumBaseName, currentDate, "EN", true]) {
    doLast {
-     addSuffixToCurriculum("remarks_en")
+     addSuffixToCurriculum("_remarks_en")
    }
  }
 
