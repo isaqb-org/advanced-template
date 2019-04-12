@@ -51,4 +51,8 @@ T.B.D
 
 
 // tag::REMARK[]
+[IMPORTANT]
+====
+Bitte sowohl die oben angegebene Tabelle als auch das beiliegende Excel-Dokument entsprechend anpassen und das Pie-Chart als "zeitaufteilung_DE.png" nach `../images` exportieren
+====
 // end::REMARK[]
