@@ -2,8 +2,8 @@
 // tag::DE[]
 :lang: DE
 :toc-title: Inhaltsverzeichnis
-:learning_goals: Lernziele
 :chapter-label: Kapitel
+:learning-goals: Lernziele
 :introduction: Einleitung
 :page: Seite
 :of: von
@@ -12,8 +12,8 @@
 // tag::EN[]
 :lang: EN
 :toc-title: Table of Contents
-:learning_goals: Learning goals
 :chapter-label: 
+:learning-goals: Learning goals
 :introduction: Introduction
 :page: Page
 :of: of

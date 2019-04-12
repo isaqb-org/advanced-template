@@ -14,7 +14,7 @@ include::config/setup.adoc[]
 :project-repository-docs-edit-link: https://github.com/isaqb-org/advanced-template/blob/master/docs/
 :project-report-issue-link: https://github.com/isaqb-org/advanced-template/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:
 
-// define terms for toc, learning_goals
+// define terms for toc, learning-goals
 include::config/i18n-definitions.adoc[tags={language}]
 
 ifdef::backend-pdf[]
