@@ -1,0 +1,26 @@
+// header file for curriculum section 2: ERSTE LERNEINHEIT
+// (c) iSAQB e.V. (https://isaqb.org)
+// ====================================================
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Überschrift sinnvoll ersetzen, ebenso eine kurze Erklärung zu den Lernzielen ergänzen.
+====
+// end::REMARK[]
+
+== ERSTE LERNEINHEIT
+
+include::01-introducing-module-duration-terms.adoc[{include_configuration}]
+
+=== {learning-goals}
+
+KURZE ERKLÄRUNG ZU DEN ZIELEN DIESER LERNEINHEIT
+
+include::./LZ-3-01.adoc[{include_configuration}]
+
+// references (if any!)
+include::references.adoc[{include_configuration}]
+
+
+

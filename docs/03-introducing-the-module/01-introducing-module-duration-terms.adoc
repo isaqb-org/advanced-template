@@ -1,0 +1,30 @@
+// tag::FEEDBACK[]
+:filename: 03-introducing-the-module/01-introducing-module-duration-terms.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+
+
+|===
+| Dauer: XXX Min. | Übungszeit: XX Min.
+|===
+
+
+=== Wesentliche Begriffe
+Begriff 1, Begriff 2, Begriff 3, ...
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Sinnvolle Zeiten für Dauer und Übungszeit eintragen.
+====
+// end::REMARK[]
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D.
+
+// end::EN[]
+
