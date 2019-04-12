@@ -58,5 +58,6 @@ Current configuration:
 * Language(s): {language}
 * Document version: {document-version}
 * Include-configuration: {include_configuration}
-====
+
+==== 
 endif::debug_adoc[]
