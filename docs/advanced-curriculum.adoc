@@ -42,6 +42,12 @@ include::01-basics/00-basics.adoc[]
 // don't use {include_configuration} here, otherwise nothing gets included
 include::02-introduction-to-isaqb/00-intro.adoc[]
 
+
+<<<
+// don't use {include_configuration} here, otherwise nothing gets included
+include::03-introducing-the-module/00-introducing-module.adoc[]
+
+
 <<<
 // don't use {include_configuration} here, otherwise nothing gets included
 include::05-examples/00-examples.adoc[]
