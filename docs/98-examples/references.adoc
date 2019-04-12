@@ -3,8 +3,9 @@
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
-=== {references}
 // tag::DE[]
+=== {references}
+
 Keine. Schulungsanbieter sind für die Auswahl und Beschreibung von Beispielen verantwortlich.
 
 // end::DE[]
