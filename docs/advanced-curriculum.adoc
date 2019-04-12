@@ -54,4 +54,4 @@ include::04-second-learning-unit/00-second-unit.adoc[]
 
 <<<
 // don't use {include_configuration} here, otherwise nothing gets included
-include::05-examples/00-examples.adoc[]
+include::98-examples/00-examples.adoc[]

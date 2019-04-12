@@ -1,7 +1,0 @@
-include::./01-examples-duration-terms.adoc[{include_configuration}]
-
-=== {learning-goals}
-
-include::./LZ-5-1.adoc[{include_configuration}]
-
-

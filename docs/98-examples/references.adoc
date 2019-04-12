@@ -1,0 +1,18 @@
+// tag::FEEDBACK[]
+:filename: 04-second-learning-unit/references.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+=== {references}
+// tag::DE[]
+Keine. Schulungsanbieter sind für die Auswahl und Beschreibung von Beispielen verantwortlich.
+
+// end::DE[]
+
+// tag::EN[]
+T.B.D.
+// end::EN[]
+
+
+// tag::REMARK[]
+// end::REMARK[]
