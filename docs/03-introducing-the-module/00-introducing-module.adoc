@@ -2,20 +2,13 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-// tag::REMARK[]
-[IMPORTANT]
-====
-Überschrift sinnvoll ersetzen, ebenso eine kurze Erklärung zu den Lernzielen ergänzen.
-====
-// end::REMARK[]
 
 == ERSTE LERNEINHEIT
 
 include::01-introducing-module-duration-terms.adoc[{include_configuration}]
 
-=== {learning-goals}
 
-KURZE ERKLÄRUNG ZU DEN ZIELEN DIESER LERNEINHEIT
+=== {learning-goals}
 
 include::./LZ-3-01.adoc[{include_configuration}]
 
