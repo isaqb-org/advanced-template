@@ -3,11 +3,11 @@
 // ====================================================
 == Einführung in das iSAQB-Zertifizierungsprogramm
 
-include::./01-intro-duration-terms.adoc[{include_configuration}]
+include::01-intro-duration-terms.adoc[{include_configuration}]
 
 === {learning-goals}
 
-include::./LZ-2-01.adoc[{include_configuration}]
+include::LZ-2-01.adoc[{include_configuration}]
 
 
 
