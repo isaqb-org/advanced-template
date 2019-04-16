@@ -4,10 +4,6 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-
-Beschreibung dessen, was die Teilnehmer über {curriculum-short} lernen sollen, wenn sie das Beispiel sehen.
-
-
 [[LZ-98-1]]
 ==== LZ 98-1: Dies ist das letzte Lernziel des Lehrplans (R3)
 - Was sollen die Teilnehmer können?
@@ -31,7 +27,8 @@ Beschreibung dessen, was die Teilnehmer über {curriculum-short} lernen sollen, 
 
 
 // tag::EN[]
-T.B.D.
+[[LG-98-1]]
+==== LG 98-1: Last learning goal of the curriculum (R3)
 // end::EN[]
 
 
