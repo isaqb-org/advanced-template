@@ -4,7 +4,6 @@
 :toc-title: Inhaltsverzeichnis
 :learning-goals: Lernziele
 :references: Referenzen
-:introduction: Einleitung
 :page: Seite
 :of: von
 // end::DE[]
@@ -14,7 +13,6 @@
 :toc-title: Table of Contents
 :learning-goals: Learning goals
 :references: References
-:introduction: Introduction
 :page: Page
 :of: of
 // end::EN[]

@@ -11,12 +11,18 @@ include::../config/_feedback.adoc[]
 Dieser Abschnitt ist nicht prüfungsrelevant. Falls Teilnehmer bereits CPSA-F zertifiziert sind, kann dieser Abschnitt entfallen.
 
 === Begriffe und Konzepte
-iSAQB, Advanced-Level-Zertifizierung und Voraussetzung dazu.
-
+iSAQB, Advanced-Level-Zertifizierung, Voraussetzungen
 // end::DE[]
 
 // tag::EN[]
-T.B.D.
+|===
+| Lesson duration: 15 min (optional) | Exercises: none
+|===
+
+This section is not examinable. In case participants are already certified according to CPSA-F, this section may be omitted.
+
+=== Terms and concepts
+iSAQB, Advanced Level certification, prerequisites
 // end::EN[]
 
 
