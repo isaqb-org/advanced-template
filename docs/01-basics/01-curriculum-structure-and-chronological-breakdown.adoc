@@ -89,6 +89,9 @@ image:chronological_breakdown.png[pdfwidth=75%, role="text-center"]
 // tag::REMARK[]
 [IMPORTANT]
 ====
-Bitte sowohl die oben angegebene Tabelle als auch das beiliegende Excel-Dokument entsprechend anpassen und das Pie-Chart als "zeitaufteilung_DE.png" nach `../images` exportieren
+Bitte sowohl die oben angegebene Tabelle als auch das beiliegende Excel-Dokument entsprechend anpassen und das Pie-Chart als "zeitaufteilung.png" nach `../images` exportieren
+- - -
+Please adjust the table above as well as the excel document according to your curriculum and export the pie chart
+as "chronological_breakdown.png" to `../images`.
 ====
 // end::REMARK[]
