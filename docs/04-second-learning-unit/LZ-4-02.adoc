@@ -7,12 +7,11 @@ include::../config/_feedback.adoc[]
 [[LZ-4-2]]
 ==== LZ 4-2: Hier ist ein zweites Lernziel in diesem Kapitel (R1)
 
-
 // end::DE[]
 
 // tag::EN[]
-T.B.D.
-
+[[LG-4-2]]
+==== LG 4-2: TBD
 // end::EN[]
 
 // tag::REMARK[]

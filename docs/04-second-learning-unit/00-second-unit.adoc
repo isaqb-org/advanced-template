@@ -3,7 +3,13 @@
 // ====================================================
 
 
-== ZWEITE LERNEINHEIT
+ifeval::["{language}" == "DE"]
+== Zweite Lerneinheit
+endif::[]
+
+ifeval::["{language}" == "EN"]
+== Lesson 2
+endif::[]
 
 include::01-second-unit-duration-terms.adoc[{include_configuration}]
 
