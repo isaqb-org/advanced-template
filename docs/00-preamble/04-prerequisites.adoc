@@ -4,18 +4,24 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-=== Voraussetzungen zur CPSA-A Zertifizierung
-- Eine erfolgreiche Ausbildung und Zertifizierung zum CPSA-F (Certified Professional for Software Architecture, Foundation Level)
-- Mindestens drei Jahre Vollzeit-Berufserfahrung in der IT-Branche, dabei Mitarbeit an Entwurf und Entwicklung von mindestens zwei unterschiedlichen IT-Systemen
-- Ausnahmen auf Antrag zulässig (etwa: Mitarbeit in OpenSource Projekten)
-- Aus- und Weiterbildung im Rahmen von iSAQB-Advanced Level Schulungen im Umfang von mindestens 70 Credit-Points aus mindestens zwei unterschiedlichen Kompetenzbereichen (detailliert geregelt in Abschnitt ).
-- Bestehende Zertifizierungen (etwa Sun/Oracle Java-Architect, Microsoft-CSA o. ä.) können auf Antrag auf diese Credit-Points angerechnet werden.
-- Erfolgreiche Bearbeitung der CPSA-A Zertifizierungsprüfung. 
+=== Voraussetzungen zur CPSA-A-Zertifizierung
+* erfolgreiche Ausbildung und Zertifizierung zum CPSA-F (Certified Professional for Software Architecture, Foundation Level)
+* mindestens drei Jahre Vollzeit-Berufserfahrung in der IT-Branche; dabei Mitarbeit an Entwurf und Entwicklung von mindestens zwei unterschiedlichen IT-Systemen
+** Ausnahmen sind auf Antrag zulässig (etwa: Mitarbeit in Open-Source-Projekten)
+* Aus- und Weiterbildung im Rahmen von iSAQB-Advanced-Level-Schulungen im Umfang von mindestens 70 Credit Points aus mindestens zwei unterschiedlichen Kompetenzbereichen
+** bestehende Zertifizierungen (etwa Sun/Oracle Java-Architect, Microsoft CSA) können auf Antrag angerechnet werden
+* erfolgreiche Bearbeitung der CPSA-A-Zertifizierungsprüfung
 
 // end::DE[]
 
 // tag::EN[]
-T.B.D
+=== Requirements for the CPSA-A certification
+* successful training and graduation of CPSA-F (Certified Professional for Software Architecture, Foundation Level)
+* at least three years industrial, full-time experience in the IT sector; including collaboration on design and development of at least two different IT systems
+** exceptions may be granted (for example: contributions to open source projects)
+* participation at iSAQB Advanced Level trainings worth at least 70 credit points from two different areas of competence
+** existing certifications (for example: Sun/Oracle Java architect, Microsoft CSA) may be credited
+* passing the CPSA-A certification exam
 // end::EN[]
 
 // tag::REMARK[]
