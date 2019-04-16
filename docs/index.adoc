@@ -5,10 +5,6 @@ The international Software Architecture Qualification Board (link:https://isaqb.
 
 The terminology used in the iSAQB curricula can be found as a (freely available) ebook, published on https://leanpub.com/isaqbglossary/read[Leanpub].
 
-== Production version
-
-The current productive version (i.e. relevant for examinations) is version 4.1 (EN) and 4.2 (DE), both of which are currently only available via the official https://isaqb.org[iSAQB website].
-
 == Development versions
 
 The Advanced Level Template Curriculum is currently maintained and published in both English (EN) and German (DE).
