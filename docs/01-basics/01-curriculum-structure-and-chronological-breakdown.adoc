@@ -83,7 +83,7 @@ image:zeitaufteilung.png[pdfwidth=75%, role="text-center"]
 
 [.text-center]
 .Durations
-image:zeitaufteilung_DE.png[pdfwidth=75%, role="text-center"]
+image:chronological_breakdown.png[pdfwidth=75%, role="text-center"]
 // end::EN[]
 
 // tag::REMARK[]
