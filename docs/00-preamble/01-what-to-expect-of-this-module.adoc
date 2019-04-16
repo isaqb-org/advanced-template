@@ -5,9 +5,16 @@ include::../config/_feedback.adoc[]
 
 // tag::DE[]
 === Was vermittelt das Modul "{curriculum-short}"?
-Das Modul präsentiert den Teilnehmerinnen und Teilnehmern {curriculum-name} als ...
+Das Modul präsentiert den Teilnehmerinnen und Teilnehmern {curriculum-name} als …
 Am Ende des Moduls kennen die Teilnehmerinnen und Teilnehmer … und können …
 // end::DE[]
+
+// tag::EN[]
+=== Was does the module "{curriculum-short}" convey?
+
+The module presents {curriculum-short} to the participants …
+At the end of the module, the participants know … and are able to …
+// end::EN[]
 
 // tag::REMARK[]
 [IMPORTANT]
@@ -16,9 +23,3 @@ Hier bitte das Modul bzw. dessen Lerninhalte zusammenfassend in 5-8 Sätzen besc
 nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen ersetzt.
 ====
 // end::REMARK[]
-
-
-// tag::EN[]
-T.B.D.
-
-// end::EN[]

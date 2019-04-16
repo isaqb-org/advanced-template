@@ -5,13 +5,14 @@ include::../config/_feedback.adoc[]
 
 // tag::DE[]
 === Was vermittelt ein Advanced Level Modul?
-- Der iSAQB Advanced-Level bietet eine modulare Ausbildung in drei Kompetenzbereichen mit flexibel gestaltbaren Ausbildungswegen. Er berücksichtigt individuelle Neigungen und Schwerpunkte.
+- Der iSAQB Advanced Level bietet eine modulare Ausbildung in drei Kompetenzbereichen mit flexibel gestaltbaren Ausbildungswegen. Er berücksichtigt individuelle Neigungen und Schwerpunkte.
 - Die Zertifizierung erfolgt als Hausarbeit. Die Bewertung und mündliche Prüfung wird durch vom iSAQB benannte Experten vorgenommen.
-
 // end::DE[]
 
 // tag::EN[]
-T.B.D.
+=== What does an Advanced Level Module convey?
+- The iSAQB Advanced Level offers modular training in three competence areas with flexible pathways through the programme. It acknowledges and supports individual strengths and focus points.
+- The certification is based on a homework paper. Grading and oral examination will be carried out through an expert designated by iSAQB.
 // end::EN[]
 
 // tag::REMARK[]

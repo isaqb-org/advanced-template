@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 01-basics/01-basics-duration-terms.adoc
+:filename: 01-basics/01-curriculum-structure-and-chronological-breakdown.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
@@ -8,11 +8,11 @@ include::../config/_feedback.adoc[]
 
 [cols="<,>", options="header"]
 |===
- 
+
 | Inhalt
 | Empfohlene Mindestdauer (min)
 
- 
+
 | 1. Thema mit Einleitung
 | 180
 
@@ -35,7 +35,7 @@ include::../config/_feedback.adoc[]
 |
 
 | Summe
-| 16:00h
+| 960 (16h)
 
 |===
 
@@ -46,9 +46,45 @@ image:zeitaufteilung_DE.png[pdfwidth=75%, role="text-center"]
 // end::DE[]
 
 // tag::EN[]
-T.B.D
-// end::EN[]
+=== Curriculum structure and recommended durations
 
+[cols="<,>", options="header"]
+|===
+
+| Content
+| Recommended minimum duration (minutes)
+
+
+| 1. Introduction
+| 180
+
+| 2. xz
+| 150
+
+| 3. Lots of theory
+| 120
+
+| 4. xy and example
+| 180
+
+| 5. abc und d
+| 210
+
+| 6. Final example
+| 120
+
+|
+|
+
+| Sum
+| 960 (16h)
+
+|===
+
+[.text-center]
+.Durations
+image:zeitaufteilung_DE.png[pdfwidth=75%, role="text-center"]
+// end::EN[]
 
 // tag::REMARK[]
 [IMPORTANT]

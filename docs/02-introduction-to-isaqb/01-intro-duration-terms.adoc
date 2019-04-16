@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 02-math/01-intro-duration-terms.adoc
+:filename: 02-introduction-to-isaqb/01-intro-duration-terms.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
