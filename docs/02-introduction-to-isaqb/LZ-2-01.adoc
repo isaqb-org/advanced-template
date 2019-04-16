@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 02-math/LZ-2-01.adoc
+:filename: 02-introduction-to-isaqb/LZ-2-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
