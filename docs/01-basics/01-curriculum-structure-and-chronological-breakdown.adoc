@@ -41,7 +41,7 @@ include::../config/_feedback.adoc[]
 
 [.text-center]
 .Zeitliche Aufteilung der Themengebiete
-image:zeitaufteilung_DE.png[pdfwidth=75%, role="text-center"]
+image:zeitaufteilung.png[pdfwidth=75%, role="text-center"]
 
 // end::DE[]
 
