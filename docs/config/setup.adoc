@@ -2,7 +2,7 @@
 :icons: font
 :sectnumlevels: 2
 :imagesdir: images
-:chapter-label: 
+:chapter-label:
 
 
 // if the attribute ":withRemarks:" is set, we amend every content-include
@@ -24,13 +24,6 @@ endif::withFeedback[]
 // ":language:" denotes the language or the target document.
 // currently only DE and EN are supported
 :language: DE
-
-ifeval::["{language}" == "DE;EN"]
-[NOTE]
-====
-Several languages have been configured, but the language-specific headings (like "Table of Contents" will be displayed in a single language only (currently set to EN))
-====
-endif::[]
 
 // ":include_configuration:" always consists of the language, eventually
 // followed by ";REMARK".
@@ -59,5 +52,5 @@ Current configuration:
 * Document version: {document-version}
 * Include-configuration: {include_configuration}
 
-==== 
+====
 endif::debug_adoc[]
