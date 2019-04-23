@@ -25,8 +25,8 @@ endif::withFeedback[]
 // currently only DE and EN are supported
 :language: DE
 
-// ":include_configuration:" always consists of the language, eventually
-// followed by ";REMARK".
+// ":include_configuration:" always consists of the language, optionally
+// followed by ";REMARK" or ";FEEDBACK".
 // additional markers might be configured here!
 :include_configuration: tags=**;{language}{remarks}{feedback};!*
 
