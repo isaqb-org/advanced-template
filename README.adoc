@@ -77,7 +77,7 @@ git clone git@github.com/username/repository.git --recursive
 ----
 
 |Simple conversion from asciidoc to pdf (and html)
-|There are several options available:
+|There is currently one option available:
 
 * Gradle based build, requiring a local Java runtime.
 |===
