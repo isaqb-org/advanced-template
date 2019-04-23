@@ -2,7 +2,7 @@
 :icons: font
 :sectnumlevels: 2
 :imagesdir: images
-:chapter-label:
+:chapter-label: 
 
 
 // if the attribute ":withRemarks:" is set, we amend every content-include
