@@ -28,7 +28,7 @@ endif::withFeedback[]
 // ":include_configuration:" always consists of the language, eventually
 // followed by ";REMARK".
 // additional markers might be configured here!
-:include_configuration: tags={language}{remarks}{feedback}
+:include_configuration: tags=**;{language}{remarks}{feedback};!*
 
 :curriculum-short: MODULKUERZEL
 
