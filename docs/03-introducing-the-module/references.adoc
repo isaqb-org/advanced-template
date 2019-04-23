@@ -7,14 +7,13 @@ include::../config/_feedback.adoc[]
 === {references}
 - Quelle Nr. 1
 - Quelle Nr. 2
-- etc.
-
 // end::DE[]
 
 // tag::EN[]
-T.B.D.
+=== {references}
+- Reference 1
+- Reference 2
 // end::EN[]
-
 
 // tag::REMARK[]
 // end::REMARK[]

@@ -1,10 +1,9 @@
-
 // tag::DE[]
 :lang: DE
 :toc-title: Inhaltsverzeichnis
 :learning-goals: Lernziele
 :references: Referenzen
-:introduction: Einleitung
+:examples: Beispiele
 :page: Seite
 :of: von
 // end::DE[]
@@ -14,7 +13,7 @@
 :toc-title: Table of Contents
 :learning-goals: Learning goals
 :references: References
-:introduction: Introduction
+:examples: Examples
 :page: Page
 :of: of
 // end::EN[]

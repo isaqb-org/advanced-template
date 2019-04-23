@@ -4,20 +4,23 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-
 |===
-| Dauer: XXX Min. | Übungszeit: XX Min.
+| Dauer: XXX Min. | Übungszeit: XXX Min.
 |===
 
-=== Wesentliche Begriffe
+=== Begriffe und Konzepte
 Begriff 1, Begriff 2, Begriff 3, ...
 
 
 // end::DE[]
 
 // tag::EN[]
-T.B.D.
+|===
+| Lesson duration: XXX min | Exercises: XXX min
+|===
 
+=== Terms and concepts
+Term 1, Term 2, Term 3
 // end::EN[]
 
 

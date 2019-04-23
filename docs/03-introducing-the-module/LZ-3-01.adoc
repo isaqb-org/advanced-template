@@ -27,7 +27,8 @@ include::../config/_feedback.adoc[]
 // end::DE[]
 
 // tag::EN[]
-T.B.D.
+[[LG-3-1]]
+==== LG 3-1: The is the first learning goal, in category xy (R1)
 
 // end::EN[]
 
