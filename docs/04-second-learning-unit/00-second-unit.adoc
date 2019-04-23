@@ -3,13 +3,13 @@
 // ====================================================
 
 
-ifeval::["{language}" == "DE"]
+// tag::DE[]
 == Zweite Lerneinheit
-endif::[]
+// end::DE[]
 
-ifeval::["{language}" == "EN"]
+// tag::EN[]
 == Lesson 2
-endif::[]
+// end::EN[]
 
 include::01-second-unit-duration-terms.adoc[{include_configuration}]
 

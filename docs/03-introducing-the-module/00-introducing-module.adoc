@@ -2,13 +2,13 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-ifeval::["{language}" == "DE"]
+// tag::DE[]
 == Erste Lerneinheit
-endif::[]
+// end::DE[]
 
-ifeval::["{language}" == "EN"]
+// tag::EN[]
 == Lesson 1
-endif::[]
+// end::EN[]
 
 include::01-introducing-module-duration-terms.adoc[{include_configuration}]
 

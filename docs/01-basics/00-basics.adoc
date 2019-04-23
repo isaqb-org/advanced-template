@@ -2,13 +2,17 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-ifeval::["{language}" == "DE"]
-== Grundlegendes
-endif::[]
+// tag::DE[]
 
-ifeval::["{language}" == "EN"]
+== Grundlegendes
+
+// end::DE[]
+
+// tag::EN[]
+
 == Basics
-endif::[]
+
+// end::EN[]
 
 include::01-curriculum-structure-and-chronological-breakdown.adoc[{include_configuration}]
 
