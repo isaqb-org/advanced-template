@@ -3,8 +3,6 @@
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
-[discrete]
-
 // tag::DE[]
 [.text-center]
 *© (Copyright), International Software Architecture Qualification Board e. V.

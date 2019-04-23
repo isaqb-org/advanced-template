@@ -38,30 +38,24 @@ toc::[]
 
 <<<
 :sectnums!:
-include::00-preamble/00-introduction.adoc[]
+include::00-preamble/00-introduction.adoc[{include_configuration}]
 
 <<<
 :sectnums:
-// don't use {include_configuration} here, otherwise nothing gets included
-include::01-basics/00-basics.adoc[]
+include::01-basics/00-basics.adoc[{include_configuration}]
 
 <<<
-// don't use {include_configuration} here, otherwise nothing gets included
-include::02-introduction-to-isaqb/00-intro.adoc[]
+include::02-introduction-to-isaqb/00-intro.adoc[{include_configuration}]
 
 
 <<<
-// don't use {include_configuration} here, otherwise nothing gets included
-include::03-introducing-the-module/00-introducing-module.adoc[]
+include::03-introducing-the-module/00-introducing-module.adoc[{include_configuration}]
 
 <<<
-// don't use {include_configuration} here, otherwise nothing gets included
-include::04-second-learning-unit/00-second-unit.adoc[]
-
+include::04-second-learning-unit/00-second-unit.adoc[{include_configuration}]
 
 <<<
-// don't use {include_configuration} here, otherwise nothing gets included
-include::98-examples/00-examples.adoc[]
+include::98-examples/00-examples.adoc[{include_configuration}]
 
 <<<
-include::99-references/00-references.adoc[]
+include::99-references/00-references.adoc[{include_configuration}]

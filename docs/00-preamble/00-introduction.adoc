@@ -1,10 +1,10 @@
-ifeval::["{language}" == "DE"]
+// tag::DE[]
 == Einführung: Allgemeines zum iSAQB Advanced Level
-endif::[]
+// end::DE[]
 
-ifeval::["{language}" == "EN"]
+// tag::EN[]
 == Introduction: General information about the iSAQB Advanced Level
-endif::[]
+// end::EN[]
 
 include::01-what-to-expect-of-this-module.adoc[{include_configuration}]
 

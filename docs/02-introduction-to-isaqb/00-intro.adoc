@@ -2,13 +2,13 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-ifeval::["{language}" == "DE"]
+// tag::DE[]
 == Einführung in das iSAQB-Zertifizierungsprogramm
-endif::[]
+// end::DE[]
 
-ifeval::["{language}" == "EN"]
-== Introduction to the iSAQB cerification program
-endif::[]
+// tag::EN[]
+== Introduction to the iSAQB certification program
+// end::EN[]
 
 include::01-intro-duration-terms.adoc[{include_configuration}]
 
