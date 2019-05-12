@@ -150,7 +150,11 @@ For that purpose we define a variable named `include_configuration` in the file 
 
 ==== Structure File Example
 
-File `advanced-curriculum.adoc` (excerpts):
+In theory, you can just use the `docs/advanced-curriculum.adoc` as is and just
+edit the section documents in the subdirectories. If you want to create your own file,
+we recommend to stick with the following:
+
+From `docs/advanced-curriculum.adoc` (excerpts):
 
 [source,asciidoc]
 ----
@@ -173,10 +177,10 @@ include::00-preamble/00-introduction.adoc[] // //<6>
 
 ----
 
-1. We propose to put the asciidoc configuration in this special file (`setup.adoc`).
+1. We propose to put the asciidoc configuration in this special file (`docs/config/setup.adoc`).
 2. You can set a version, but it may be overridden in the build process.
 3. You can turn section numbering on and off (here: off).
-4. This includes parts of the copyright.adoc file.
+4. This includes parts of the `docs/00-preamble/copyright.adoc` file.
 5. The `<<<` will create a pagebreak in pdf files.
 6. Include the whole file 00-introduction.adoc.
 
@@ -189,7 +193,8 @@ TBD.
 
 Prerequisite: You need a Java Runtime(tm) installed.
 
-You build the output documents with gradle. That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration. 
+You build the output documents with gradle.
+That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration.
 
 In case you want to change that, adjust the following part of `build.gradle`:
 
@@ -202,7 +207,7 @@ task buildDocs {
 }
 ----
 
-In the task "renderNoRemarksDE", certain attributes (aka variables) are defined that configure the corresponding output. 
+In the task "renderNoRemarksDE", certain attributes (aka variables) are defined that configure the corresponding output.
 
 
 
