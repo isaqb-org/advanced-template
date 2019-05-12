@@ -3,16 +3,30 @@
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
+// tag::REMARK[]
+[IMPORTANT]
+====
+Bitte die Anzahl der Tage sowie der erreichbaren Punkte oben bei den **?** einsetzen.
+====
+// end::REMARK[]
+:recommended-duration: **?**
+:methodical-credits: **?**
+:technical-credits: **?**
+:communicative-credits: **?**
+
 // tag::DE[]
 === Dauer, Didaktik und weitere Details
 
-Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul {curriculum-short} sollte mindestens **?** Tage betragen, kann aber länger sein. Anbieter können sich durch Dauer, Didaktik, Art und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden. Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.
+Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul {curriculum-short}
+sollte mindestens {recommended-duration} Tage betragen, kann aber länger sein.
+Anbieter können sich durch Dauer, Didaktik, Art und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden.
+Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.
 
 Lizenzierte Schulungen zu {curriculum-short} tragen zur Zulassung zur abschließenden Advanced-Level-Zertifizierungsprüfung folgende Credit Points) bei:
 
-Methodische Kompetenz:	**?** Punkte +
-Technische Kompetenz:		**?** Punkte +
-Kommunikative Kompetenz:	**?** Punkte
+Methodische Kompetenz:	{methodical-credits} Punkte +
+Technische Kompetenz:		{technical-credits} Punkte +
+Kommunikative Kompetenz:	{communicative-credits} Punkte
 
 // end::DE[]
 
@@ -20,20 +34,13 @@ Kommunikative Kompetenz:	**?** Punkte
 === Duration, didactics, and further details
 
 The durations mentioned below are recommendations.
-A course for the {curriculum-short} should last at least **?** days.
+A course for the {curriculum-short} should last at least {recommended-duration} days.
 Provides may vary length, didactics, type and structure of exercises, and structure of the course.
 In particular, examples and exercises are left unspecified in this curriculum.
 
 Licensed courses for {curriculum-short} contribute the following credit points to the Advanced Level graduation:
 
-Methodical Competence:	**?** Points +
-Technical Competence:		**?** Points +
-Communicative Competence:	**?** Points
+Methodical Competence:	{methodical-credits} Points +
+Technical Competence:		{technical-credits} Points +
+Communicative Competence:	{communicative-credits} Points
 // end::EN[]
-
-// tag::REMARK[]
-[IMPORTANT]
-====
-Bitte die Anzahl der Tage sowie der erreichbaren Punkte oben bei den **?** einsetzen.
-====
-// end::REMARK[]
