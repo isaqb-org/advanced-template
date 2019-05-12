@@ -41,7 +41,7 @@ Create an issue, a merge- or pull-request
 git clone git@github.com/username/repository.git --recursive
 ----
 --
-2. Build it with gradle.
+2. Build it with gradle via `./gradle buildDocs`.
 3. Look into the file `build.gradle` to see what attributes you may configure. Watch for:
 ** the `language` attribute, either `DE` (German) or `EN` (English);
 ** the output formats called `backends` (pdf and/or html5);
