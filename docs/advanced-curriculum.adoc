@@ -34,11 +34,11 @@ endif::[]
 include::00-preamble/copyright.adoc[{include_configuration}]
 
 <<<
-toc::[]
-
-<<<
 :sectnums!:
 include::00-preamble/00-introduction.adoc[{include_configuration}]
+
+<<<
+toc::[]
 
 <<<
 :sectnums:
