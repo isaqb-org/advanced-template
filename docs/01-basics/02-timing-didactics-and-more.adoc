@@ -6,10 +6,10 @@ include::../config/_feedback.adoc[]
 // tag::REMARK[]
 [IMPORTANT]
 ====
-Bitte die Anzahl der Tage sowie der erreichbaren Punkte oben bei den **?** einsetzen.
+Bitte die **?** durch die Anzahl der Tage sowie die erreichbaren Punkte ersetzen.
 ====
 // end::REMARK[]
-:recommended-duration: **?**
+:recommended-duration-in-days: **?**
 :methodical-credits: **?**
 :technical-credits: **?**
 :communicative-credits: **?**
@@ -18,7 +18,7 @@ Bitte die Anzahl der Tage sowie der erreichbaren Punkte oben bei den **?** einse
 === Dauer, Didaktik und weitere Details
 
 Die unten genannten Zeiten sind Empfehlungen. Die Dauer einer Schulung zum Modul {curriculum-short}
-sollte mindestens {recommended-duration} Tage betragen, kann aber länger sein.
+sollte mindestens {recommended-duration-in-days} Tage betragen, kann aber länger sein.
 Anbieter können sich durch Dauer, Didaktik, Art und Aufbau der Übungen sowie der detaillierten Kursgliederung voneinander unterscheiden.
 Insbesondere die Art der Beispiele und Übungen lässt der Lehrplan komplett offen.
 
@@ -34,7 +34,7 @@ Kommunikative Kompetenz:	{communicative-credits} Punkte
 === Duration, didactics, and further details
 
 The durations mentioned below are recommendations.
-A course for the {curriculum-short} should last at least {recommended-duration} days.
+A course for the {curriculum-short} should last at least {recommended-duration-in-days} days.
 Provides may vary length, didactics, type and structure of exercises, and structure of the course.
 In particular, examples and exercises are left unspecified in this curriculum.
 
