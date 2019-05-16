@@ -1,10 +1,20 @@
 // tag::FEEDBACK[]
-:filename: 00-preamble/01-what-to-expect-of-this-module.adoc
-include::../config/_feedback.adoc[]
+:filename: what-to-expect-of-this-module.adoc
+include::config/_feedback.adoc[]
 // end::FEEDBACK[]
+
+// tag::REMARK[]
+[IMPORTANT]
+====
+Bitte diese Datei mit Ueberschrift 3. Ordnung beginnen, damit das Kapitel in
+der Struktur unterhalb von "00-preamble/introduction" eingeordnet wird.
+====
+// end::REMARK[]
+
 
 // tag::DE[]
 === Was vermittelt das Modul "{curriculum-short}"?
+
 Das Modul präsentiert den Teilnehmerinnen und Teilnehmern {curriculum-name} als …
 Am Ende des Moduls kennen die Teilnehmerinnen und Teilnehmer … und können …
 // end::DE[]

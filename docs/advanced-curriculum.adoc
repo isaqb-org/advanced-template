@@ -3,23 +3,23 @@
 include::config/setup.adoc[]
 
 ifeval::["{language}" == "DE"]
-= Curriculum fürpass:q[<br><br>]CPSA Certified Professional forpass:q[<br>]Software Architecture^®^pass:q[<br>]- Advanced Level -: pass:q[<br><br>]Modul:pass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
+= Curriculum fürpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^®^pass:q[<br>]- Advanced Level - pass:q[<br><br>]Modul:pass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
 :toc: left
 endif::[]
 
 ifeval::["{language}" == "EN"]
-= Curriculum forpass:q[<br><br>]CPSA Certified Professional forpass:q[<br>]Software Architecture^®^pass:q[<br>]- Advanced Level -: pass:q[<br><br>]Module:pass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
+= Curriculum forpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^®^pass:q[<br>]- Advanced Level - pass:q[<br><br>]Module:pass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
 :toc: left
 endif::[]
 
-// document-version should usually be overwritten by the build process,
+// document-version fallback, should usually be overwritten by the build process,
 // e.g. build.gradle
 :document-version: 2.0-DRAFT 2019
 
 // this is the base URL for the "improve this doc" links that directly link
 // to the source files in your repository; change this accordingly
-:project-repository-docs-edit-link: https://github.com/isaqb-org/advanced-template/blob/master/docs/
-:project-report-issue-link: https://github.com/isaqb-org/advanced-template/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:
+:project-repository-docs-edit-link: https://github.com/isaqb-org/{curriculumBaseName}/blob/master/docs/
+:project-report-issue-link: https://github.com/isaqb-org/{curriculumBaseName}/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:
 
 // define terms for toc, learning-goals
 include::config/i18n-definitions.adoc[tags={language}]
@@ -39,6 +39,10 @@ toc::[]
 <<<
 :sectnums!:
 include::00-preamble/00-introduction.adoc[{include_configuration}]
+
+<<<
+:sectnums!:
+include::what-to-expect-of-this-module.adoc[{include_configuration}]
 
 <<<
 :sectnums:
