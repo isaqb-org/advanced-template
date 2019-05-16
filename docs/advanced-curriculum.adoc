@@ -3,12 +3,12 @@
 include::config/setup.adoc[]
 
 ifeval::["{language}" == "DE"]
-= Curriculum fürpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^®^pass:q[<br>]- Advanced Level - pass:q[<br><br>]Modul:pass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
+= Curriculum fürpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^®^pass:q[<br>]_Advanced Level_: pass:q[<br>] Modulpass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
 :toc: left
 endif::[]
 
 ifeval::["{language}" == "EN"]
-= Curriculum forpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^®^pass:q[<br>]- Advanced Level - pass:q[<br><br>]Module:pass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
+= Curriculum forpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^®^pass:q[<br>]_Advanced Level_: pass:q[<br>] Modulepass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
 :toc: left
 endif::[]
 
