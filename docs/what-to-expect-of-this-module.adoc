@@ -4,7 +4,7 @@ include::config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
 ====
 Bitte diese Datei mit Ueberschrift 3. Ordnung beginnen, damit das Kapitel in
 der Struktur unterhalb von "00-preamble/introduction" eingeordnet wird.
@@ -27,7 +27,7 @@ At the end of the module, the participants know … and are able to …
 // end::EN[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
 ====
 Hier bitte das Modul bzw. dessen Lerninhalte zusammenfassend in 5-8 Sätzen beschreiben. Dabei `{curriculum-name}`
 nicht entfernen, beim Zusammenbauen wird dieser Platzhalter mit dem Modulnamen ersetzt.

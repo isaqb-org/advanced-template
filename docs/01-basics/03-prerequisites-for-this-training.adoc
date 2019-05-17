@@ -40,7 +40,7 @@ Knowledge in the following areas may be **helpful** for understanding some conce
 // end::EN[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
 ====
 Kenntnisgruppen sowie Voraussetzungen bitte entsprechend ausformulieren!
 ====
