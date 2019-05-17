@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 02-module-lesson2/01-second-unit-duration-terms.adoc
+:filename: 02-module-lesson2/01-duration-terms.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
@@ -9,7 +9,9 @@ include::../config/_feedback.adoc[]
 |===
 
 === Begriffe und Konzepte
-Begriff 1, Begriff 2, Begriff 3, ...
+* Begriff 1
+* Begriff 2
+* Begriff 3
 
 
 // end::DE[]
@@ -20,14 +22,15 @@ Begriff 1, Begriff 2, Begriff 3, ...
 |===
 
 === Terms and concepts
-Term 1, Term 2, Term 3
+* Term 1
+* Term 2
+* Term 3
 // end::EN[]
-
 
 // tag::REMARK[]
 [NOTE]
 ====
-Überschrift sinnvoll ersetzen
+Überschrift in 00-structure.adoc ersetzen
 ====
 // end::REMARK[]
 

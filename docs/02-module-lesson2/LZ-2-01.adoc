@@ -29,6 +29,7 @@ include::../config/_feedback.adoc[]
 // tag::EN[]
 [[LG-2-1]]
 ==== LG 2-1: TBD
+tbd.
 // end::EN[]
 
 // tag::REMARK[]

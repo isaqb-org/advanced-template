@@ -1,11 +1,11 @@
 // tag::FEEDBACK[]
-:filename: 01-module-lesson1/LZ-3-01.adoc
+:filename: 01-module-lesson1/LZ-1-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-3-1]]
-==== LZ 3-1: Dies ist das erste Lernziel, in Kategorie xy (R1)
+[[LZ-1-1]]
+==== LZ 1-1: Dies ist das erste Lernziel, in Kategorie xy (R1)
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
    * Fähigkeit 2
@@ -27,9 +27,9 @@ include::../config/_feedback.adoc[]
 // end::DE[]
 
 // tag::EN[]
-[[LG-3-1]]
-==== LG 3-1: The is the first learning goal, in category xy (R1)
-
+[[LG-1-1]]
+==== LG 1-1: The is the first learning goal, in category xy (R1)
+tbd.
 // end::EN[]
 
 // tag::REMARK[]

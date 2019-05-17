@@ -28,7 +28,14 @@ include::../config/_feedback.adoc[]
 // end::EN[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
+====
+Überschrift in 00-structure.adoc ersetzen
+====
+// end::REMARK[]
+
+// tag::REMARK[]
+[NOTE]
 ====
 Sinnvolle Zeiten für Dauer und Übungszeit eintragen, vernünftige Begriffe aufzählen.
 ====
