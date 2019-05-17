@@ -1,18 +1,20 @@
 // tag::FEEDBACK[]
-:filename: 04-second-learning-unit/LZ-4-01.adoc
+:filename: 02-module-lesson2/references.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-4-1]]
-==== LZ 4-1: Dies ist das erste Lernziel in Kapitel vier, das mit xyz (R2)
-
+=== {references}
+- Quelle Nr. 1
+- Quelle Nr. 2
 // end::DE[]
 
 // tag::EN[]
-[[LG-4-1]]
-==== LG 4-1: TBD
+=== {references}
+- Reference 1
+- Reference 2
 // end::EN[]
+
 
 // tag::REMARK[]
 // end::REMARK[]

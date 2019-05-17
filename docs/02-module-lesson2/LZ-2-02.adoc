@@ -1,20 +1,18 @@
 // tag::FEEDBACK[]
-:filename: 04-second-learning-unit/references.adoc
+:filename: 02-module-lesson2/LZ-2-02.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-=== {references}
-- Quelle Nr. 1
-- Quelle Nr. 2
+[[LZ-2-2]]
+==== LZ 4-2: Hier ist ein zweites Lernziel in diesem Kapitel (R1)
+
 // end::DE[]
 
 // tag::EN[]
-=== {references}
-- Reference 1
-- Reference 2
+[[LG-4-2]]
+==== LG 4-2: TBD
 // end::EN[]
-
 
 // tag::REMARK[]
 // end::REMARK[]

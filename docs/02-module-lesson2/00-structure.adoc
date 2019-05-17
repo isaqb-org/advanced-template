@@ -16,9 +16,9 @@ include::01-second-unit-duration-terms.adoc[{include_configuration}]
 
 === {learning-goals}
 
-include::LZ-4-01.adoc[{include_configuration}]
-include::LZ-4-02.adoc[{include_configuration}]
-include::LZ-4-03.adoc[{include_configuration}]
+include::LZ-2-01.adoc[{include_configuration}]
+include::LZ-2-02.adoc[{include_configuration}]
+include::LZ-2-03.adoc[{include_configuration}]
 
 // references (if any!)
 include::references.adoc[{include_configuration}]

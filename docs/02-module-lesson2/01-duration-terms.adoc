@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 04-second-learning-unit/01-second-unit-duration-terms.adoc
+:filename: 02-module-lesson2/01-second-unit-duration-terms.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 

@@ -1,11 +1,12 @@
 // tag::FEEDBACK[]
-:filename: 04-second-learning-unit/LZ-4-03.adoc
+:filename: 02-module-lesson2/LZ-2-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-4-3]]
-==== LZ 4-3: Dies ist das erste dritte Lernziel, in Kategorie xy (R1)
+[[LZ-2-1]]
+==== LZ 2-1: Dies ist das erste Lernziel in Kapitel vier, das mit xyz (R2)
+
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
    * Fähigkeit 2
@@ -26,13 +27,9 @@ include::../config/_feedback.adoc[]
 // end::DE[]
 
 // tag::EN[]
-[[LG-4-3]]
-==== LG 4-3: TBD
+[[LG-2-1]]
+==== LG 2-1: TBD
 // end::EN[]
 
 // tag::REMARK[]
-[IMPORTANT]
-====
-Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
-====
 // end::REMARK[]
