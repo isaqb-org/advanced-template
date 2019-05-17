@@ -4,7 +4,7 @@ include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
 ====
 Bitte die **?** durch die Anzahl der Tage sowie die erreichbaren Punkte ersetzen.
 ====

@@ -32,7 +32,7 @@ The are not prescribed by iSAQB.
 // end::EN[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
 ====
 Sinnvolle Zeiten für Dauer und Übungszeit eintragen.
 ====

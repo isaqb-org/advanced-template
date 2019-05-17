@@ -34,7 +34,7 @@ include::../config/_feedback.adoc[]
 
 // tag::REMARK[]
 
-[IMPORTANT]
+[NOTE]
 ====
 KURZE ERKLÄRUNG ZU DEN ZIELEN DIESER LERNEINHEIT
 ====
