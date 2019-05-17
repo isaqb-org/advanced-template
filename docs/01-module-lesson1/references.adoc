@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 03-introducing-the-module/references.adoc
+:filename: 01-module-lesson1/references.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 

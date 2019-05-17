@@ -45,18 +45,24 @@ include::00-preamble/00-introduction.adoc[{include_configuration}]
 include::what-to-expect-of-this-module.adoc[{include_configuration}]
 
 <<<
-:sectnums:
+:sectnums!:
 include::01-basics/00-basics.adoc[{include_configuration}]
 
 <<<
-include::02-introduction-to-isaqb/00-intro.adoc[{include_configuration}]
-
-
-<<<
-include::03-introducing-the-module/00-introducing-module.adoc[{include_configuration}]
+:sectnums:
+include::01-module-lesson1/00-structure.adoc[{include_configuration}]
 
 <<<
-include::04-second-learning-unit/00-second-unit.adoc[{include_configuration}]
+include::02-module-lesson2/00-structure.adoc[{include_configuration}]
+
+<<<
+include::03-module-lesson3/00-structure.adoc[{include_configuration}]
+
+<<<
+include::04-module-lesson4/00-structure.adoc[{include_configuration}]
+
+<<<
+include::05-module-lesson5/00-structure.adoc[{include_configuration}]
 
 <<<
 include::98-examples/00-examples.adoc[{include_configuration}]

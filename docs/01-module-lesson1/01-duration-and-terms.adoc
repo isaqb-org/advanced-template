@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 03-introducing-the-module/01-introducing-module-duration-terms.adoc
+:filename: 01-module-lesson1/01-introducing-module-duration-terms.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
