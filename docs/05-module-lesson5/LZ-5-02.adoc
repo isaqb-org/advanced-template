@@ -1,0 +1,19 @@
+// tag::FEEDBACK[]
+:filename: 05-module-lesson5/LZ-5-02.adoc
+include::../config/_feedback.adoc[]
+// end::FEEDBACK[]
+
+// tag::DE[]
+[[LZ-5-2]]
+==== LZ 5-2: Hier ist ein zweites Lernziel in diesem Kapitel (R1)
+tbd.
+// end::DE[]
+
+// tag::EN[]
+[[LG-5-2]]
+==== LG 5-2: TBD
+tbd.
+// end::EN[]
+
+// tag::REMARK[]
+// end::REMARK[]
