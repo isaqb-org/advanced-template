@@ -5,7 +5,7 @@ include::../config/_feedback.adoc[]
 
 // tag::DE[]
 [[LZ-3-1]]
-==== LZ 3-1: Dies ist das erste Lernziel in Kapitel 3, das mit xyz (R2)
+==== LZ 3-1: Dies ist das erste Lernziel in Kapitel 3, das mit xyz
 
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1

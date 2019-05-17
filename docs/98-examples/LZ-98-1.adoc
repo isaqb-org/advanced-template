@@ -5,7 +5,7 @@ include::../config/_feedback.adoc[]
 
 // tag::DE[]
 [[LZ-98-1]]
-==== LZ 98-1: Dies ist das letzte Lernziel des Lehrplans (R3)
+==== LZ 98-1: Dies ist das letzte Lernziel des Lehrplans
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
    * Fähigkeit 2
@@ -28,7 +28,7 @@ include::../config/_feedback.adoc[]
 
 // tag::EN[]
 [[LG-98-1]]
-==== LG 98-1: Last learning goal of the curriculum (R3)
+==== LG 98-1: Last learning goal of the curriculum
 // end::EN[]
 
 

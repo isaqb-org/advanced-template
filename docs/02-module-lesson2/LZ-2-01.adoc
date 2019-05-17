@@ -5,7 +5,7 @@ include::../config/_feedback.adoc[]
 
 // tag::DE[]
 [[LZ-2-1]]
-==== LZ 2-1: Dies ist das erste Lernziel in Kapitel vier, das mit xyz (R2)
+==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1

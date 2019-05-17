@@ -5,7 +5,7 @@ include::../config/_feedback.adoc[]
 
 // tag::DE[]
 [[LZ-3-2]]
-==== LZ 3-2: Hier ist ein zweites Lernziel in diesem Kapitel (R1)
+==== LZ 3-2: Hier ist ein zweites Lernziel in diesem Kapitel
 tbd.
 // end::DE[]
 
