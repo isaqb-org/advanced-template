@@ -87,7 +87,7 @@ image:chronological_breakdown.png[pdfwidth=75%, role="text-center"]
 // end::EN[]
 
 // tag::REMARK[]
-[IMPORTANT]
+[NOTE]
 ====
 Bitte sowohl die oben angegebene Tabelle als auch das beiliegende Excel-Dokument entsprechend anpassen und das Pie-Chart als "zeitaufteilung.png" nach `../images` exportieren
 
