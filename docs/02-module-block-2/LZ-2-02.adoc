@@ -1,17 +1,17 @@
 // tag::FEEDBACK[]
-:filename: 04-module-lesson4/LZ-4-02.adoc
+:filename: 02-module-block-2/LZ-2-02.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-4-2]]
-==== LZ 4-2: Hier ist ein zweites Lernziel in diesem Kapitel
+[[LZ-2-2]]
+==== LZ 2-2: Hier ist ein zweites Lernziel in diesem Kapitel
 tbd.
 // end::DE[]
 
 // tag::EN[]
-[[LG-4-2]]
-==== LG 4-2: TBD
+[[LG-2-2]]
+==== LG 2-2: TBD
 tbd.
 // end::EN[]
 

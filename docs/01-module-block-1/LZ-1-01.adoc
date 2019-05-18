@@ -1,17 +1,17 @@
 // tag::FEEDBACK[]
-:filename: 04-module-lesson4/LZ-4-01.adoc
+:filename: 01-module-block-1/LZ-1-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-4-1]]
-==== LZ 4-1: Dies ist das erste Lernziel in Kapitel 4, das mit xyz
-
+[[LZ-1-1]]
+==== LZ 1-1: Dies ist das erste Lernziel, in Kategorie xy
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
    * Fähigkeit 2
    * Fähigkeit 3
    * etc.
+
 - Was sollen die Teilnehmer verstehen?
   * Aussage 1
   * Behauptung 2
@@ -27,8 +27,8 @@ include::../config/_feedback.adoc[]
 // end::DE[]
 
 // tag::EN[]
-[[LG-4-1]]
-==== LG 4-1: TBD
+[[LG-1-1]]
+==== LG 1-1: The is the first learning goal, in category xy
 tbd.
 // end::EN[]
 

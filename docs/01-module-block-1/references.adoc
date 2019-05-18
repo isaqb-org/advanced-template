@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 01-module-lesson1/references.adoc
+:filename: 01-module-block-1/references.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
@@ -14,6 +14,7 @@ include::../config/_feedback.adoc[]
 - Reference 1
 - Reference 2
 // end::EN[]
+
 
 // tag::REMARK[]
 // end::REMARK[]

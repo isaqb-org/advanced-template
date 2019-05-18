@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 02-module-lesson2/01-duration-terms.adoc
+:filename: 01-module-block-1/01-duration-terms.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
@@ -13,7 +13,6 @@ include::../config/_feedback.adoc[]
 * Begriff 2
 * Begriff 3
 
-
 // end::DE[]
 
 // tag::EN[]
@@ -26,6 +25,7 @@ include::../config/_feedback.adoc[]
 * Term 2
 * Term 3
 // end::EN[]
+
 
 // tag::REMARK[]
 [NOTE]

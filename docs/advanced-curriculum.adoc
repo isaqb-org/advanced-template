@@ -50,19 +50,19 @@ include::01-basics/00-basics.adoc[{include_configuration}]
 
 <<<
 :sectnums:
-include::01-module-lesson1/00-structure.adoc[{include_configuration}]
+include::01-module-block-1/00-structure.adoc[{include_configuration}]
 
 <<<
-include::02-module-lesson2/00-structure.adoc[{include_configuration}]
+include::02-module-block-2/00-structure.adoc[{include_configuration}]
 
 <<<
-include::03-module-lesson3/00-structure.adoc[{include_configuration}]
+include::03-module-block-3/00-structure.adoc[{include_configuration}]
 
 <<<
-include::04-module-lesson4/00-structure.adoc[{include_configuration}]
+include::04-module-block-4/00-structure.adoc[{include_configuration}]
 
 <<<
-include::05-module-lesson5/00-structure.adoc[{include_configuration}]
+include::05-module-block-5/00-structure.adoc[{include_configuration}]
 
 <<<
 include::98-examples/00-examples.adoc[{include_configuration}]

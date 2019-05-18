@@ -1,11 +1,11 @@
 // tag::FEEDBACK[]
-:filename: 02-module-lesson2/LZ-2-01.adoc
+:filename: 04-module-block-4/LZ-4-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-2-1]]
-==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+[[LZ-4-1]]
+==== LZ 4-1: Dies ist das erste Lernziel in Kapitel 4, das mit xyz
 
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
@@ -27,8 +27,8 @@ include::../config/_feedback.adoc[]
 // end::DE[]
 
 // tag::EN[]
-[[LG-2-1]]
-==== LG 2-1: TBD
+[[LG-4-1]]
+==== LG 4-1: TBD
 tbd.
 // end::EN[]
 
