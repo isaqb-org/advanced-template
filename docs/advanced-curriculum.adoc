@@ -42,10 +42,6 @@ include::00-preamble/00-introduction.adoc[{include_configuration}]
 
 <<<
 :sectnums!:
-include::what-to-expect-of-this-module.adoc[{include_configuration}]
-
-<<<
-:sectnums!:
 include::01-basics/00-basics.adoc[{include_configuration}]
 
 <<<

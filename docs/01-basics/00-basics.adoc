@@ -14,11 +14,12 @@
 
 // end::EN[]
 
+include::../what-to-expect-of-this-module.adoc[{include_configuration}]
+
 include::01-curriculum-structure-and-chronological-breakdown.adoc[{include_configuration}]
 
 include::02-timing-didactics-and-more.adoc[{include_configuration}]
 
-<<<
 include::03-prerequisites-for-this-training.adoc[{include_configuration}]
 
 include::04-curriculum-outline.adoc[{include_configuration}]
