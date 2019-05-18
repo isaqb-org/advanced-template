@@ -11,3 +11,6 @@ include::02-what-to-expect-of-an-advanced-level-module.adoc[{include_configurati
 include::03-advanced-level-knowledge.adoc[{include_configuration}]
 
 include::04-prerequisites.adoc[{include_configuration}]
+
+[.text-center]
+image:../images/cpsa-a-logo.png[width=60%,align=center,alt="Certified Professional for Software Architecture^(R)^ Advanced Level (CPSA-A)"]
