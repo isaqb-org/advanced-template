@@ -8,8 +8,8 @@ include::../config/_feedback.adoc[]
 
 Die einzelnen Abschnitte des Lehrplans sind gemäß folgender Gliederung beschrieben:
 
-- **Unterrichts-/Übungszeit**: Legt die Unterrichts- und Übungszeit fest, die für dieses Thema bzw. dessen Übung in einer akkreditierten Schulung mindestens aufgewendet werden muss.
 - **Begriffe/Konzepte**: Wesentliche Kernbegriffe dieses Themas.
+- **Unterrichts-/Übungszeit**: Legt die Unterrichts- und Übungszeit fest, die für dieses Thema bzw. dessen Übung in einer akkreditierten Schulung mindestens aufgewendet werden muss.
 - **Lernziele**: Beschreibt die zu vermittelnden Inhalte inklusive ihrer Kernbegriffe und -konzepte.
 
 Dieser Abschnitt skizziert damit auch die zu erwerbenden Kenntnisse in entsprechenden Schulungen. Die Lernziele werden differenziert in folgende Kategorien bzw. Unterkapitel:
@@ -25,8 +25,8 @@ Dieser Abschnitt skizziert damit auch die zu erwerbenden Kenntnisse in entsprech
 
 The sections of the curriculum are laid out as follows:
 
-- **Instruction/exercise time**: specifies the minimum durations for instruction and exercise blocks for licensed trainings
 - **Terms/concepts**: core terminology of the topic
+- **Instruction/exercise time**: specifies the minimum durations for instruction and exercise blocks for licensed trainings
 - **Learning goals**: describes in detail the lessons, including core terminology and concepts
 
 This section outlines the knowledge to be gained in the training sessions.
