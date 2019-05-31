@@ -1,11 +1,12 @@
 // tag::FEEDBACK[]
-:filename: 98-examples/LZ-98-1.adoc
+:filename: 02-module-block-2/LZ-2-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
 // tag::DE[]
-[[LZ-98-1]]
-==== LZ 98-1: Dies ist das letzte Lernziel des Lehrplans
+[[LZ-2-1]]
+==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
    * Fähigkeit 2
@@ -25,17 +26,15 @@ include::../config/_feedback.adoc[]
 
 // end::DE[]
 
-
 // tag::EN[]
-[[LG-98-1]]
-==== LG 98-1: Last learning goal of the curriculum
+[[LG-2-1]]
+==== LG 2-1: TBD
+tbd.
 // end::EN[]
 
-
 // tag::REMARK[]
-
 [NOTE]
 ====
-KURZE ERKLÄRUNG ZU DEN ZIELEN DIESER LERNEINHEIT
+Die einzelnen Lernziele müssen nicht als einfache Aufzählungen mit Unterpunkten aufgeführt werden, sondern können auch gerne in ganzen Sätzen formuliert werden, welche die einzelnen Punkte (sofern möglich) integrieren.
 ====
 // end::REMARK[]
