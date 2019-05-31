@@ -9,7 +9,7 @@ CPSA-A-Absolventen können:
 
 - eigenständig und methodisch fundiert mittlere bis große IT-Systeme entwerfen
 - in IT-Systemen mittlerer bis hoher Kritikalität technische und inhaltliche Verantwortung übernehmen
-- Maßnahmen zur Erreichung nichtfunktionaler Anforderungen konzeptionieren, entwerfen und dokumentieren sowie Entwicklungsteams bei der Umsetzung dieser Maßnahmen begleiten
+- Maßnahmen zur Erreichung von Qualitätsanforderungen konzeptionieren, entwerfen und dokumentieren sowie Entwicklungsteams bei der Umsetzung dieser Maßnahmen begleiten
 - architekturrelevante Kommunikation in mittleren bis großen Entwicklungsteams steuern und durchführen
 
 // end::DE[]
@@ -20,7 +20,7 @@ CPSA-A graduates are able to:
 
 - design medium to large IT systems idependently and based on solid methodical foundations
 - take technical and operational responsibility in IT systems with medium to high criticality
-- design and document measures to achieve non-functional requirements and support development teams implementing those measures
+- design and document measures to achieve quality requirements and support development teams implementing those measures
 - manage communication relevant to architecture in medium to large development teams
 // end::EN[]
 
