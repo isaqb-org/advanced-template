@@ -1,5 +1,5 @@
 // tag::FEEDBACK[]
-:filename: 00-preamble/04-prerequisites.adoc
+:filename: 00-preamble/03-prerequisites.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
@@ -23,6 +23,7 @@ include::../config/_feedback.adoc[]
 ** existing certifications (for example: Sun/Oracle Java architect, Microsoft CSA) may be credited
 * passing the CPSA-A certification exam
 // end::EN[]
+
 
 // tag::REMARK[]
 // end::REMARK[]
