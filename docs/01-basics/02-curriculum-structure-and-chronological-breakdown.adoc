@@ -41,7 +41,7 @@ include::../config/_feedback.adoc[]
 
 [.text-center]
 .Zeitliche Aufteilung der Themengebiete
-image:zeitaufteilung.png[pdfwidth=75%, role="text-center"]
+image:01-basics/zeitaufteilung.png[pdfwidth=75%, role="text-center"]
 
 // end::DE[]
 
@@ -83,17 +83,18 @@ image:zeitaufteilung.png[pdfwidth=75%, role="text-center"]
 
 [.text-center]
 .Durations
-image:chronological_breakdown.png[pdfwidth=75%, role="text-center"]
+image:01-basics/chronological_breakdown.png[pdfwidth=75%, role="text-center"]
 // end::EN[]
 
 // tag::REMARK[]
 [NOTE]
 ====
-Bitte sowohl die oben angegebene Tabelle als auch das beiliegende Excel-Dokument entsprechend anpassen und das Pie-Chart als "zeitaufteilung.png" nach `../images` exportieren
+Bitte sowohl die oben angegebene Tabelle als auch das beiliegende Excel-Dokument entsprechend anpassen
+und das Pie-Chart als "zeitaufteilung.png" nach `../images/01-basics` exportieren
 
 = = =
 
 Please adjust the table above as well as the excel document according to your curriculum and export the pie chart
-as "chronological_breakdown.png" to `../images`.
+as "chronological_breakdown.png" to `../images/01-basics`.
 ====
 // end::REMARK[]
