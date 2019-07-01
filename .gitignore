@@ -4,3 +4,5 @@
 build
 .idea
 advanced-template.iml
+.settings/org.eclipse.buildship.core.prefs
+.project
