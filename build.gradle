@@ -16,7 +16,7 @@ plugins {
 
 ext {
   currentDate = new Date().format("d. MMM yyyy")
-  project.version = "0.1.0 DRAFT ($currentDate)"
+  project.version = project.file("./document.version").text
   curriculumBaseName = "advanced-curriculum"
   curriculumFileName = "advanced-curriculum"
   addSuffixToCurriculum = { suffix ->
