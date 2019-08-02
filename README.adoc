@@ -156,7 +156,7 @@ From `docs/advanced-curriculum.adoc` (excerpts):
 
 [source,asciidoc]
 ----
-= Template Curriculum: CPSA Certified Professional for Software Architecture®
+= Template Curriculum: CPSA Certified Professional for Software Architecture^(R)^
 :doctype: book
 
 include::config/setup.adoc[]  // // <1>
