@@ -4,8 +4,6 @@
 :learning-goals: Lernziele
 :references: Referenzen
 :examples: Beispiele
-:page: Seite
-:of: von
 // end::DE[]
 
 // tag::EN[]
@@ -14,6 +12,4 @@
 :learning-goals: Learning goals
 :references: References
 :examples: Examples
-:page: Page
-:of: of
 // end::EN[]
