@@ -7,7 +7,7 @@ buildscript {
   }
 
   dependencies {
-    classpath "org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.17"
+    classpath "org.asciidoctor:asciidoctorj-pdf:1.5.0-beta.2"
   }
 }
 plugins {
@@ -16,7 +16,7 @@ plugins {
 
 ext {
   currentDate = new Date().format("d. MMM yyyy")
-  project.version = "0.1.0 DRAFT ($currentDate)"
+  project.version = project.file("./document.version").text
   curriculumBaseName = "advanced-curriculum"
   curriculumFileName = "advanced-curriculum"
   addSuffixToCurriculum = { suffix ->
@@ -40,9 +40,14 @@ class RenderCurriculumTask extends AsciidoctorTask {
     outputDir = new File("./build/")
     separateOutputDirs = false
     backends 'pdf', 'html5'
+
+    def fileVersion = project.version.trim() + "-" + language
+
     attributes = [
       'icons'            : 'font',
-      'document-version' : "${project.version}",
+      'revnumber'        : fileVersion,
+      'revdate'          : currentDate,
+      'document-version' : fileVersion + " (" + currentDate + ")",
       'curriculumBaseName': curriculumBaseName,
       'currentDate'      : currentDate,
       'language'         : language,
