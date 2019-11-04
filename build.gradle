@@ -17,7 +17,7 @@ plugins {
 
 ext {
   today = new Date()
-  englishDate = new SimpleDateFormat("MMM d, yyyy", Locale.US).format(today)
+  englishDate = new SimpleDateFormat("MMMM d, yyyy", Locale.US).format(today)
   germanDate = new SimpleDateFormat("d. MMMM yyy", Locale.GERMANY).format(today)
 
   project.version = project.file("./document.version").text
