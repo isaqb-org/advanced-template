@@ -1,8 +1,3 @@
-// tag::FEEDBACK[]
-:filename: 00-preamble/01-what-to-expect-of-an-advanced-level-module.adoc
-include::../config/_feedback.adoc[]
-// end::FEEDBACK[]
-
 // tag::DE[]
 === Was vermittelt ein Advanced Level Modul?
 - Der iSAQB Advanced Level bietet eine modulare Ausbildung in drei Kompetenzbereichen mit flexibel gestaltbaren Ausbildungswegen. Er berücksichtigt individuelle Neigungen und Schwerpunkte.

@@ -1,8 +1,3 @@
-// tag::FEEDBACK[]
-:filename: 01-basics/06-complementary-information.adoc
-include::../config/_feedback.adoc[]
-// end::FEEDBACK[]
-
 // tag::DE[]
 === Ergänzende Informationen, Begriffe, Übersetzungen
 

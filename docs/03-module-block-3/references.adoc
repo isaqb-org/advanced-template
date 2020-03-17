@@ -1,8 +1,3 @@
-// tag::FEEDBACK[]
-:filename: 03-module-block-3/references.adoc
-include::../config/_feedback.adoc[]
-// end::FEEDBACK[]
-
 === {references}
 
 // tag::DE[]
