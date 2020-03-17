@@ -2,6 +2,4 @@
 
 include::01-examples-duration-terms.adoc[{include_configuration}]
 
-=== {learning-goals}
-
 include::02-learning-goals.adoc[{include_configuration}]

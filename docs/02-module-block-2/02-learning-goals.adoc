@@ -3,6 +3,8 @@
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
+=== {learning-goals}
+
 // tag::DE[]
 [[LZ-2-1]]
 ==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit

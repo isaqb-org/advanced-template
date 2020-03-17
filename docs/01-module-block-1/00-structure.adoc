@@ -6,8 +6,6 @@
 
 include::01-duration-terms.adoc[{include_configuration}]
 
-=== {learning-goals}
-
 include::02-learning-goals.adoc[{include_configuration}]
 
 // references (if any!)
