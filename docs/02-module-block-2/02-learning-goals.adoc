@@ -24,11 +24,19 @@ include::../config/_feedback.adoc[]
   * Buch Nr. 3
   * etc.
 
+[[LZ-2-2]]
+==== LZ 2-2: Hier ist ein zweites Lernziel in diesem Kapitel
+tbd.
+
 // end::DE[]
 
 // tag::EN[]
 [[LG-2-1]]
 ==== LG 2-1: TBD
+tbd.
+
+[[LG-2-2]]
+==== LG 2-2: TBD
 tbd.
 // end::EN[]
 
