@@ -3,34 +3,16 @@
 
 [cols="<,>", options="header"]
 |===
+| Inhalt | Empfohlene Mindestdauer (min)
 
-| Inhalt
-| Empfohlene Mindestdauer (min)
-
-
-| 1. Thema mit Einleitung
-| 180
-
-| 2. Thema über xz
-| 150
-
-| 3. Thema mit viel Theorie
-| 120
-
-| 4. Thema mit xy und Beispiel
-| 180
-
-| 5. Thema mit abc und d
-| 210
-
-| 6. Thema mit Abschlussbeispiel
-| 120
-
-|
-|
-
-| Summe
-| 960 (16h)
+| 1. Thema mit Einleitung | 180
+| 2. Thema über xz | 150
+| 3. Thema mit viel Theorie | 120
+| 4. Thema mit xy und Beispiel | 180
+| 5. Thema mit abc und d | 210
+| 6. Thema mit Abschlussbeispiel | 120
+| |
+| Summe | 960 (16h)
 
 |===
 
