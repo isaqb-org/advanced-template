@@ -1,6 +1,7 @@
 // tag::DE[]
 :lang: DE
 :toc-title: Inhaltsverzeichnis
+:lesson: Lerneinheit
 :learning-goals: Lernziele
 :references: Referenzen
 :examples: Beispiele
@@ -9,6 +10,7 @@
 // tag::EN[]
 :lang: EN
 :toc-title: Table of Contents
+:lesson: Lesson
 :learning-goals: Learning goals
 :references: References
 :examples: Examples
