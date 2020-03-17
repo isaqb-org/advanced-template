@@ -2,14 +2,7 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-
-// tag::DE[]
-== Lerneinheit 5
-// end::DE[]
-
-// tag::EN[]
-== Lesson 5
-// end::EN[]
+== {lesson} 5
 
 include::01-duration-terms.adoc[{include_configuration}]
 
