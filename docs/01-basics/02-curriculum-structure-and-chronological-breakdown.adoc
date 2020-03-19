@@ -4,7 +4,6 @@
 [cols="<,>", options="header"]
 |===
 | Inhalt | Empfohlene Mindestdauer (min)
-
 | 1. Thema mit Einleitung | 180
 | 2. Thema über xz | 150
 | 3. Thema mit viel Theorie | 120
@@ -27,34 +26,16 @@ image:01-basics/zeitaufteilung.png[pdfwidth=75%, role="text-center"]
 
 [cols="<,>", options="header"]
 |===
-
 | Content
 | Recommended minimum duration (minutes)
-
-
-| 1. Introduction
-| 180
-
-| 2. xz
-| 150
-
-| 3. Lots of theory
-| 120
-
-| 4. xy and example
-| 180
-
-| 5. abc und d
-| 210
-
-| 6. Final example
-| 120
-
-|
-|
-
-| Sum
-| 960 (16h)
+| 1. Introduction | 180
+| 2. xz | 150
+| 3. Lots of theory | 120
+| 4. xy and example | 180
+| 5. abc und d | 210
+| 6. Final example | 120
+| |
+| Sum | 960 (16h)
 
 |===
 
