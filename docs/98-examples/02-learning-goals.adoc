@@ -1,10 +1,4 @@
-// tag::FEEDBACK[]
-:filename: 98-examples/LZ-98-1.adoc
-include::../config/_feedback.adoc[]
-// end::FEEDBACK[]
-
 === {learning-goals}
-
 
 // tag::DE[]
 [[LZ-98-1]]
