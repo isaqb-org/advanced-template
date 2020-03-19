@@ -3,6 +3,9 @@
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
+=== {learning-goals}
+
+
 // tag::DE[]
 [[LZ-5-1]]
 ==== LZ 5-1: Dies ist das erste Lernziel in Kapitel 5, lorem ipsum sit dolor
@@ -24,11 +27,18 @@ include::../config/_feedback.adoc[]
   * Buch Nr. 3
   * etc.
 
+[[LZ-5-2]]
+==== LZ 5-2: Hier ist ein zweites Lernziel in diesem Kapitel
+tbd.
 // end::DE[]
 
 // tag::EN[]
 [[LG-5-1]]
 ==== LG 5-1: TBD
+tbd.
+
+[[LG-5-2]]
+==== LG 5-2: TBD
 tbd.
 // end::EN[]
 

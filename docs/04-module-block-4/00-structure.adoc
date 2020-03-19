@@ -2,22 +2,11 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-
-// tag::DE[]
-== Lerneinheit 4
-// end::DE[]
-
-// tag::EN[]
-== Lesson 4
-// end::EN[]
+== {lesson} 4
 
 include::01-duration-terms.adoc[{include_configuration}]
 
-
-=== {learning-goals}
-
-include::LZ-4-01.adoc[{include_configuration}]
-include::LZ-4-02.adoc[{include_configuration}]
+include::02-learning-goals.adoc[{include_configuration}]
 
 // references (if any!)
 include::references.adoc[{include_configuration}]

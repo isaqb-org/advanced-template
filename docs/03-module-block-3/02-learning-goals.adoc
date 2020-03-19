@@ -1,11 +1,13 @@
 // tag::FEEDBACK[]
-:filename: 02-module-block-2/LZ-2-01.adoc
+:filename: 03-module-block-3/LZ-3-01.adoc
 include::../config/_feedback.adoc[]
 // end::FEEDBACK[]
 
+=== {learning-goals}
+
 // tag::DE[]
-[[LZ-2-1]]
-==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+[[LZ-3-1]]
+==== LZ 3-1: Dies ist das erste Lernziel in Kapitel 3, das mit xyz
 
 - Was sollen die Teilnehmer können?
    * Fähigkeit 1
@@ -24,11 +26,19 @@ include::../config/_feedback.adoc[]
   * Buch Nr. 3
   * etc.
 
+[[LZ-3-2]]
+==== LZ 3-2: Hier ist ein zweites Lernziel in diesem Kapitel
+tbd.
+
 // end::DE[]
 
 // tag::EN[]
-[[LG-2-1]]
-==== LG 2-1: TBD
+[[LG-3-1]]
+==== LG 3-1: TBD
+tbd.
+
+[[LG-3-2]]
+==== LG 3-2: TBD
 tbd.
 // end::EN[]
 
