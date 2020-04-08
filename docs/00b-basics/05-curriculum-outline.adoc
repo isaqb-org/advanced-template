@@ -7,12 +7,7 @@ Die einzelnen Abschnitte des Lehrplans sind gemäß folgender Gliederung beschri
 - **Unterrichts-/Übungszeit**: Legt die Unterrichts- und Übungszeit fest, die für dieses Thema bzw. dessen Übung in einer akkreditierten Schulung mindestens aufgewendet werden muss.
 - **Lernziele**: Beschreibt die zu vermittelnden Inhalte inklusive ihrer Kernbegriffe und -konzepte.
 
-Dieser Abschnitt skizziert damit auch die zu erwerbenden Kenntnisse in entsprechenden Schulungen. Die Lernziele werden differenziert in folgende Kategorien bzw. Unterkapitel:
-
-- Was sollen die Teilnehmer **können**? Diese Inhalte sollen die Teilnehmer nach der Schulung selbständig anwenden können. Innerhalb der Schulung werden diese Inhalte durch Übungen abgedeckt und sind Bestandteil der Modulprüfung {curriculum-short} und/oder der Abschlussprüfung des iSAQB Advanced Levels.
-- Was sollen die Teilnehmer **verstehen**? Diese Inhalte können in der Modulprüfung {curriculum-short} geprüft werden.
-- Was sollen die Teilnehmer **kennen**? Diese Inhalte (Begriffe, Konzepte, Methoden, Praktiken oder Ähnliches) können das Verständnis unterstützen oder das Thema motivieren. Diese Inhalte sind nicht Bestandteil der Prüfungen und werden in Schulungen thematisiert, aber nicht notwendigerweise ausführlich unterrichtet.
-
+Dieser Abschnitt skizziert damit auch die zu erwerbenden Kenntnisse in entsprechenden Schulungen.
 // end::DE[]
 
 // tag::EN[]
