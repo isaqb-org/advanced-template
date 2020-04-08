@@ -10,9 +10,9 @@
 
 // tag::EN[]
 :lang: EN
-:basics: Basics
+:basics: Essentials
 :toc-title: Table of Contents
-:learning-goals: Learning goals
+:learning-goals: Learning Goals
 :lesson: Lesson
 :references: References
 :examples: Examples

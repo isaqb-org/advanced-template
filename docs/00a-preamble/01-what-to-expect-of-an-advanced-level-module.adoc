@@ -5,9 +5,9 @@
 // end::DE[]
 
 // tag::EN[]
-=== What does an Advanced Level Module convey?
-- The iSAQB Advanced Level offers modular training in three competence areas with flexible pathways through the programme. It acknowledges and supports individual strengths and focus points.
-- The certification is based on a homework paper. Grading and oral examination will be carried out through an expert designated by iSAQB.
+=== What is taught in an Advanced Level module?
+- The iSAQB Advanced Level offers modular training in three areas of competence with flexibly designable training paths. It takes individual inclinations and priorities into account.
+- The certification is done as an assignment. The assessment and oral exam is conducted by experts appointed by the iSAQB.
 // end::EN[]
 
 // tag::REMARK[]

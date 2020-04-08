@@ -16,20 +16,15 @@ Dieser Abschnitt skizziert damit auch die zu erwerbenden Kenntnisse in entsprech
 // end::DE[]
 
 // tag::EN[]
-=== Structure of the curriculum
+=== Structure of the Curriculum
 
-The sections of the curriculum are laid out as follows:
+The individual sections of the curriculum are described according to the following structure:
 
-- **Terms/concepts**: core terminology of the topic
-- **Instruction/exercise time**: specifies the minimum durations for instruction and exercise blocks for licensed trainings
-- **Learning goals**: describes in detail the lessons, including core terminology and concepts
+- **Terms/principles**: Essential core terms of this topic.
+- **Teaching/practice time**: Defines the minimum amount of teaching and practice time that must be spent on this topic or its practice in an accredited training course.
+- **Learning goals**: Describes the content to be conveyed including its core terms and principles.
 
-This section outlines the knowledge to be gained in the training sessions.
-The learning goals are classified according to the following categories:
-
-- What should the participants **be able to do**? Participants should be able to apply these concepts by themselves without guidance. In courses, these topics should be covered by exercises and are part of the examination {curriculum-short} and/or the final examination of the iSAQB Advanced Level.
-- What should the participants **understand**? These topics may be part of the examination {curriulum-short}.
-- What should the participants **know**? These topics (terminology, concepts, methods, practices) may aid understanding or motivate broader concepts. They are not part of the examination and may be discussed in trainings on a basic, abstract level.
+This section therefore also outlines the skills to be acquired in corresponding training courses.
 // end::EN[]
 
 // tag::REMARK[]
