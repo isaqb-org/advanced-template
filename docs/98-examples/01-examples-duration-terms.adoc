@@ -14,12 +14,12 @@ Art und Ausprägung der vorgestellten Beispiele können von der Schulung bzw. de
 
 // tag::EN[]
 |===
-| Lesson duration: XXX min | Exercises: XXX min
+| Duration: XXX min | Practice time: XXX min
 |===
 
 This section is not examinable.
 
-=== Terms and concepts
+=== Terms and Principles
 In every licensed training session, at least one example for {curriculum-short} must be presented.
 
 Type and structure of the examples presented may depend on the training and participants' interests.

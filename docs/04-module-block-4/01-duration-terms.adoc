@@ -12,10 +12,10 @@
 
 // tag::EN[]
 |===
-| Lesson duration: XXX min | Exercises: XXX min
+| Duration: XXX min | Practice time: XXX min
 |===
 
-=== Terms and concepts
+=== Terms and Principles
 * Term 1
 * Term 2
 * Term 3
