@@ -161,7 +161,7 @@ From `docs/advanced-curriculum.adoc` (excerpts):
 
 include::config/setup.adoc[]  // // <1>
 
-:document-version: 2.0-DRAFT 2019 // //<2>
+:document-version: 2020.2 // //<2>
 
 :sectnums!: // // <3>
 include::00-preamble/copyright.adoc[{include_configuration}] // // <4>
