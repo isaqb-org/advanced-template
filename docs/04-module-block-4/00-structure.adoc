@@ -2,7 +2,13 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-== {lesson} 4
+// tag::DE[]
+== Viertes Modul, das ist sein Titel
+// end::DE[]
+
+// tag::EN[]
+== Fourth Module, This is its Title
+// end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
 
