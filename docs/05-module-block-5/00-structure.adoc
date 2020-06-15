@@ -2,7 +2,13 @@
 // (c) iSAQB e.V. (https://isaqb.org)
 // ====================================================
 
-== {lesson} 5
+// tag::DE[]
+== Und so heißt Modul 5
+// end::DE[]
+
+// tag::EN[]
+== And This is Module no 5
+// end::EN[]
 
 include::01-duration-terms.adoc[{include_configuration}]
 
