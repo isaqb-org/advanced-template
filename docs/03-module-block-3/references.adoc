@@ -1,7 +1,6 @@
 === {references}
 
-- <<hargis>>
-- <<starke>>
+<<hargis>>, <<starke>>
 
 
 // tag::REMARK[]

@@ -1,7 +1,6 @@
 === {references}
 
-- <<bachmann>>
-- <<kruchten>>
+<<bachmann>>, <<kruchten>>
 
 
 // tag::REMARK[]

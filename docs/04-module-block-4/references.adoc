@@ -1,6 +1,6 @@
 === {references}
 
-- <<kruchten>>
+<<kruchten>>
 
 
 

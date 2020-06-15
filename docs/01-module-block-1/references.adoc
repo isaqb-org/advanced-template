@@ -1,7 +1,6 @@
 === {references}
 
-- <<starke>>
-- <<bass>>
+<<bass>>, <<bachmann>>, <<kruchten>>, <<starke>>
 
 
 
