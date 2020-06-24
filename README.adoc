@@ -31,12 +31,16 @@ Create an issue, a merge- or pull-request
 
 == How to use this template
 
-1. Clone or download - but include the submodule:
+1. Clone or download AND include the submodule:
 +
 --
 [source,shell]
 ----
-git clone git@github.com/username/repository.git --recursive
+Via SSH:
+git clone git@github.com:isaqb-org/advanced-template.git --recursive
+
+Via HTTPS:
+git clone https://github.com/isaqb-org/advanced-template.git --recursive
 ----
 --
 2. Build it with gradle via `./gradle buildDocs`.
