@@ -4,9 +4,8 @@
 |===
 
 === Begriffe und Konzepte
-* Begriff 1
-* Begriff 2
-* Begriff 3
+Begriff 1, Begriff 2, Begriff 3
+
 
 // end::DE[]
 
@@ -16,9 +15,7 @@
 |===
 
 === Terms and Principles
-* Term 1
-* Term 2
-* Term 3
+Term 1, Term 2, Term 3
 // end::EN[]
 
 // tag::REMARK[]
