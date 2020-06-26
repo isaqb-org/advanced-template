@@ -51,9 +51,10 @@ git clone https://github.com/isaqb-org/advanced-template.git --recursive
 .. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full English title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices and Self-Contained Systems"
 . Open the file `build.gradle` to adjust attributes specific to your curriculum:
 [loweralpha]
-.. `curriculumBaseName`: the exact name of the github repository e.g. `curriculum-flex`
-.. `curriculumFileName`: the name of the github repository e.g. `curriculum-flex`
+.. `curriculumBaseName`: the exact name of the github repository e.g. `curriculum-flex` or however you named your clone
+.. `curriculumFileName`: the name of the github repository e.g. `curriculum-flex` (we separated these because the repo name can be different if you have multiple copies)
 . Edit the file `document.version` and enter the version number this new version of the curriculum shall have e.g. "2020.1".
+. Open README.adoc and replace `advanced-curriculum` with the `curriculumBaseName`
 . Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradlew`.
 . Once the "BUILD SUCCESSFUL" is show, you can review the build result under `./build/index.html`
 
