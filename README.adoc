@@ -31,7 +31,7 @@ Create an issue, a merge- or pull-request
 
 == How to use this template
 
-1. Clone or download AND include the submodule:
+. Either click on "Use this template" in the Github UI or Clone the repository - including the submodule:
 +
 --
 [source,shell]
@@ -43,11 +43,19 @@ Via HTTPS:
 git clone https://github.com/isaqb-org/advanced-template.git --recursive
 ----
 --
-2. Build it with gradle via `./gradle buildDocs`.
-3. Look into the file `build.gradle` to see what attributes you may configure. Watch for:
-** the `language` attribute, either `DE` (German) or `EN` (English);
-** the output formats called `backends` (pdf and/or html5);
-** the document version.
+. Rename the repository to the name of your curriculum e.g. `curriculum-flex`
+. Rename the file `/docs/advanced-template.adoc` to the name of your curriculum e.g. `curriculum-flex.adoc` (this is later on referred to as `curriculumFileName`)
+. Open the file `./config/setup.adoc` to adjust configuration specific to your curriculum:
+.. `:curriculum-short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. FLEX
+.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full German title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices und Self-Contained Systems"
+.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full English title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices and Self-Contained Systems"
+. Open the file `build.gradle` to adjust attributes specific to your curriculum:
+[loweralpha]
+.. `curriculumFileName`: the name of the asciidoc root file of your curriculum e.g. `curriculum-flex` (see above! The `.adoc` suffix is added automatically, omit it here!)
+. Edit the file `document.version` and enter the version number this new version of the curriculum shall have e.g. "2020.1".
+. Open README.adoc and replace the string `advanced-curriculum` with the name of your Github repository e.g. `curriculum-flex`
+. Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradlew`.
+. Once the "BUILD SUCCESSFUL" is show, you can review the build result under `./build/index.html`
 
 == How to write iSAQB Advanced Level Curricula with AsciiDoc
 
