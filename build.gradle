@@ -47,17 +47,18 @@ class RenderCurriculumTask extends AsciidoctorTask {
     def fileVersion = project.version.trim() + "-" + language
 
     attributes = [
-      'icons'            : 'font',
-      'revnumber'        : fileVersion,
-      'revdate'          : currentDate,
-      'document-version' : fileVersion + " (" + currentDate + ")",
-      'currentDate'      : currentDate,
-      'language'         : language,
-      'withRemarks'      : withRemarks,
-      'debug_adoc'       : false,
-      'pdf-stylesdir'    : '../pdf-theme/themes',
-      'pdf-fontsdir'     : '../pdf-theme/fonts',
-      'pdf-style'        : 'isaqb'
+      'icons'             : 'font',
+      'revnumber'         : fileVersion,
+      'revdate'           : currentDate,
+      'document-version'  : fileVersion + " (" + currentDate + ")",
+      'currentDate'       : currentDate,
+      'language'          : language,
+      'withRemarks'       : withRemarks,
+      'curriculumFileName': curriculumFileName,
+      'debug_adoc'        : false,
+      'pdf-stylesdir'     : '../pdf-theme/themes',
+      'pdf-fontsdir'      : '../pdf-theme/fonts',
+      'pdf-style'         : 'isaqb'
     ]
   }
 }
