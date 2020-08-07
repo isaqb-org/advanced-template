@@ -219,7 +219,8 @@ task buildDocs {
 
 In the task "renderNoRemarksDE", certain attributes (aka variables) are defined that configure the corresponding output.
 
-
+== Additional translations/languages
+include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 
 == Maintainers
 
