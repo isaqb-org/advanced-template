@@ -53,7 +53,7 @@ git clone https://github.com/isaqb-org/advanced-template.git --recursive
 [loweralpha]
 .. `curriculumFileName`: the name of the asciidoc root file of your curriculum e.g. `curriculum-flex` (see above! The `.adoc` suffix is added automatically, omit it here!)
 . Edit the file `document.version` and enter the version number this new version of the curriculum shall have e.g. "2020.1".
-. Open README.adoc and replace the string `advanced-curriculum` with the name of your Github repository e.g. `curriculum-flex`
+. Open README.adoc and replace the string `curriculum-template` with the name of your Github repository e.g. `curriculum-flex`
 . Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradlew`.
 . Once the "BUILD SUCCESSFUL" is show, you can review the build result under `./build/index.html`
 
@@ -160,11 +160,11 @@ For that purpose we define a variable named `include_configuration` in the file 
 
 ==== Structure File Example
 
-In theory, you can just use the `docs/advanced-curriculum.adoc` as is and just
+In theory, you can just use the `docs/curriculum-template.adoc` as is and just
 edit the section documents in the subdirectories. If you want to create your own file,
 we recommend to stick with the following:
 
-From `docs/advanced-curriculum.adoc` (excerpts):
+From `docs/curriculum-template.adoc` (excerpts):
 
 [source,asciidoc]
 ----
@@ -219,7 +219,8 @@ task buildDocs {
 
 In the task "renderNoRemarksDE", certain attributes (aka variables) are defined that configure the corresponding output.
 
-
+== Additional translations/languages
+include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 
 == Maintainers
 
