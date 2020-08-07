@@ -21,7 +21,7 @@ ext {
   germanDate = new SimpleDateFormat("d. MMMM yyy", Locale.GERMANY).format(today)
 
   project.version = project.file("./document.version").text
-  curriculumFileName = "advanced-curriculum"
+  curriculumFileName = "curriculum-template"
   addSuffixToCurriculum = { suffix ->
     for (extension in ["html", "pdf"]) {
       File source = new File("${buildDir}/${curriculumFileName}.${extension}")
