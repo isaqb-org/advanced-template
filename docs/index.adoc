@@ -25,6 +25,13 @@ Maintainers and volunteer reviewers collaborate on GitHub to improve the curricu
 | link:{curriculumFileName}-en.html[HTML]
 | link:{curriculumFileName}-en.pdf[PDF]
 
+| Español
+|
+|
+| link:{curriculumFileName}-es.pdf[PDF]
+
+
+
 | German
 | ✔️
 | link:{curriculumFileName}-remarks-de.html[HTML]
