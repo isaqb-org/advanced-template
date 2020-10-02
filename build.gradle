@@ -47,6 +47,7 @@ class RenderCurriculumTask extends AsciidoctorTask {
 
     attributes = [
       'icons'             : 'font',
+      'version-label'     : '',
       'revnumber'         : fileVersion,
       'revdate'           : versionDate,
       'document-version'  : fileVersion + "-" + versionDate,
