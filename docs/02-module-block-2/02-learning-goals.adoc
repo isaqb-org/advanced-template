@@ -3,23 +3,13 @@
 // tag::DE[]
 [[LZ-2-1]]
 ==== LZ 2-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Hier wird beschrieben, was Teilnehmer:innen in diesem Lernziel lernen sollen. Das kann in Prosa-Text
+in ganzen Sätzen oder in Aufzählungen mit Unterpunkten erfolgen. Dabei kann auch unterschieden werden,
+wie wichtig einzelne Aspekte des Lernziels sind. Es kann hier bereits auf Literatur verwiesen werden.
 
-- Was sollen die Teilnehmer können?
-   * Fähigkeit 1
-   * Fähigkeit 2
-   * Fähigkeit 3
-   * etc.
-- Was sollen die Teilnehmer verstehen?
-  * Aussage 1
-  * Behauptung 2
-  * Erfahrung 3
-  * Zusammenhang 4
-  * etc.
-- Was sollen die Teilnehmer kennen?
-  * Zusammenhang Nr. 1
-  * Norm Nr. 2
-  * Buch Nr. 3
-  * etc.
+* Erstes Teilziel
+* Zweites Unterthema
+* Dritter Aspekt
 
 [[LZ-2-2]]
 ==== LZ 2-2: Hier ist ein zweites Lernziel in diesem Kapitel
