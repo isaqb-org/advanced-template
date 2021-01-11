@@ -59,7 +59,7 @@ jobs:
         mkdir release_dir
         cp ./build/curriculum-*.pdf ./release_dir 2>/dev/null || :
         mv release.zip ./release_dir/release-${{ env.RELEASE_VERSION }}.zip
-    - name: Deploy Release Candidate
+    - name: Deploy Release Candidate to GitHub Pages
       if: startsWith(github.ref, 'refs/tags/')
       uses: peaceiris/actions-gh-pages@v3
       with:
