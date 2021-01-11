@@ -86,7 +86,7 @@ jobs:
               owner, repo,
               release_id: ${{ steps.create-release-candidate.outputs.id }},
               name: file,
-              data: await fs.readFile(`./${file}`)
+              data: await fs.readFile(`./release_dir/${file}`)
             });
           }
 #      with:
