@@ -73,10 +73,23 @@ jobs:
     - name: Upload Release Candidate Files
       if: startsWith(github.ref, 'refs/tags/')
       id: upload-release-candidate-assets
-      uses: actions/upload-release-asset@v1
+      uses: actions/github-script@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ steps.create-release-candidate.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-        asset_path: ./release_dir
-        asset_name: Release Candidate ${{ env.RELEASE_VERSION }}
+        script: |
+          const fs = require('fs').promises;
+          const { repo: { owner, repo }, sha } = context;
+
+          for (let file of await fs.readdir('./release_dir')) {
+            await github.repos.uploadReleaseAsset({
+              owner, repo,
+              release_id: ${{ steps.create-release-candidate.outputs.id }},
+              name: file,
+              data: await fs.readFile(`./${file}`)
+            });
+          }
+#      with:
+#        upload_url: ${{ steps.create-release-candidate.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+#        asset_path: ./release_dir
+#        asset_name: Release Candidate ${{ env.RELEASE_VERSION }}
