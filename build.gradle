@@ -1,5 +1,4 @@
 import org.asciidoctor.gradle.AsciidoctorTask
-import javax.inject.Inject
 import java.text.SimpleDateFormat
 
 buildscript {
