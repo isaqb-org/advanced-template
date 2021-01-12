@@ -13,33 +13,18 @@ The Advanced Level Template Curriculum is currently maintained and published in 
 Maintainers and volunteer reviewers collaborate on GitHub to improve the curriculum.
 
 |===
-| Version | Comments | HTML | PDF
+| Version | HTML | PDF
 
 | German
-|
 | link:{curriculumFileName}-de.html[HTML]
 | link:{curriculumFileName}-de.pdf[PDF]
 
 | English
-|
 | link:{curriculumFileName}-en.html[HTML]
 | link:{curriculumFileName}-en.pdf[PDF]
 
 | Español
 |
-|
 | link:{curriculumFileName}-es.pdf[PDF]
-
-
-
-| German
-| ✔️
-| link:{curriculumFileName}-remarks-de.html[HTML]
-| link:{curriculumFileName}-remarks-de.pdf[PDF]
-
-| English
-| ✔️
-| link:{curriculumFileName}-remarks-en.html[HTML]
-| link:{curriculumFileName}-remarks-en.pdf[PDF]
 
 |===
