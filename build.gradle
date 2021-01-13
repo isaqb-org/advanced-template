@@ -19,6 +19,10 @@ ext {
     versionDate = new SimpleDateFormat("yyyyMMdd").format(today)
 
     project.version = project.file("./document.version").text
+    validity = new Date(project.file("./document.validity").text.trim())
+    validityEnglish = "valid from " + new SimpleDateFormat("MMMM d, yyyy", Locale.US).format(validity)
+    validityGerman = "Gültig ab " + new SimpleDateFormat("d. MMMM yyy", Locale.GERMANY).format(validity)
+
     curriculumFileName = "curriculum-template"
     addSuffixToCurriculum = { suffix ->
         for (extension in ["html", "pdf"]) {
