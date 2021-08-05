@@ -1,46 +1,56 @@
-import org.asciidoctor.gradle.AsciidoctorTask
+import org.asciidoctor.gradle.jvm.AsciidoctorTask
+
 import java.text.SimpleDateFormat
 
 buildscript {
-  repositories {
-    mavenCentral()
-  }
-
-  dependencies {
-    classpath "org.asciidoctor:asciidoctorj-pdf:1.5.3"
-  }
+    allprojects {
+        repositories {
+            mavenCentral()
+            maven {
+                url "https://plugins.gradle.org/m2/"
+            }
+        }
+    }
+    dependencies {
+        classpath "org.asciidoctor:asciidoctorj-pdf:1.6.0"
+    }
 }
+
 plugins {
-  id "org.asciidoctor.convert" version "1.6.0"
+    id "org.asciidoctor.jvm.convert" version "3.3.0"
 }
 
 ext {
-  today = new Date()
-  versionDate = new SimpleDateFormat("yyyyMMdd").format(today)
+    today = new Date()
+    versionDate = new SimpleDateFormat("yyyyMMdd").format(today)
 
-  project.version = project.file("./document.version").text
-  curriculumFileName = "curriculum-template"
-  addSuffixToCurriculum = { suffix ->
-    for (extension in ["html", "pdf"]) {
-      File source = new File("${buildDir}/${curriculumFileName}.${extension}")
-      File target = new File("${buildDir}/${curriculumFileName}${suffix}.${extension}")
+    project.version = project.file("./document.version").text
+    curriculumFileName = "curriculum-template"
+    addSuffixToCurriculum = { suffix ->
+        for (extension in ["html", "pdf"]) {
+            File source = new File("${buildDir}/${curriculumFileName}.${extension}")
+            File target = new File("${buildDir}/${curriculumFileName}${suffix}.${extension}")
 
-      source.renameTo(target)
+            source.renameTo(target)
+        }
     }
-  }
 }
 
 class RenderCurriculumTask extends AsciidoctorTask {
-  @Inject
-  RenderCurriculumTask(String curriculumFileName, String versionDate, String language, boolean withRemarks) {
-    sourceDir = new File("./docs/")
-    sources {
-      include "index.adoc"
-      include "${curriculumFileName}.adoc"
-    }
-    outputDir = new File("./build/")
-    separateOutputDirs = false
-    backends 'pdf', 'html5'
+    @Inject
+    RenderCurriculumTask(WorkerExecutor worker, String curriculumFileName, String versionDate, String language, boolean withRemarks) {
+        super(worker)
+        sourceDir = new File("./docs/")
+        sources {
+            include "index.adoc"
+            include "${curriculumFileName}.adoc"
+        }
+        outputDir = new File("./build/")
+        outputOptions {
+            separateOutputDirs = false
+            backends 'pdf', 'html5'
+        }
+        def fileVersion = project.version.trim() + "-" + language
 
     def fileVersion = project.version.trim() + "-" + language
 
@@ -65,37 +75,37 @@ class RenderCurriculumTask extends AsciidoctorTask {
 }
 
 task buildDocs {
-  group 'Documentation'
-  description 'Grouping task for generating all languages in several formats'
-  dependsOn "includeLearningObjectives", "renderNoRemarksDE", "renderNoRemarksEN"
+    group 'Documentation'
+    description 'Grouping task for generating all languages in several formats'
+    dependsOn "includeLearningObjectives", "renderNoRemarksDE", "renderNoRemarksEN"
 }
 
 task renderNoRemarksDE(type: RenderCurriculumTask,
-    constructorArgs: [curriculumFileName, versionDate, "DE", false]) {
-  doLast {
-    addSuffixToCurriculum("-de")
-  }
+        constructorArgs: [curriculumFileName, versionDate, "DE", false]) {
+    doLast {
+        addSuffixToCurriculum("-de")
+    }
 }
 
 task renderWithRemarksDE(type: RenderCurriculumTask,
-     constructorArgs: [curriculumFileName, versionDate, "DE", true]) {
-  doLast {
-    addSuffixToCurriculum("-remarks-de")
-  }
+        constructorArgs: [curriculumFileName, versionDate, "DE", true]) {
+    doLast {
+        addSuffixToCurriculum("-remarks-de")
+    }
 }
 
 task renderNoRemarksEN(type: RenderCurriculumTask,
-    constructorArgs: [curriculumFileName, versionDate, "EN", false]) {
-  doLast {
-    addSuffixToCurriculum("-en")
-  }
+        constructorArgs: [curriculumFileName, versionDate, "EN", false]) {
+    doLast {
+        addSuffixToCurriculum("-en")
+    }
 }
 
 task renderWithRemarksEN(type: RenderCurriculumTask,
-     constructorArgs: [curriculumFileName, versionDate, "EN", true]) {
-  doLast {
-    addSuffixToCurriculum("-remarks-en")
-  }
+        constructorArgs: [curriculumFileName, versionDate, "EN", true]) {
+    doLast {
+        addSuffixToCurriculum("-remarks-en")
+    }
 }
 
 apply from: 'scripts/includeLearningObjectives.gradle'
