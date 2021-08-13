@@ -12,12 +12,14 @@ buildscript {
         }
     }
     dependencies {
+        classpath 'org.jruby:jruby-complete:9.2.19.0'
+        classpath 'org.asciidoctor:asciidoctorj:2.5.1'
         classpath "org.asciidoctor:asciidoctorj-pdf:1.6.0"
     }
 }
 
 plugins {
-    id "org.asciidoctor.jvm.convert" version "3.3.0"
+    id "org.asciidoctor.jvm.convert" version "3.3.2"
 }
 
 ext {
@@ -36,10 +38,20 @@ ext {
     }
 }
 
+
+
+
 class RenderCurriculumTask extends AsciidoctorTask {
     @Inject
     RenderCurriculumTask(WorkerExecutor worker, String curriculumFileName, String versionDate, String language, boolean withRemarks) {
         super(worker)
+
+//        inProcess = org.asciidoctor.gradle.base.process.ProcessMode.JAVA_EXEC
+
+        forkOptions {
+            jvmArgs "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED"
+        }
+
         sourceDir = new File("./docs/")
         sources {
             include "index.adoc"
