@@ -57,7 +57,8 @@ class RenderCurriculumTask extends AsciidoctorTask {
       'debug_adoc'        : false,
       'pdf-stylesdir'     : '../pdf-theme/themes',
       'pdf-fontsdir'      : '../pdf-theme/fonts',
-      'pdf-style'         : 'isaqb'
+      'pdf-style'         : 'isaqb',
+      'stylesheet'        : '../html-theme/adoc-github.css'
     ]
   }
 }
