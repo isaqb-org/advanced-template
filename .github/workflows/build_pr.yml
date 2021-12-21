@@ -32,4 +32,5 @@ jobs:
         uses: eskatos/gradle-command-action@v2
         with:
           # Gradle command line arguments, see gradle --help
+          gradle-version: 7.2
           arguments: buildDocs
