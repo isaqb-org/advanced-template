@@ -1,12 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI - Releases and Master
+name: CI - Releases and Main
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
-# events but only for the master branch
+# events but only for the main branch
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     tags:
       - "[2-9][0-9][0-9][0-9].[0-9]+-rev[0-9]+"
 
