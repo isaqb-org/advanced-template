@@ -1,22 +1,16 @@
 import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import java.text.SimpleDateFormat
 
-
-//
-//dependencies {
-//    classpath "org.asciidoctor:asciidoctorj-pdf:2.0.4"
-//}
-
 plugins {
-    id "org.asciidoctor.jvm.convert" version "2.4.0"
-    id "org.asciidoctor.jvm.pdf" version "2.4.0"
+    id "org.asciidoctor.jvm.convert" version "3.3.2"
+    id "org.asciidoctor.jvm.pdf" version "3.3.2"
 }
 repositories {
     mavenCentral()
 }
 
 asciidoctorj {
-    version = '1.6.2'
+    version = '2.5.3'
 }
 
 ext {
@@ -42,6 +36,12 @@ class RenderCurriculumTask extends AsciidoctorTask {
     @Inject
     RenderCurriculumTask(WorkerExecutor we, String curriculumFileName, String versionDate, String language, boolean withRemarks) {
         super(we)
+
+        forkOptions {
+            jvmArgs "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED"
+        }
+
+
         sourceDir = new File("./docs/")
         baseDir = new File ("./docs/")
         sources {
