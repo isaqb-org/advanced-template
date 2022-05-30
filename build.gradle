@@ -2,6 +2,7 @@ import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import java.text.SimpleDateFormat
 
 plugins {
+    id "org.asciidoctor.jvm.base" version "3.3.2"
     id "org.asciidoctor.jvm.convert" version "3.3.2"
     id "org.asciidoctor.jvm.pdf" version "3.3.2"
 }
