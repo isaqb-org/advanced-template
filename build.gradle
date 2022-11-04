@@ -80,34 +80,20 @@ class RenderCurriculumTask extends AsciidoctorTask {
 task buildDocs {
     group 'Documentation'
     description 'Grouping task for generating all languages in several formats'
-    dependsOn "includeLearningObjectives", "renderNoRemarksDE", "renderNoRemarksEN"
+    dependsOn "includeLearningObjectives", "renderDE", "renderEN"
 }
 
-task renderNoRemarksDE(type: RenderCurriculumTask,
+task renderDE(type: RenderCurriculumTask,
         constructorArgs: [curriculumFileName, versionDate, "DE", false]) {
     doLast {
         addSuffixToCurriculum("-de")
     }
 }
 
-task renderWithRemarksDE(type: RenderCurriculumTask,
-        constructorArgs: [curriculumFileName, versionDate, "DE", true]) {
-    doLast {
-        addSuffixToCurriculum("-remarks-de")
-    }
-}
-
-task renderNoRemarksEN(type: RenderCurriculumTask,
+task renderEN(type: RenderCurriculumTask,
         constructorArgs: [curriculumFileName, versionDate, "EN", false]) {
     doLast {
         addSuffixToCurriculum("-en")
-    }
-}
-
-task renderWithRemarksEN(type: RenderCurriculumTask,
-        constructorArgs: [curriculumFileName, versionDate, "EN", true]) {
-    doLast {
-        addSuffixToCurriculum("-remarks-en")
     }
 }
 
