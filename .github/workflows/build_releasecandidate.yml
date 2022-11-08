@@ -61,7 +61,7 @@ jobs:
           name: Release Candidate ${{ env.RELEASE_VERSION }}
           draft: false
           prerelease: true
-          bodyFile: "CHANGELOG.adoc"
+          bodyFile: "CHANGELOG.md"
           artifacts: "LICENSE.adoc,release_dir/*.pdf,release_dir/*.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy Release Candidate to GitHub Pages

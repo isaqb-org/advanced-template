@@ -1,4 +1,4 @@
-= New in 2020.6
+# New in 2020.6
 
 - CHANGELOG can be created from file
 - New section for Glossary
