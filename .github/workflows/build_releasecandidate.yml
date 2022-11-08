@@ -53,6 +53,8 @@ jobs:
           draft: false
           prerelease: true
           body_path: CHANGELOG.txt
+          append_body: true
+          files: LICENSE.adoc
       - name: Prepare Deployment
         if: startsWith(github.ref, 'refs/tags/')
         run: |
