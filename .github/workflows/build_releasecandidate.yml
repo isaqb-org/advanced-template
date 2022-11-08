@@ -75,22 +75,3 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: Publish Release Candidate ${{ env.RELEASE_VERSION }}
-      - name: Upload Release Candidate Files
-        if: startsWith(github.ref, 'refs/tags/')
-        id: upload-release-candidate-assets
-        uses: actions/github-script@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          script: |
-            const fs = require('fs').promises;
-            const { repo: { owner, repo }, sha } = context;
-
-            for (let file of await fs.readdir('./release_dir')) {
-              await github.repos.uploadReleaseAsset({
-                owner, repo,
-                release_id: ${{ steps.create-release-candidate.outputs.id }},
-                name: file,
-                data: await fs.readFile(`./release_dir/${file}`)
-              });
-            }
