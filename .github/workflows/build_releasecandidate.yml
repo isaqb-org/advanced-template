@@ -44,14 +44,15 @@ jobs:
       - name: Create New Release Candidate
         if: startsWith(github.ref, 'refs/tags/')
         id: create-release-candidate
-        uses: actions/create-release@latest
+        uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ env.RELEASE_VERSION }}
-          release_name: Release Candidate ${{ env.RELEASE_VERSION }}
+          name: Release Candidate ${{ env.RELEASE_VERSION }}
           draft: false
           prerelease: true
+          body_path: CHANGELOG.txt
       - name: Prepare Deployment
         if: startsWith(github.ref, 'refs/tags/')
         run: |
