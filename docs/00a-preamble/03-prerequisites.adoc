@@ -25,6 +25,3 @@
 [.text-center]
 image:00-preamble/cpsa-a-logo.png[pdfwidth=50%,align=center,alt="Certified Professional for Software Architecture^(R)^ Advanced Level (CPSA-A)"]
 
-
-// tag::REMARK[]
-// end::REMARK[]

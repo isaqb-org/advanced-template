@@ -35,7 +35,7 @@ ext {
 
 class RenderCurriculumTask extends AsciidoctorTask {
     @Inject
-    RenderCurriculumTask(WorkerExecutor we, String curriculumFileName, String versionDate, String language, boolean withRemarks) {
+    RenderCurriculumTask(WorkerExecutor we, String curriculumFileName, String versionDate, String language) {
         super(we)
 
         forkOptions {
@@ -65,7 +65,6 @@ class RenderCurriculumTask extends AsciidoctorTask {
                 'document-version'  : fileVersion + "-" + versionDate,
                 'currentDate'       : versionDate,
                 'language'          : language,
-                'withRemarks'       : withRemarks,
                 'curriculumFileName': curriculumFileName,
                 'debug_adoc'        : false,
                 'pdf-stylesdir'     : '../pdf-theme/themes',
@@ -84,14 +83,14 @@ task buildDocs {
 }
 
 task renderDE(type: RenderCurriculumTask,
-        constructorArgs: [curriculumFileName, versionDate, "DE", false]) {
+        constructorArgs: [curriculumFileName, versionDate, "DE"]) {
     doLast {
         addSuffixToCurriculum("-de")
     }
 }
 
 task renderEN(type: RenderCurriculumTask,
-        constructorArgs: [curriculumFileName, versionDate, "EN", false]) {
+        constructorArgs: [curriculumFileName, versionDate, "EN"]) {
     doLast {
         addSuffixToCurriculum("-en")
     }

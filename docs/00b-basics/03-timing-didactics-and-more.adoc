@@ -1,9 +1,10 @@
-// tag::REMARK[]
+
 [NOTE]
 ====
 Bitte in dieser Datei nur die "**?**"-Platzhalter durch die Anzahl der Tage sowie die erreichbaren Punkte ersetzen. Ansonsten keine Änderungen vornehmen!
 ====
-// end::REMARK[]
+
+
 :recommended-duration-in-days: **?**
 :methodical-credits: **?**
 :technical-credits: **?**

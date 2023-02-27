@@ -2,13 +2,11 @@
 
 <<bass>>, <<clements>>
 
-// tag::REMARK[]
 [NOTE]
 ====
-Eine Quelle wird über `<<label>>` referenziert. Dieses muss in `99-references/00-references.adoc` definiert sein.
+Eine Quelle wird über `\<<label>>` referenziert. Dieses muss in `99-references/00-references.adoc` definiert sein.
 
 = = =
 
-A reference source is referenced via `<<label>>`. The label has to be defined in `99-references/00-references.adoc`.
+A reference source is referenced via `\<<label>>`. The label has to be defined in `99-references/00-references.adoc`.
 ====
-// end::REMARK[]
