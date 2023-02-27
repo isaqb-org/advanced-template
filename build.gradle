@@ -18,7 +18,10 @@ ext {
     today = new Date()
     versionDate = new SimpleDateFormat("yyyyMMdd").format(today)
 
-    project.version = project.file("./document.version").text
+    releaseVersion = System.getenv("RELEASE_VERSION")
+    localVersion = "LocalBuild"
+    project.version = releaseVersion == null ? localVersion : releaseVersion;
+
     curriculumFileName = "curriculum-template"
     addSuffixToCurriculum = { suffix ->
         for (extension in ["html", "pdf"]) {
