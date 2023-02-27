@@ -26,9 +26,7 @@ Type and structure of the examples presented may depend on the training and part
 The are not prescribed by iSAQB.
 // end::EN[]
 
-// tag::REMARK[]
 [NOTE]
 ====
 Sinnvolle Zeiten für Dauer und Übungszeit eintragen.
 ====
-// end::REMARK[]

@@ -34,9 +34,7 @@ Knowledge in the following areas may be **helpful** for understanding some conce
   * Understanding 5
 // end::EN[]
 
-// tag::REMARK[]
 [NOTE]
 ====
 Kenntnisgruppen sowie Voraussetzungen bitte entsprechend ausformulieren!
 ====
-// end::REMARK[]
