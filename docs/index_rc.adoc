@@ -1,11 +1,11 @@
 include::config/setup.adoc[]
 
 = image:isaqb-logo.jpg[width=150]Certified Professional for Software Architecture^(R)^ (CPSA)
-- Advanced Level Curriculum TEMPLATE – Release Candidate -
+- Curriculum {curriculum-name} [{curriculum-short}] – Release Candidate -
 
 The international Software Architecture Qualification Board (link:https://isaqb.org[iSAQB]) defines curricula on several levels for software architects.
 
-The **Release Candidates** of the **Advanced Level TEMPLATE** curriculum are currently maintained and published in both English (EN) and German (DE). Maintainers of this curriculum and voluntary reviewers collaborate on https://github.com/isaqb-org[GitHub] to improve the curriculum.
+The **Release Candidates** of the **{curriculum-name} [{curriculum-short}]** advanced level curriculum are currently maintained and published in both English (EN) and German (DE). Maintainers of this curriculum and voluntary reviewers collaborate on https://github.com/isaqb-org[GitHub] to improve the curriculum.
 
 == Current Release Candidate v2023.1
 
