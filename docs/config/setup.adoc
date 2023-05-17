@@ -2,7 +2,7 @@
 :icons: font
 :sectnumlevels: 2
 :imagesdir: images
-:chapter-label: 
+:chapter-label:
 
 // ":language:" denotes the language or the target document.
 // currently only DE and EN are supported
@@ -15,12 +15,12 @@
 :curriculum-short: MODULKUERZEL
 
 ifeval::["{language}" == "DE"]
-:curriculum-name: MODULNAME IN VOLLER LAENGE
+:curriculum-name: TEST me with low text MODULNAME IN VOLLER LAENGE
 :curriculum-header-title: iSAQB-Curriculum für Advanced Level: {curriculum-short}
 endif::[]
 
 ifeval::["{language}" == "EN"]
-:curriculum-name: FULL NAME OF MODULE
+:curriculum-name: TEST me with low text FULL NAME OF MODULE
 :curriculum-header-title: iSAQB curriculum for Advanced Level: {curriculum-short}
 endif::[]
 
