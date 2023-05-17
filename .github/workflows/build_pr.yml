@@ -40,3 +40,4 @@ jobs:
           path: |
             build/*.pdf
             build/*.html
+          retention-days: 10
