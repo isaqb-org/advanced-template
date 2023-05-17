@@ -6,7 +6,6 @@ name: CI – Pull Requests
 # events but only for the main branch
 on:
   pull_request:
-
     branches: [ main ]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,10 +33,10 @@ jobs:
         with:
           gradle-version: wrapper
           arguments: buildDocs
-      - name: Upload build artifacts
+      - name: Upload Build Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: build result
+          name: curriculum files (PDF and HTML)
           path: |
             build/*.pdf
             build/*.html
