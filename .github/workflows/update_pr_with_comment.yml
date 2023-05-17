@@ -2,13 +2,12 @@ name: Comment on Pull Request
 
 on:
   workflow_run:
-    types:
-      - completed
+    types: [completed]
     workflows: [CI – Pull Requests]
 
 jobs:
   comment:
-    if: github.event.workflow_run.conclusion == 'success'
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Get Artifact and Pull request info
