@@ -34,3 +34,10 @@ jobs:
         with:
           gradle-version: wrapper
           arguments: buildDocs
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build result
+          path: |
+            build/*.pdf
+            build/*.html
