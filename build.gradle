@@ -1,104 +1,40 @@
-import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import java.text.SimpleDateFormat
+import java.util.*
 
 plugins {
-    id "org.asciidoctor.jvm.base" version "3.3.2"
-    id "org.asciidoctor.jvm.convert" version "3.3.2"
-    id "org.asciidoctor.jvm.pdf" version "3.3.2"
+    id "java"
+    id "application"
 }
+
+def group = "org.isaqb"
+def version = "1.0-SNAPSHOT"
+
 repositories {
     mavenCentral()
 }
 
-asciidoctorj {
-    version = '2.5.3'
+dependencies {
+    implementation("org.asciidoctor:asciidoctorj:2.5.8")
+    implementation("org.asciidoctor:asciidoctorj-pdf:2.3.7")
 }
 
-ext {
-    today = new Date()
-    versionDate = new SimpleDateFormat("yyyyMMdd").format(today)
+def curriculumFileName = "curriculum-template"
+def versionDate = new SimpleDateFormat("yyyyMMdd").format(new Date())
+def languages = ["DE", "EN"]
 
-    releaseVersion = System.getenv("RELEASE_VERSION")
-    localVersion = "LocalBuild"
-    project.version = releaseVersion == null ? localVersion : releaseVersion;
-
-    curriculumFileName = "curriculum-template"
-    addSuffixToCurriculum = { suffix ->
-        for (extension in ["html", "pdf"]) {
-            File source = new File("${buildDir}/${curriculumFileName}.${extension}")
-            File target = new File("${buildDir}/${curriculumFileName}${suffix}.${extension}")
-
-            source.renameTo(target)
-        }
-    }
-}
-
-
-
-
-class RenderCurriculumTask extends AsciidoctorTask {
-    @Inject
-    RenderCurriculumTask(WorkerExecutor we, String curriculumFileName, String versionDate, String language) {
-        super(we)
-
-        forkOptions {
-            jvmArgs "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED"
-        }
-
-
-        sourceDir = new File("./docs/")
-        baseDir = new File ("./docs/")
-        sources {
-            include "index.adoc"
-            include "${curriculumFileName}.adoc"
-        }
-        outputDir = new File("./build/")
-        outputOptions {
-            separateOutputDirs = false
-            backends 'pdf', 'html5'
-        }
-
-        def fileVersion = project.version.trim() + "-" + language
-
-        attributes = [
-                'icons'             : 'font',
-                'version-label'     : '',
-                'revnumber'         : fileVersion,
-                'revdate'           : versionDate,
-                'document-version'  : fileVersion + "-" + versionDate,
-                'currentDate'       : versionDate,
-                'language'          : language,
-                'curriculumFileName': curriculumFileName,
-                'debug_adoc'        : false,
-                'pdf-stylesdir'     : '../pdf-theme/themes',
-                'pdf-fontsdir'      : '../pdf-theme/fonts',
-                'pdf-style'         : 'isaqb',
-                'stylesheet'        : '../html-theme/adoc-github.css',
-                'stylesheet-dir'    : '../html-theme'
-        ]
-    }
-}
-
-task buildDocs {
-    group 'Documentation'
-    description 'Grouping task for generating all languages in several formats'
-    dependsOn "includeLearningObjectives", "renderDE", "renderEN"
-}
-
-task renderDE(type: RenderCurriculumTask,
-        constructorArgs: [curriculumFileName, versionDate, "DE"]) {
-    doLast {
-        addSuffixToCurriculum("-de")
-    }
-}
-
-task renderEN(type: RenderCurriculumTask,
-        constructorArgs: [curriculumFileName, versionDate, "EN"]) {
-    doLast {
-        addSuffixToCurriculum("-en")
-    }
+application {
+    mainClass.set("org.isaqb.asciidoc.Main")
+    applicationDefaultJvmArgs = [
+        """-DcurriculumFileName=${curriculumFileName}""",
+        """-DversionDate=${versionDate}""",
+        """-Dlanguages=${languages.join(',')}"""]
 }
 
 apply from: 'scripts/includeLearningObjectives.gradle'
+
+task buildDocs {
+    description 'Grouping task for generating all languages in several formats'
+    dependsOn "includeLearningObjectives", "run"
+}
 
 defaultTasks "buildDocs"
