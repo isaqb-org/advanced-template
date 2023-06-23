@@ -32,8 +32,10 @@ application {
 
 apply from: 'scripts/includeLearningObjectives.gradle'
 
-task buildDocs {
-    description 'Grouping task for generating all languages in several formats'
+task buildDocs (
+    description: 'Grouping task for generating all languages in several formats',
+    group: 'documentation'
+) {
     dependsOn "includeLearningObjectives", "run"
 }
 
