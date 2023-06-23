@@ -108,9 +108,9 @@ public class Main {
             put("language"          , language);
             put("curriculumFileName", curriculumFileName);
             put("debug_adoc"        , false);
-            put("pdf-stylesdir"     , "../pdf-theme/themes");
+            put("pdf-themesdir"     , "../pdf-theme/themes");
             put("pdf-fontsdir"      , "../pdf-theme/fonts");
-            put("pdf-style"         , "isaqb");
+            put("pdf-theme"         , "isaqb");
             put("stylesheet"        , "../html-theme/adoc-github.css");
             put("stylesheet-dir"    , "../html-theme");
             put("allow-uri-read"    , true);
