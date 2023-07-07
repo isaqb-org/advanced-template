@@ -122,6 +122,7 @@ public class Main {
             put("pdf-theme"         , "isaqb");
             put("stylesheet"        , "../html-theme/adoc-github.css");
             put("stylesheet-dir"    , "../html-theme");
+            put("data-uri"          , true);
             put("allow-uri-read"    , true);
         }};
 
