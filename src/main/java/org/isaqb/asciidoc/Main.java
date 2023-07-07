@@ -13,6 +13,7 @@ import static org.asciidoctor.Asciidoctor.Factory.create;
 
 public class Main {
 
+    private static final String PROJECT_VERSION = "projectVersion";
     private static final String CURRICULUM_FILE_NAME = "curriculumFileName";
     private static final String VERSION_DATE = "versionDate";
     private static final String LANGUAGES = "languages";
@@ -20,7 +21,6 @@ public class Main {
 
     private static final String LANGUAGE_SEPERATOR = ",";
 
-    private static final String PROJECT_VERSION = "?";
     private static final String SOURCE_DIR = "./docs/";
     private static final String BASE_DIR = SOURCE_DIR;
     private static final String OUTPUT_DIR = "./build/";
@@ -30,10 +30,12 @@ public class Main {
     private static final String PDF = "pdf";
 
     public static void main(final String[] args) {
+        Objects.requireNonNull(System.getProperty(PROJECT_VERSION));
         Objects.requireNonNull(System.getProperty(CURRICULUM_FILE_NAME));
         Objects.requireNonNull(System.getProperty(VERSION_DATE));
         Objects.requireNonNull(System.getProperty(LANGUAGES));
 
+        final String projectVersion = System.getProperty(PROJECT_VERSION);
         final String curriculumFileName = System.getProperty(CURRICULUM_FILE_NAME);
         final String versionDate = System.getProperty(VERSION_DATE);
         final String[] languages = System.getProperty(LANGUAGES).split(LANGUAGE_SEPERATOR);
@@ -41,21 +43,25 @@ public class Main {
         System.out.printf("Source Directory: %s\n", new File(SOURCE_DIR).getAbsolutePath());
         System.out.printf("Base Directory: %s\n", new File(BASE_DIR).getAbsolutePath());
         System.out.printf("Output Directory: %s\n", new File(OUTPUT_DIR).getAbsolutePath());
+        System.out.printf("Property PROJECT_VERSION: %s\n", projectVersion);
         System.out.printf("Property CURRICULUM_FILE_NAME: %s\n", curriculumFileName);
         System.out.printf("Property VERSION_DATE: %s\n", versionDate);
         System.out.printf("Property LANGUAGES: %s\n", String.join(LANGUAGE_SEPERATOR, languages));
 
         Stream.of(languages).forEach(language -> convert(
+                projectVersion,
                 curriculumFileName,
                 versionDate,
                 language));
     }
 
     private static void convert(
+            final String projectVersion,
             final String curriculumFileName,
             final String versionDate,
             final String language) {
         Stream.of(FORMATS).forEach(format -> convert(
+                projectVersion,
                 curriculumFileName,
                 versionDate,
                 language,
@@ -63,6 +69,7 @@ public class Main {
     }
 
     private static void convert(
+            final String projectVersion,
             final String curriculumFileName,
             final String versionDate,
             final String language,
@@ -70,6 +77,7 @@ public class Main {
         try (final Asciidoctor asciidoctor = create()) {
             final List<String> fileNames = Arrays.asList(curriculumFileName, "index");
             final Attributes attributes = toAttributes(
+                    projectVersion,
                     curriculumFileName,
                     versionDate,
                     language);
@@ -92,10 +100,11 @@ public class Main {
     }
 
     private static Attributes toAttributes(
+            final String projectVersion,
             final String curriculumFileName,
             final String versionDate,
             final String language) {
-        final String fileVersion = "%s - %s".formatted(PROJECT_VERSION, language);
+        final String fileVersion = "%s - %s".formatted(projectVersion, language);
         final String documentVersion = "%s-%s".formatted(fileVersion, versionDate);
 
         final Map<String, Object> attributes = new HashMap<>() {{

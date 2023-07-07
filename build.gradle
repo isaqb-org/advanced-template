@@ -7,7 +7,9 @@ plugins {
 }
 
 def group = "org.isaqb"
-def version = "1.0-SNAPSHOT"
+def releaseVersion = System.getenv("RELEASE_VERSION")
+def localVersion = "LocalBuild"
+project.version = releaseVersion == null ? localVersion : releaseVersion
 
 repositories {
     mavenCentral()
@@ -25,6 +27,7 @@ def languages = ["DE", "EN"]
 application {
     mainClass.set("org.isaqb.asciidoc.Main")
     applicationDefaultJvmArgs = [
+        """-DprojectVersion=${project.version}""",
         """-DcurriculumFileName=${curriculumFileName}""",
         """-DversionDate=${versionDate}""",
         """-Dlanguages=${languages.join(',')}"""]
