@@ -6,7 +6,10 @@ import org.asciidoctor.Options;
 import org.asciidoctor.SafeMode;
 
 import java.io.File;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Stream;
 
 import static org.asciidoctor.Asciidoctor.Factory.create;
@@ -15,6 +18,7 @@ public class Main {
 
     private static final String PROJECT_VERSION = "projectVersion";
     private static final String CURRICULUM_FILE_NAME = "curriculumFileName";
+    private static final String INDEX_FILE_NAME = "index";
     private static final String VERSION_DATE = "versionDate";
     private static final String LANGUAGES = "languages";
     private static final String[] FORMATS = {"html", "pdf"};
@@ -27,7 +31,9 @@ public class Main {
 
     private static final String ADOC = "adoc";
     private static final String HTML = "html";
+    private static final String HTML5 = "html5";
     private static final String PDF = "pdf";
+    private static final String ENGLISH = "EN";
 
     public static void main(final String[] args) {
         Objects.requireNonNull(System.getProperty(PROJECT_VERSION));
@@ -40,52 +46,49 @@ public class Main {
         final String versionDate = System.getProperty(VERSION_DATE);
         final String[] languages = System.getProperty(LANGUAGES).split(LANGUAGE_SEPERATOR);
 
-        System.out.printf("Source Directory: %s\n", new File(SOURCE_DIR).getAbsolutePath());
-        System.out.printf("Base Directory: %s\n", new File(BASE_DIR).getAbsolutePath());
-        System.out.printf("Output Directory: %s\n", new File(OUTPUT_DIR).getAbsolutePath());
-        System.out.printf("Property PROJECT_VERSION: %s\n", projectVersion);
-        System.out.printf("Property CURRICULUM_FILE_NAME: %s\n", curriculumFileName);
-        System.out.printf("Property VERSION_DATE: %s\n", versionDate);
-        System.out.printf("Property LANGUAGES: %s\n", String.join(LANGUAGE_SEPERATOR, languages));
-
-        Stream.of(languages).forEach(language -> convert(
+        Stream.of(languages).forEach(language -> convertInLanguage(
+                language,
                 projectVersion,
                 curriculumFileName,
-                versionDate,
-                language));
+                versionDate
+        ));
+        convertInLanguage(
+                ENGLISH,
+                projectVersion,
+                INDEX_FILE_NAME,
+                versionDate);
     }
 
-    private static void convert(
+    private static void convertInLanguage(
+            final String language,
+            final String projectVersion,
+            final String curriculumFileName,
+            final String versionDate) {
+        Stream.of(FORMATS).forEach(format -> convertInFormat(
+                format, projectVersion,
+                curriculumFileName,
+                versionDate,
+                language
+        ));
+    }
+
+    private static void convertInFormat(
+            final String format,
             final String projectVersion,
             final String curriculumFileName,
             final String versionDate,
             final String language) {
-        Stream.of(FORMATS).forEach(format -> convert(
-                projectVersion,
-                curriculumFileName,
-                versionDate,
-                language,
-                format));
-    }
-
-    private static void convert(
-            final String projectVersion,
-            final String curriculumFileName,
-            final String versionDate,
-            final String language,
-            final String format) {
         try (final Asciidoctor asciidoctor = create()) {
-            final List<String> fileNames = Arrays.asList(curriculumFileName, "index");
             final Attributes attributes = toAttributes(
                     projectVersion,
                     curriculumFileName,
                     versionDate,
                     language);
             asciidoctor.convertDirectory(
-                    fileNames.stream()
-                            .map(it -> "%s%s.%s".formatted(SOURCE_DIR, it, ADOC))
-                            .map(File::new)
-                            .toList(),
+                    List.of(new File("%s%s.%s".formatted(
+                            SOURCE_DIR,
+                            curriculumFileName,
+                            ADOC))),
                     Options.builder()
                             .baseDir(new File(BASE_DIR))
                             .backend(toBackend(format))
@@ -131,7 +134,7 @@ public class Main {
 
     private static String toBackend(final String format) {
         return switch (format) {
-            case HTML -> "html5";
+            case HTML -> HTML5;
             case PDF -> PDF;
             default -> throw new IllegalArgumentException("Unknown target format %s".formatted(format));
         };
@@ -146,7 +149,7 @@ public class Main {
         if (!original.exists()) {
             System.err.printf("Failed to rename result file %s as it does not exist", original.getAbsolutePath());
         } else if (!original.renameTo(renamed)) {
-            System.err.printf("Failed to rename result file %s to %s", original.getName(), renamed.getName());
+            System.err.printf("Failed to rename result file %s to %s%n", original.getName(), renamed.getName());
         }
         original.deleteOnExit();
     }

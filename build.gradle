@@ -1,5 +1,4 @@
 import java.text.SimpleDateFormat
-import java.util.*
 
 plugins {
     id "java"
@@ -10,6 +9,9 @@ def group = "org.isaqb"
 def releaseVersion = System.getenv("RELEASE_VERSION")
 def localVersion = "LocalBuild"
 project.version = releaseVersion == null ? localVersion : releaseVersion
+def curriculumFileName = "curriculum-template"
+def versionDate = new SimpleDateFormat("yyyyMMdd").format(new Date())
+def languages = ["DE", "EN"]
 
 repositories {
     mavenCentral()
@@ -17,12 +19,8 @@ repositories {
 
 dependencies {
     implementation("org.asciidoctor:asciidoctorj:2.5.10")
-    implementation("org.asciidoctor:asciidoctorj-pdf:2.3.7")
+    implementation("org.asciidoctor:asciidoctorj-pdf:2.3.9")
 }
-
-def curriculumFileName = "curriculum-template"
-def versionDate = new SimpleDateFormat("yyyyMMdd").format(new Date())
-def languages = ["DE", "EN"]
 
 application {
     mainClass.set("org.isaqb.asciidoc.Main")
@@ -37,10 +35,9 @@ application {
 
 apply from: 'scripts/includeLearningObjectives.gradle'
 
-task buildDocs (
-    description: 'Grouping task for generating all languages in several formats',
-    group: 'documentation'
-) {
+tasks.register('buildDocs') {
+    description = 'Grouping task for generating all languages in several formats'
+    group = 'documentation'
     dependsOn "includeLearningObjectives", "run"
 }
 
