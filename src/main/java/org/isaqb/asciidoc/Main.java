@@ -121,7 +121,6 @@ public class Main {
       put("currentDate", versionDate);
       put("language", language);
       put("curriculumFileName", curriculumFileName);
-      put("debug_adoc", false);
       put("pdf-themesdir", "../pdf-theme/themes");
       put("pdf-fontsdir", "../pdf-theme/fonts");
       put("pdf-theme", "isaqb");
