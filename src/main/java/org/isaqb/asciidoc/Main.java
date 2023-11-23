@@ -109,7 +109,7 @@ public class Main {
       final String curriculumFileName,
       final String versionDate,
       final String language) {
-    final String fileVersion = "%s - %s".formatted(projectVersion, language);
+    final String fileVersion = "%s-%s".formatted(projectVersion, language);
     final String documentVersion = "%s-%s".formatted(fileVersion, versionDate);
 
     final Map<String, Object> attributes = new HashMap<>() {{
