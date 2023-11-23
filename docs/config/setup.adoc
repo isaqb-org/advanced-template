@@ -2,7 +2,7 @@
 :icons: font
 :sectnumlevels: 2
 :imagesdir: images
-:chapter-label: 
+:!chapter-signifier:
 
 // ":language:" denotes the language or the target document.
 // currently only DE and EN are supported
