@@ -6,7 +6,7 @@ name: CI - Releases and Main
 # events but only for the main branch
 on:
   push:
-    branches: [ main, outsource_workflows ]
+    branches: [ main ]
     tags:
       - "[2-9][0-9][0-9][0-9].[0-9]+-rev[0-9]+"
 
