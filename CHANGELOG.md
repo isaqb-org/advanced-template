@@ -1,4 +1,8 @@
 # Release Notes
+## New in 2020.8
+- Move all workflows to separate repository
+- Update to Gradle Wrapper 8.8
+
 ## New in 2020.7
 - Remove lots of old/unused stuff regarding remarks
 - Use Gradle Wrapper in GitHub Actions
