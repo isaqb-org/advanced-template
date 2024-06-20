@@ -10,7 +10,7 @@ The international Software Architecture Qualification Board (link:https://isaqb.
 
 The **Release Candidates** of the **{curriculum-name} [{curriculum-short}]** advanced level curriculum are currently maintained and published in both English (EN) and German (DE). Maintainers of this curriculum and voluntary reviewers collaborate on https://github.com/isaqb-org[GitHub] to improve the curriculum.
 
-== Current Release Candidate {project.version}
+== Current Release Candidate {release-version}
 
 image:https://img.shields.io/github/last-commit/isaqb-org/{repo-name}/main.svg["Last commit"]
 image:https://img.shields.io/github/contributors/isaqb-org/{repo-name}.svg["Contributors",link="https://github.com/isaqb-org/{repo-name}/graphs/contributors"]
