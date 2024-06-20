@@ -13,5 +13,3 @@ on:
 jobs:
   call_workflow_build:
     uses: isaqb-org/github-workflows/.github/workflows/build_main.yml@main
-    with:
-      release_version: env.RELEASE_VERSION
