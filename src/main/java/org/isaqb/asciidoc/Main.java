@@ -123,6 +123,7 @@ public class Main {
     final Map<String, Object> attributes = new HashMap<>() {{
       put("icons", "font");
       put("version-label", "");
+      put("release-version", projectVersion);
       put("revnumber", fileVersion);
       put("revdate", versionDate);
       put("document-version", documentVersion);

@@ -3,17 +3,19 @@ include::config/setup.adoc[]
 = image:isaqb-logo.jpg[width=150]Certified Professional for Software Architecture^(R)^ (CPSA)
 - Curriculum {curriculum-name} [{curriculum-short}] – Release Candidate -
 
+:repo-name: advanced-template
+
 The international Software Architecture Qualification Board (link:https://isaqb.org[iSAQB]) defines curricula on several levels for software architects.
 
 The **Release Candidates** of the **{curriculum-name} [{curriculum-short}]** advanced level curriculum are currently maintained and published in both English (EN) and German (DE). Maintainers of this curriculum and voluntary reviewers collaborate on https://github.com/isaqb-org[GitHub] to improve the curriculum.
 
-== Current Release Candidate v2023.1
+== Current Release Candidate {release-version}
 
-image:https://img.shields.io/github/last-commit/isaqb-org/advanced-template/main.svg["Last commit"]
-image:https://img.shields.io/github/contributors/isaqb-org/advanced-template.svg["Contributors",link="https://github.com/isaqb-org/advanced-template/graphs/contributors"]
-image:https://img.shields.io/github/issues/isaqb-org/advanced-template.svg["Issues",link="https://github.com/isaqb-org/advanced-template/issues"]
-image:https://img.shields.io/github/issues-closed/isaqb-org/advanced-template.svg["Issues closed",link="https://github.com/isaqb-org/advanced-template/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
-image:https://img.shields.io/github/commits-since/isaqb-org/advanced-template/latest.svg[]
+image:https://img.shields.io/github/last-commit/isaqb-org/{repo-name}/main.svg["Last commit"]
+image:https://img.shields.io/github/contributors/isaqb-org/{repo-name}.svg["Contributors",link="https://github.com/isaqb-org/{repo-name}/graphs/contributors"]
+image:https://img.shields.io/github/issues/isaqb-org/{repo-name}.svg["Issues",link="https://github.com/isaqb-org/{repo-name}/issues"]
+image:https://img.shields.io/github/issues-closed/isaqb-org/{repo-name}.svg["Issues closed",link="https://github.com/isaqb-org/{repo-name}/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
+image:https://img.shields.io/github/commits-since/isaqb-org/{repo-name}/latest.svg[]
 |===
 | Version | HTML | PDF
 
@@ -28,5 +30,4 @@ image:https://img.shields.io/github/commits-since/isaqb-org/advanced-template/la
 |===
 
 == Changes compared to XXX
-- link:https://github.com/isaqb-org/advanced-template/blob/main/CHANGELOG.md[CHANGELOG.md on GitHub]
-// - link: [HTML diff to the latest curriculum] T.B.A.
+- link:https://github.com/isaqb-org/{repo-name}/blob/main/CHANGELOG.md[CHANGELOG.md on GitHub]
