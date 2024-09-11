@@ -1,44 +1,142 @@
+import org.asciidoctor.gradle.jvm.AsciidoctorTask
+import org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask
+
 import java.text.SimpleDateFormat
 
-plugins {
-    id "java"
-    id "application"
-}
 
-def group = "org.isaqb"
-def releaseVersion = System.getenv("RELEASE_VERSION")
-def localVersion = "LocalBuild"
-project.version = releaseVersion == null ? localVersion : releaseVersion
-def curriculumFileName = "curriculum-template"
-def versionDate = new SimpleDateFormat("yyyyMMdd").format(new Date())
-def languages = ["DE", "EN"]
+plugins {
+    id 'application'
+    id 'org.asciidoctor.jvm.convert' version '4.0.3'
+    id 'org.asciidoctor.jvm.pdf' version '4.0.3'
+}
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    implementation("org.asciidoctor:asciidoctorj:2.5.10")
-    implementation("org.asciidoctor:asciidoctorj-pdf:2.3.9")
+ext {
+    def releaseVersion = System.getenv("RELEASE_VERSION")
+    def localVersion = "LocalBuild"
+    project.version = releaseVersion == null ? localVersion : releaseVersion
+    curriculumFileName = "curriculum-template"
+    versionDate = new SimpleDateFormat("yyyyMMdd").format(new Date())
 }
+
+def languages = ["DE", "EN"]
+def buildPDF = languages.collect { 'pdf' + it }
+def buildHTML = languages.collect { 'html' + it }
+
+
+pdfThemes {
+    local 'iSAQB', {
+        themeDir = file('pdf-theme/themes')
+        themeName = 'iSAQB'
+    }
+}
+
 
 application {
-    mainClass.set("org.isaqb.asciidoc.Main")
     applicationDefaultJvmArgs = [
-        """-DprojectVersion=${project.version}""",
-        """-DcurriculumFileName=${curriculumFileName}""",
-        """-DversionDate=${versionDate}""",
-        """-Dlanguages=${languages.join(',')}""",
-        """--add-opens""", """java.base/sun.nio.ch=ALL-UNNAMED""",
-        """--add-opens""", """java.base/java.io=ALL-UNNAMED"""]
+            """--add-opens""", """java.base/sun.nio.ch=ALL-UNNAMED""",
+            """--add-opens""", """java.base/java.io=ALL-UNNAMED""",
+    ]
 }
 
-apply from: 'scripts/includeLearningObjectives.gradle'
 
-tasks.register('buildDocs') {
+languages.forEach { lang ->
+    tasks.register("pdf${lang}", AsciidoctorPdfTask) {
+
+        mustRunAfter includeLearningObjectives
+
+        jvm {
+            jvmArgs("--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED")
+        }
+
+        sourceDir = new File("./docs/")
+        baseDir = new File("./docs/")
+        sources {
+            include "${curriculumFileName}.adoc"
+        }
+
+        outputDir "build/"
+
+        theme "iSAQB"
+        fontsDirs 'pdf-theme/fonts'
+        def fileVersion = project.version.trim() + "-" + lang
+
+        attributes = [
+                'icons'             : 'font',
+                'version-label'     : '',
+                'revnumber'         : fileVersion,
+                'revdate'           : versionDate,
+                'document-version'  : fileVersion + "-" + versionDate,
+                'currentDate'       : versionDate,
+                'release-version'   : project.version,
+                'language'          : lang,
+                'curriculumFileName': curriculumFileName,
+                'data-uri'          : true,
+                'allow-uri-read'    : true,
+        ]
+
+        doLast {
+
+            File source = new File("build/${curriculumFileName}.pdf")
+            File target = new File("build/${curriculumFileName}-${lang.toLowerCase()}.pdf")
+            source.renameTo(target)
+        }
+    }
+
+    tasks.register("html${lang}", AsciidoctorTask) {
+
+        mustRunAfter includeLearningObjectives
+
+        jvm {
+            jvmArgs("--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED", "--add-opens", "java.base/java.io=ALL-UNNAMED")
+        }
+
+        sourceDir = new File("./docs/")
+        baseDir = new File("./docs/")
+        sources {
+            include "index.adoc"
+            include "${curriculumFileName}.adoc"
+        }
+
+        outputDir "build/"
+
+        def fileVersion = project.version.trim() + "-" + lang
+
+        attributes = [
+                'icons'             : 'font',
+                'version-label'     : '',
+                'revnumber'         : fileVersion,
+                'revdate'           : versionDate,
+                'document-version'  : fileVersion + "-" + versionDate,
+                'currentDate'       : versionDate,
+                'release-version'   : project.version,
+                'language'          : lang,
+                'curriculumFileName': curriculumFileName,
+                'data-uri'          : true,
+                'allow-uri-read'    : true,
+                'stylesheet'        : '../html-theme/adoc-github.css',
+                'stylesheet-dir'    : '../html-theme'
+        ]
+
+        doLast {
+
+            File source = new File("build/${curriculumFileName}.html")
+            File target = new File("build/${curriculumFileName}-${lang.toLowerCase()}.html")
+            source.renameTo(target)
+        }
+    }
+}
+
+def buildDocs = tasks.register('buildDocs') {
     description = 'Grouping task for generating all languages in several formats'
     group = 'documentation'
-    dependsOn "includeLearningObjectives", "run"
+    dependsOn includeLearningObjectives, buildPDF, buildHTML
 }
 
-defaultTasks "buildDocs"
+apply from: 'gradle-tools/includeLearningObjectives.gradle'
+
+
+defaultTasks 'buildDocs'
