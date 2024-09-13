@@ -5,3 +5,10 @@ include::01-examples-duration-terms.adoc[{include_configuration}]
 include::02-learning-goals.adoc[{include_configuration}]
 
 include::references.adoc[{include_configuration}]
+
+// tag::DE[]
+// silence asciidoctor warnings
+// end::DE[]
+// tag::EN[]
+// silence asciidoctor warnings
+// end::EN[]
