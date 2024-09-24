@@ -12,3 +12,11 @@ Eine Quelle wird über `\<<label>>` referenziert. Dieses muss in `99-references/
 
 A reference source is referenced via `\<<label>>`. The label has to be defined in `99-references/00-references.adoc`.
 ====
+
+
+// tag::DE[]
+// silence asciidoctor warnings
+// end::DE[]
+// tag::EN[]
+// silence asciidoctor warnings
+// end::EN[]
