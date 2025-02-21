@@ -1,6 +1,7 @@
 ext {
-    curriculumFileName = "curriculum-template"
+    curriculumFileName = "curriculum-"
     languages = ["DE", "EN"]
+    tags = ["WEBSEC", "EMBEDDEDSEC"]
 }
 
 defaultTasks 'buildDocs'
