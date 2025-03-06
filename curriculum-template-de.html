@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <title>Curriculum fürCertified Professional forSoftware Architecture (CPSA)&#174;Advanced Level: ModulMODULKUERZELMODULNAME IN VOLLER LAENGE</title>
 <style>
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
@@ -36,8 +36,6 @@ html {
   background: #fff; /* 1 */
   color: #000; /* 2 */
   font-family: sans-serif; /* 3 */
-  -ms-text-size-adjust: 100%; /* 4 */
-  -webkit-text-size-adjust: 100%; /* 4 */
 }
 
 /** Remove default margin. */
@@ -80,7 +78,6 @@ dfn {
 
 /** Address differences between Firefox and other browsers. */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -195,9 +192,7 @@ input[type="checkbox"], input[type="radio"] {
 
 /** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
+  -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
@@ -226,8 +221,6 @@ table {
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -724,7 +717,6 @@ a:hover, a:focus {
   white-space: nowrap;
   background-color: transparent;
   border: 1px solid #dddddd;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   text-shadow: none;
 }
@@ -747,9 +739,7 @@ kbd:not(.keyseq) {
   line-height: 1.4;
   background-color: #F7F7F7;
   border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
   margin: -0.15em 0.15em 0 0.15em;
   padding: 0.2em 0.6em 0.2em 0.5em;
@@ -910,13 +900,11 @@ div .details br {
 
 #content #toc {
   border-style: solid;
-  border-width: 1px;
   border-color: #e6e6e6;
   margin-bottom: 1.33333em;
   padding: 1.33333em;
   background: white;
   border-width: 0;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -999,6 +987,10 @@ div .details br {
   font-weight: bold;
 }
 
+.admonitionblock td.content, .admonitionblock td.icon {
+  font-size: 1em;
+}
+
 .tableblock > caption {
   text-align: left;
   font-weight: bold;
@@ -1053,7 +1045,6 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
   margin-bottom: 1.33333em;
   padding: 1.33333em;
   background: white;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1079,7 +1070,6 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
 }
 
 .exampleblock.result > .content {
-  -webkit-box-shadow: 0 1px 8px #eaeaea;
   box-shadow: 0 1px 8px #eaeaea;
 }
 
@@ -1090,7 +1080,6 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
   margin-bottom: 1.33333em;
   padding: 1.33333em;
   background: white;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1133,7 +1122,6 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p {
   border-width: 2px;
   border-style: solid;
   border-color: #dddddd;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 0.66667em;
   word-wrap: break-word;
@@ -1310,7 +1298,6 @@ table thead th, table tfoot th {
 table.tableblock.grid-all {
   border-collapse: separate;
   border-spacing: 1px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
@@ -1492,7 +1479,6 @@ td.hdlist1, td.hdlist2 {
   line-height: 0;
   display: inline-block;
   border: solid 4px white;
-  -webkit-box-shadow: 0 0 0 1px #dddddd;
   box-shadow: 0 0 0 1px #dddddd;
 }
 
@@ -1756,7 +1742,6 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] {
 
 .admonitionblock td.icon .icon-note:before {
   content: "\f05a";
-  color: #4183c4;
   color: #2e6295;
 }
 
@@ -1785,7 +1770,6 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] {
   display: inline-block;
   color: white !important;
   background-color: #333333;
-  -webkit-border-radius: 100px;
   border-radius: 100px;
   text-align: center;
   width: 20px;
@@ -1880,10 +1864,7 @@ h2 {
 }
 
 .sidebarblock > .content > .title {
-  margin-top: -20px;
-  margin-right: -20px;
-  margin-left: -20px;
-  margin-bottom: 20px;
+  margin: -20px -20px 20px;
   padding: 1em;
   font-size: 0.8em;
   background: #eaeaea;
@@ -1897,8 +1878,8 @@ h2 {
 <div id="header">
 <h1>Curriculum für<br><br>Certified Professional for<br>Software Architecture (CPSA)<sup>&#174;</sup><br><em>Advanced Level</em>: <br> Modul<br>MODULKUERZEL<br><br>MODULNAME IN VOLLER LAENGE</h1>
 <div class="details">
-<span id="revnumber"> 2020.8-rev0-DE,</span>
-<span id="revdate">20240619</span>
+<span id="revnumber"> 2025.1-rev0-DE,</span>
+<span id="revdate">20250306</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Inhaltsverzeichnis</div>
@@ -3173,8 +3154,8 @@ Es kann hier bereits auf Literatur verwiesen werden.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
- 2020.8-rev0-DE<br>
-Last updated 2024-06-19 12:24:24 UTC
+ 2025.1-rev0-DE<br>
+Last updated 2025-03-06 10:44:21 UTC
 </div>
 </div>
 </body>
