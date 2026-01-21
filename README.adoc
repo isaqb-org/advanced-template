@@ -34,14 +34,18 @@ Create an issue, a merge- or pull-request
 . Either click on "Use this template" in the Github UI or Clone the repository - including the submodule:
 +
 --
+Via SSH:
 [source,shell]
 ----
-Via SSH:
 git clone git@github.com:isaqb-org/advanced-template.git --recursive
+----
 
 Via HTTPS:
+[source,shell]
+----
 git clone https://github.com/isaqb-org/advanced-template.git --recursive
 ----
+
 --
 . Rename the repository to the name of your curriculum e.g. `curriculum-flex`
 . Rename the file `/docs/advanced-template.adoc` to the name of your curriculum e.g. `curriculum-flex.adoc` (this is later on referred to as `curriculumFileName`)
