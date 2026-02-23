@@ -48,7 +48,7 @@ git clone https://github.com/isaqb-org/advanced-template.git --recursive
 --
 . Rename the repository to the name of your curriculum e.g. `curriculum-flex`
 . Rename the file `docs/curriculum-template.adoc` to the name of your curriculum e.g. `curriculum-flex.adoc` (this is later on referred to as `curriculumFileName`)
-. Open the file `config/setup.adoc` to adjust configuration specific to your curriculum:
+. Open the file `docs/config/setup.adoc` to adjust configuration specific to your curriculum:
 .. `:curriculum-short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. FLEX
 .. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full German title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices und Self-Contained Systems"
 .. `:curriculum-name: FULL NAME OF MODULE`: the full English title of your CPSA-A module. replace "FULL NAME OF MODULE" with your module name e.g. "Flexible Architecture Models - Microservices and Self-Contained Systems"
