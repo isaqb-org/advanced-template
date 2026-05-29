@@ -89,6 +89,27 @@ The results are written to `build/`, named `<curriculumFileName>-<lang>.pdf` /
 To change which languages or variants are produced, edit the `ext` block in
 `build.gradle` (`languages`, `suffixTags`).
 
+=== Build with Docker (no local JDK)
+
+If you would rather not install a JDK, you can build inside a container; you only need
+Docker. Clone with submodules first (the build logic and themes are needed inside the
+container), then run the launcher from the repository root:
+
+[source,shell]
+----
+./build-docker.sh           # buildDocs — all languages and formats
+./build-docker.sh pdfDE     # a single output
+----
+
+The toolchain (Gradle + its dependencies) is downloaded once into a gitignored
+`.gradle-docker/` cache, so repeat builds are fast. Output appears in `build/` exactly
+as with a local build.
+
+The image and the launcher logic live in the `gradle-tools` submodule
+(`gradle-tools/docker/`); the repo-level `build-docker.sh`/`.bat` are thin wrappers that
+delegate there. This way the Docker setup is upgraded centrally — bump the submodule and
+every curriculum picks it up, with no per-repository changes.
+
 [[creating]]
 == Creating a new curriculum from this template
 
