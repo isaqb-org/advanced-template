@@ -38,7 +38,7 @@ They are produced by CI on each release. Pre-rendered translations in other lang
 (if any) live in `docs-ext/` – see `docs-ext/EXTERNAL_DOCUMENTS_README.adoc`.
 
 == How to build locally
-Prerequisite: a locally installed JDK 21 or higher. +
+Prerequisite: a locally installed JDK 25 or higher. +
 Clone the repository including its submodules:
 
 [source,shell]

@@ -54,7 +54,7 @@ configuration lives in `docs/config/setup.adoc`.
 
 == How to build
 
-Prerequisite: a locally installed JDK 21 or higher. +
+Prerequisite: a locally installed JDK 25 or higher. +
 Clone the repository including its submodules:
 
 [source,shell]
