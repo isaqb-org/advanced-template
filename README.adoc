@@ -1,16 +1,5 @@
 = Template for https://isaqb.org[iSAQB] Advanced Level Curricula
 
-:toc:
-:toc-placement!:
-
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-
 == Status
 image:https://github.com/isaqb-org/advanced-template/workflows/CI%20-%20Releases%20and%20Main/badge.svg?branch=main["CI – Releases and Main"]
 image:https://img.shields.io/github/last-commit/isaqb-org/advanced-template/main.svg["Last commit"]
@@ -18,171 +7,111 @@ image:https://img.shields.io/github/contributors/isaqb-org/advanced-template.svg
 image:https://img.shields.io/github/issues/isaqb-org/advanced-template.svg["Issues",link="https://github.com/isaqb-org/advanced-template/issues"]
 image:https://img.shields.io/github/issues-closed/isaqb-org/advanced-template.svg["Issues closed",link="https://github.com/isaqb-org/advanced-template/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
 
-
 This is <<copyrighted,copyrighted work>>.
 
-== Content
-This repository contains a template for iSAQB Advanced Level *curricula* in AsciiDoc.
+== What is this repository?
 
-toc::[]
+This is the *GitHub template repository* for authoring https://isaqb.org[iSAQB] Advanced Level *curricula* in AsciiDoc.
 
-== How to contribute or participate
-Create an issue, a merge- or pull-request
+Each real curriculum (e.g. `curriculum-flex`, `curriculum-web`) is created from this
+template and then customized. The build produces PDF and HTML output in German (DE) and English (EN),
+based on a set of AsciiDoc files.
 
-== How to use this template
+== Repository structure
 
-. Either click on "Use this template" in the Github UI or Clone the repository - including the submodule:
-+
---
-Via SSH:
+[cols="1,3a",options="header"]
+|===
+|Path |Purpose
+
+|`docs/`
+|The curriculum content. `curriculum-template.adoc` is the root structure file;
+content is organized into `00a-preamble/`, `00b-basics/`, one `NN-module-block-N/`
+directory per learning module, `20-examples/` and `99-references/`. Per-curriculum
+configuration lives in `docs/config/setup.adoc`.
+
+|`build.gradle` / `gradle.properties` / `settings.gradle`
+|Thin project configuration. The interesting settings are the `ext` properties in
+`build.gradle`: `curriculumFileName`, `languages` and `suffixTags`.
+
+|`gradle-tools/` (submodule)
+|The actual build logic. `gradle-tools/build.gradle` auto-generates one render task per
+`format × language × suffixTag` combination (`pdfDE`, `htmlEN`, ...) and groups them into
+`buildDocs`. The Gradle wrapper used for builds lives here.
+
+|`pdf-theme/`, `html-theme/` (submodules)
+|The iSAQB PDF theme (incl. fonts) and the HTML stylesheet applied to the output.
+
+|`license-copyright/` (submodule)
+|Shared license and copyright text included into every curriculum.
+
+|`docs-ext/`
+|[OPTIONAL] Pre-rendered PDF translations in languages other than DE/EN (see
+`docs-ext/EXTERNAL_DOCUMENTS_README.adoc`).
+
+|`.github/workflows/`
+|Thin wrappers that call the reusable workflows in `isaqb-org/github-workflows`.
+|===
+
+== How to build
+
+Prerequisite: a locally installed JDK 21 or higher. +
+Clone the repository including its submodules:
+
 [source,shell]
 ----
 git clone git@github.com:isaqb-org/advanced-template.git --recursive
 ----
 
-Via HTTPS:
+If you already cloned without `--recursive`:
+
 [source,shell]
 ----
-git clone https://github.com/isaqb-org/advanced-template.git --recursive
-----
---
-. Rename the repository to the name of your curriculum e.g. `curriculum-flex`
-. Rename the file `docs/curriculum-template.adoc` to the name of your curriculum e.g. `curriculum-flex.adoc` (this is later on referred to as `curriculumFileName`)
-. Open the file `docs/config/setup.adoc` to adjust configuration specific to your curriculum:
-.. `:curriculum-short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. FLEX
-.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full German title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices und Self-Contained Systems"
-.. `:curriculum-name: FULL NAME OF MODULE`: the full English title of your CPSA-A module. replace "FULL NAME OF MODULE" with your module name e.g. "Flexible Architecture Models - Microservices and Self-Contained Systems"
-. Open the file `build.gradle` to adjust attributes specific to your curriculum:
-[loweralpha]
-.. `curriculumFileName`: the name of the asciidoc root file of your curriculum e.g. `curriculum-flex` (see above! The `.adoc` suffix is added automatically, omit it here!)
-. Open README.adoc and replace the string `curriculum-template` with the name of your Github repository e.g. `curriculum-flex`
-. Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK 17 or higher) via `./gradle-tools/gradlew buildDocs`.
-. Once the "BUILD SUCCESSFUL" is shown, you can review the build result under `build/index.html`
-
-== How to write iSAQB Advanced Level Curricula with AsciiDoc
-
-=== Requirements and (our) solutions
-
-[cols="1,2a",options="header"]
-|===
-|Requirement
-|Solution
-
-|Visually appealing pdf output
-|We created an iSAQB pdf theme, located under the `/style` directory. The original is maintained in the `adoc2pdf` repository.
-
-|Multiple people contribute content, review and comment
-|highly modularized content: Small chunks, like learning-goals or subsections, are contained in their own asciidoc-files.
-
-|Multiple languages, at least EN and DE (i18n)
-|Every piece of text is enclosed in _tags_ like `tag::EN[]`. The build process collects all parts for the desired language.
-
-|Simple conversion from asciidoc to pdf (and html)
-|There is currently one option available:
-
-* Gradle based build, requiring a local Java runtime.
-|===
-
-- - -
-
-**TODO:** Add explanation for keywords and general procedure when creating a new Advanced Level Curriculum.
-
-- - -
-
-=== How to organize files?
-
-==== Prerequisite: AsciiDoc include
-You should know some details about the AsciiDoc include statement.
-
-If the Asciidoctor processor encounters a statement like the one below:
-
-[source,asciidoc]
-----
-   include::directory/file.adoc[]
+git submodule update --init --recursive
 ----
 
-It will replace this include statement with the contents of `file.adoc`. That's easy and straightforward.
+Build all languages and formats:
 
-=== Content and Structure files
-As we are writing i18n we need to strictly distiguish between two
-kind of files:
-
-* *content* files, they contain text, tables or diagrams that shall be included in the output.
-* *structure* files, containing only include-statements, configuration information. Structure files include both content-files and other structure files.
-
-For content files, specific parts will be included via the tag-syntax described above.
-For that purpose we define a variable named `include_configuration` in the file `config/setup.adoc`.
-
-==== Structure File Example
-
-In theory, you can just use the `docs/curriculum-template.adoc` as is and just
-edit the section documents in the subdirectories. If you want to create your own file,
-we recommend to stick with the following:
-
-From `docs/curriculum-template.adoc` (excerpts):
-
-[source,asciidoc]
+[source,shell]
 ----
-= Template Curriculum: CPSA Certified Professional for Software Architecture^(R)^
-:doctype: book
-
-include::config/setup.adoc[]  // // <1>
-
-:document-version: 2020.2 // //<2>
-
-:sectnums!: // // <3>
-include::00-preamble/copyright.adoc[{include_configuration}] // // <4>
-
-<<< // // <5>
-:toc:
-
-<<<
-:sectnums!:
-include::00-preamble/00-introduction.adoc[] // //<6>
-
+./gradle-tools/gradlew buildDocs
 ----
 
-1. We propose to put the asciidoc configuration in this special file (`docs/config/setup.adoc`).
-2. You can set a version, but it may be overridden in the build process.
-3. You can turn section numbering on and off (here: off).
-4. This includes parts of the `docs/00-preamble/copyright.adoc` file.
-5. The `<<<` will create a pagebreak in pdf files.
-6. Include the whole file 00-introduction.adoc.
+The results are written to `build/`, named `<curriculumFileName>-<lang>.pdf` /
+`.html`, together with an `index.html` overview page. Useful additional tasks:
 
-
-=== Suggestions
-
-TBD.
-
-== How to build the documents
-
-Prerequisite: You need a Java Runtime(tm) installed.
-
-You build the output documents with gradle.
-That will produce both pdf and html output in German (DE) _and_ English (EN), unless you modify the configuration.
-
-In case you want to change that, adjust the following part of `build.gradle`:
-
-[source,groovy]
+[source,shell]
 ----
-task buildDocs {
-  group 'Documentation'
-  description 'Grouping task for generating all languages in several formats'
-  dependsOn "renderDE", "renderEN"
-}
+./gradle-tools/gradlew pdfDE     # build a single output (format + language)
+./gradle-tools/gradlew clean     # remove the build/ directory
+./gradle-tools/gradlew tasks     # list all generated render tasks
 ----
 
-In the task "renderDE", certain attributes (aka variables) are defined that configure the corresponding output.
+To change which languages or variants are produced, edit the `ext` block in
+`build.gradle` (`languages`, `suffixTags`).
 
-== Additional translations/languages
-include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
+[[creating]]
+== Creating a new curriculum from this template
+
+. Click *Use this template* in the GitHub UI
+. Rename `docs/curriculum-template.adoc` to match your curriculum, e.g. `docs/curriculum-flex.adoc`.
+. In `build.gradle`, set `curriculumFileName` to that name *without* the `.adoc`
+suffix, e.g. `curriculum-flex`.
+. In `docs/config/setup.adoc`, set the curriculum metadata:
+.. `:curriculum-short:` – your module abbreviation, e.g. `FLEX`.
+.. `:curriculum-name:` – the full module title (set separately for DE and EN).
+. Replace the README: delete this file and rename `README-curriculum.adoc` to
+`README.adoc`, then fill in the placeholders. (The README you are reading describes
+the *template*; `README-curriculum.adoc` is the starting point for *your* curriculum.)
+. Build with `./gradle-tools/gradlew buildDocs` and review the result under
+`build/index.html`.
+
+== How to contribute or participate
+
+Create an issue, a merge- or pull-request.
 
 == Maintainers
 
 This repository is currently maintained by Benjamin Wolf.
-It was forked from https://github.com/isaqb-org/curriculum-template,
-so the contributors of that project basically contributed to this one, too.
-
 
 [[copyrighted]]
 == Licensing and Copyright

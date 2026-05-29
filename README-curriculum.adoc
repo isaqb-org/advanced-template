@@ -1,0 +1,75 @@
+// ============================================================================
+// This is the README for a curriculum that was created from the
+// isaqb-org/advanced-template template repository.
+//
+// SETUP (do this once, then delete these comment lines):
+//   1. Rename this file to README.adoc (replacing the template's README.adoc).
+//   2. Replace every <PLACEHOLDER> below with your curriculum's values.
+//   3. Replace REPO-NAME in the badge URLs and the published-release link with
+//      your GitHub repository name, e.g. curriculum-flex.
+// ============================================================================
+
+= <FULL MODULE NAME> – iSAQB Advanced Level Curriculum (<MODULE-SHORT>)
+
+== Status
+image:https://github.com/isaqb-org/REPO-NAME/workflows/CI%20-%20Releases%20and%20Main/badge.svg?branch=main["CI – Releases and Main"]
+image:https://img.shields.io/github/last-commit/isaqb-org/REPO-NAME/main.svg["Last commit"]
+image:https://img.shields.io/github/contributors/isaqb-org/REPO-NAME.svg["Contributors",link="https://github.com/isaqb-org/REPO-NAME/graphs/contributors"]
+image:https://img.shields.io/github/issues/isaqb-org/REPO-NAME.svg["Issues",link="https://github.com/isaqb-org/REPO-NAME/issues"]
+image:https://img.shields.io/github/issues-closed/isaqb-org/REPO-NAME.svg["Issues closed",link="https://github.com/isaqb-org/REPO-NAME/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
+
+This is <<copyrighted,copyrighted work>>.
+
+
+== About this curriculum
+
+This repository contains the source of the iSAQB^(R)^ Advanced Level (CPSA-A) curriculum
+*<FULL MODULE NAME>* (module *<MODULE-SHORT>*).
+
+The curriculum is written in AsciiDoc and built into versioned *PDF and HTML* output in
+*German (DE)* and *English (EN)*. It was created from the
+https://github.com/isaqb-org/advanced-template[iSAQB Advanced Level template].
+
+== Released documents
+The latest released HTML and PDF documents (German and English) are published via GitHub
+Pages at https://public.isaqb.org/REPO-NAME[public.isaqb.org/REPO-NAME].
+
+They are produced by CI on each release. Pre-rendered translations in other languages
+(if any) live in `docs-ext/` – see `docs-ext/EXTERNAL_DOCUMENTS_README.adoc`.
+
+== How to build locally
+Prerequisite: a locally installed JDK 21 or higher. +
+Clone the repository including its submodules:
+
+[source,shell]
+----
+git clone git@github.com:isaqb-org/REPO-NAME.git --recursive
+----
+
+If you already cloned without `--recursive`:
+
+[source,shell]
+----
+git submodule update --init --recursive
+----
+
+Build all languages and formats:
+
+[source,shell]
+----
+./gradle-tools/gradlew buildDocs
+----
+
+The results are written to `build/` (PDF and HTML per language) together with an
+`index.html` overview page. To build a single output use e.g.
+`./gradle-tools/gradlew pdfDE`; run `./gradle-tools/gradlew tasks` to list all
+available render tasks.
+
+== How to contribute or participate
+
+Create an issue, a merge- or pull-request.
+
+[[copyrighted]]
+== Licensing and Copyright
+
+include::license-copyright/LICENSE.adoc[]
