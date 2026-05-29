@@ -38,7 +38,7 @@ They are produced by CI on each release. Pre-rendered translations in other lang
 (if any) live in `docs-ext/` – see `docs-ext/EXTERNAL_DOCUMENTS_README.adoc`.
 
 == How to build locally
-Prerequisite: a locally installed JDK 21 or higher. +
+Prerequisite: a locally installed JDK 25 or higher. +
 Clone the repository including its submodules:
 
 [source,shell]
@@ -64,6 +64,20 @@ The results are written to `build/` (PDF and HTML per language) together with an
 `index.html` overview page. To build a single output use e.g.
 `./gradle-tools/gradlew pdfDE`; run `./gradle-tools/gradlew tasks` to list all
 available render tasks.
+
+=== Build with Docker (no local JDK)
+
+If you would rather not install a JDK, you can build inside a container; you only need
+Docker. Clone with submodules as above, then run the launcher from the repository root:
+
+[source,shell]
+----
+./build-docker.sh           # buildDocs — all languages and formats
+./build-docker.sh pdfDE     # a single output
+----
+
+The toolchain is downloaded once into a gitignored `.gradle-docker/` cache, so repeat
+builds are fast. Output appears in `build/` exactly as with a local build.
 
 == How to contribute or participate
 
