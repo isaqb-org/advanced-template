@@ -29,6 +29,11 @@ content is organized into `00a-preamble/`, `00b-basics/`, one `NN-module-block-N
 directory per learning module, `20-examples/` and `99-references/`. Per-curriculum
 configuration lives in `docs/config/setup.adoc`.
 
+`docs/index.adoc` and `docs/index_rc.adoc` are the sources for the published landing
+page (`index.html`) that lists the curriculum and links to the rendered HTML/PDF
+outputs: `index.adoc` is used for a released version, while `index_rc.adoc` is the
+release-candidate variant (adds GitHub status badges and a changelog link).
+
 |`build.gradle` / `gradle.properties` / `settings.gradle`
 |Thin project configuration. The interesting settings are the `ext` properties in
 `build.gradle`: `curriculumFileName`, `languages` and `suffixTags`.
