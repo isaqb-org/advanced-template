@@ -12,6 +12,11 @@ ext {
     //
     // suffixTags = ["REMARKS"]
     suffixTags = [""]
+
+    // With this variable, you can define that chapters start on a recto (right) page and
+    // recto/verso binding margins are applied (asciidoctor-pdf prepress mode, only valid for PDF).
+    // default is false, set to true to enable this feature.
+    prepress = false
 }
 
 defaultTasks 'buildDocs'
