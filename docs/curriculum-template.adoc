@@ -5,11 +5,22 @@ include::config/setup.adoc[]
 ifeval::["{language}" == "DE"]
 = Curriculum fürpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^(R)^pass:q[<br>]_Advanced Level_: pass:q[<br>] Modulpass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
 :toc-title: Inhaltsverzeichnis
-:toc: left
 endif::[]
 
 ifeval::["{language}" == "EN"]
 = Curriculum forpass:q[<br><br>]Certified Professional forpass:q[<br>]Software Architecture (CPSA)^(R)^pass:q[<br>]_Advanced Level_: pass:q[<br>] Modulepass:q[<br>]{curriculum-short}pass:q[<br><br>]{curriculum-name}
+endif::[]
+
+// TOC placement is backend-specific:
+// - PDF: macro -> rendered at the toc::[] macro below (after copyright + the
+//   learning-goals overview), so the TOC is the last front-matter element and
+//   "page: numbering: start_at: after-toc" makes the front matter roman.
+// - HTML: left sidebar (page numbers are irrelevant there).
+ifdef::backend-pdf[]
+:toc: macro
+:toc-placement: macro
+endif::[]
+ifndef::backend-pdf[]
 :toc: left
 endif::[]
 
