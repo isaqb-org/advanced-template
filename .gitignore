@@ -10,3 +10,5 @@ advanced-template.iml
 learning-objectives.adoc
 gradle/
 gradlew*
+CLAUDE.md
+.claude/settings.local.json

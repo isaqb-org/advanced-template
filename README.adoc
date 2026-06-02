@@ -34,17 +34,13 @@ page (`index.html`) that lists the curriculum and links to the rendered HTML/PDF
 outputs: `index.adoc` is used for a released version, while `index_rc.adoc` is the
 release-candidate variant (adds GitHub status badges and a changelog link).
 
-|`build.gradle` / `gradle.properties` / `settings.gradle`
-|Thin project configuration. The interesting settings are the `ext` properties in
-`build.gradle`: `curriculumFileName`, `languages` and `suffixTags`.
+|`curriculum-build.sh` / `curriculum-build.bat`
+|The build launcher. It pulls the pinned builder image and renders the curriculum into
+`build/`. `.sh` for Linux/macOS, `.bat` for Windows.
 
-|`gradle-tools/` (submodule)
-|The actual build logic. `gradle-tools/build.gradle` auto-generates one render task per
-`format × language × suffixTag` combination (`pdfDE`, `htmlEN`, ...) and groups them into
-`buildDocs`. The Gradle wrapper used for builds lives here.
-
-|`pdf-theme/`, `html-theme/` (submodules)
-|The iSAQB PDF theme (incl. fonts) and the HTML stylesheet applied to the output.
+|`build.config`
+|The few per-curriculum build settings: `CURRICULUM_FILE`, `LANGUAGES`, `SUFFIX_TAGS`,
+`PREPRESS` (see <<build-configuration>>).
 
 |`license-copyright/` (submodule)
 |Shared license and copyright text included into every curriculum.
@@ -54,82 +50,88 @@ release-candidate variant (adds GitHub status badges and a changelog link).
 `docs-ext/EXTERNAL_DOCUMENTS_README.adoc`).
 
 |`.github/workflows/`
-|Thin wrappers that call the reusable workflows in `isaqb-org/github-workflows`.
+|CI workflows that build and publish the curriculum on push and on release.
 |===
+
+The whole toolchain — Asciidoctor, asciidoctor-pdf and the iSAQB PDF and HTML themes —
+lives in a prebuilt Docker image
+(https://github.com/isaqb-org/curriculum-builder[isaqb-org/curriculum-builder]). Nothing
+needs to be installed or vendored per curriculum; the image is pinned by tag and digest in
+`curriculum-build.sh` and kept current by Renovate.
 
 == How to build
 
-Prerequisite: a locally installed JDK 25 or higher. +
-Clone the repository including its submodules:
+Prerequisite: https://docs.docker.com/get-docker/[Docker]. Nothing else — no JDK, no Ruby.
+
+Clone the repository (with submodules, for the license text):
 
 [source,shell]
 ----
 git clone git@github.com:isaqb-org/advanced-template.git --recursive
 ----
 
-If you already cloned without `--recursive`:
-
-[source,shell]
-----
-git submodule update --init --recursive
-----
+If you already cloned without `--recursive`, run `git submodule update --init --recursive`.
 
 Build all languages and formats:
 
 [source,shell]
 ----
-./gradle-tools/gradlew buildDocs
+./curriculum-build.sh        # Linux / macOS
+curriculum-build.bat         # Windows
 ----
 
-The results are written to `build/`, named `<curriculumFileName>-<lang>.pdf` /
-`.html`, together with an `index.html` overview page. Useful additional tasks:
+Build a single output — pass the format and language (and optionally a variant):
 
 [source,shell]
 ----
-./gradle-tools/gradlew pdfDE     # build a single output (format + language)
-./gradle-tools/gradlew clean     # remove the build/ directory
-./gradle-tools/gradlew tasks     # list all generated render tasks
+./curriculum-build.sh pdf DE          # Linux / macOS
+./curriculum-build.sh html EN
+./curriculum-build.sh pdf DE REMARKS
 ----
 
-To change which languages or variants are produced, edit the `ext` block in
-`build.gradle` (`languages`, `suffixTags`).
-
-=== Build with Docker (no local JDK)
-
-If you would rather not install a JDK, you can build inside a container; you only need
-Docker. Clone with submodules first (the build logic and themes are needed inside the
-container), then run the launcher from the repository root:
-
-[source,shell]
+[source,bat]
 ----
-./build-docker.sh           # buildDocs — all languages and formats
-./build-docker.sh pdfDE     # a single output
+curriculum-build.bat pdf DE           rem Windows
+curriculum-build.bat html EN
+curriculum-build.bat pdf DE REMARKS
 ----
 
-The toolchain (Gradle + its dependencies) is downloaded once into a gitignored
-`.gradle-docker/` cache, so repeat builds are fast. Output appears in `build/` exactly
-as with a local build.
+Output is written to `build/`, named `<CURRICULUM_FILE>-<lang>.pdf` / `.html`, together
+with an `index.html` overview page. The launcher pulls the builder image on first run and
+reuses it afterwards. After a successful build, review `build/index.html`.
 
-The image and the launcher logic live in the `gradle-tools` submodule
-(`gradle-tools/docker/`); the repo-level `build-docker.sh`/`.bat` are thin wrappers that
-delegate there. This way the Docker setup is upgraded centrally — bump the submodule and
-every curriculum picks it up, with no per-repository changes.
+[[build-configuration]]
+=== Build configuration
+
+`build.config` in the repository root holds the per-curriculum settings:
+
+[cols="1,3a",options="header"]
+|===
+|Key |Meaning
+
+|`CURRICULUM_FILE` |AsciiDoc root in `docs/` (without `.adoc`); also the output file name.
+|`LANGUAGES`       |Space-separated languages to build. Default `DE EN`; drop one for a single-language curriculum.
+|`SUFFIX_TAGS`     |Space-separated extra build variants, exposed as the `{suffix}` attribute. Empty = single build.
+|`PREPRESS`        |PDF print/book layout (recto chapter starts + binding margins). `true` / `false`.
+|===
+
+Any key can be overridden for a single run via an environment variable, e.g.
+`LANGUAGES="DE" ./curriculum-build.sh`.
 
 [[creating]]
 == Creating a new curriculum from this template
 
-. Click *Use this template* in the GitHub UI
+. Click *Use this template* in the GitHub UI.
 . Rename `docs/curriculum-template.adoc` to match your curriculum, e.g. `docs/curriculum-flex.adoc`.
-. In `build.gradle`, set `curriculumFileName` to that name *without* the `.adoc`
-suffix, e.g. `curriculum-flex`.
+. In `build.config`, set `CURRICULUM_FILE` to that name *without* the `.adoc` suffix, e.g.
+`curriculum-flex`.
 . In `docs/config/setup.adoc`, set the curriculum metadata:
 .. `:curriculum-short:` – your module abbreviation, e.g. `FLEX`.
 .. `:curriculum-name:` – the full module title (set separately for DE and EN).
 . Replace the README: delete this file and rename `README-curriculum.adoc` to
-`README.adoc`, then fill in the placeholders. (The README you are reading describes
-the *template*; `README-curriculum.adoc` is the starting point for *your* curriculum.)
-. Build with `./gradle-tools/gradlew buildDocs` and review the result under
-`build/index.html`.
+`README.adoc`, then fill in the placeholders. (The README you are reading describes the
+*template*; `README-curriculum.adoc` is the starting point for *your* curriculum.)
+. Build with `./curriculum-build.sh` and review the result under `build/index.html`.
 
 == How to contribute or participate
 
