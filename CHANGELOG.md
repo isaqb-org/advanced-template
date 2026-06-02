@@ -1,12 +1,22 @@
 # iSAQB® Advanced Level Curriculum Template
 
-## New in 2025.1
+## New in 2026.1
+- Remove gradle-tools and Gradle/JDK dependencies and replace the build toolchain with docker-based ruby tools
+- Remove html and pdf theme submodules, they're part of the docker file of the ruby tools now
+- Add README for new curricula which is supposed to replace the README of this repository when used as template
+- Add renovate to automatically check for updates in the tool chain and license files
+- Add roman numbers for front matter
+- Add support for prepress builds (new chapters always start on the "right" side of a book)
+- Add support for additional tags (=suffix) when building files
+
+## Older releases
+
+### New in 2025.1
 - Extract gradle-tools into separate submodule
 - Increase speed of extracted build.gradle
 - Simplify project specific build.gradle _a lot_
 - Allow for LG as learning goal anchors in German curriculum
 
-## Older releases
 ### New in 2020.9
 - Improved text in index-page
 
