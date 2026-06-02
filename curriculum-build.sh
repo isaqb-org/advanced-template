@@ -6,7 +6,7 @@
 set -eu
 
 IMAGE="ghcr.io/isaqb-org/curriculum-builder:2026.1-rev0"
-DIGEST=""   # fill after first publish, e.g. "sha256:abc123..."; Renovate keeps it current
+DIGEST="sha256:b06c7999937d0b8f6cc91b69e1c718eb5f694346a9e73f9b0b71e8f0513f2c32"
 
 REPO_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
