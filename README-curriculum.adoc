@@ -38,46 +38,62 @@ They are produced by CI on each release. Pre-rendered translations in other lang
 (if any) live in `docs-ext/` – see `docs-ext/EXTERNAL_DOCUMENTS_README.adoc`.
 
 == How to build locally
-Prerequisite: a locally installed JDK 25 or higher. +
-Clone the repository including its submodules:
+
+Prerequisite: https://docs.docker.com/get-docker/[Docker]. Nothing else — no JDK, no Ruby.
+
+Clone the repository (with submodules, for the license text):
 
 [source,shell]
 ----
 git clone git@github.com:isaqb-org/REPO-NAME.git --recursive
 ----
 
-If you already cloned without `--recursive`:
-
-[source,shell]
-----
-git submodule update --init --recursive
-----
+If you already cloned without `--recursive`, run `git submodule update --init --recursive`.
 
 Build all languages and formats:
 
 [source,shell]
 ----
-./gradle-tools/gradlew buildDocs
+./curriculum-build.sh        # Linux / macOS
+curriculum-build.bat         # Windows
 ----
 
-The results are written to `build/` (PDF and HTML per language) together with an
-`index.html` overview page. To build a single output use e.g.
-`./gradle-tools/gradlew pdfDE`; run `./gradle-tools/gradlew tasks` to list all
-available render tasks.
-
-=== Build with Docker (no local JDK)
-
-If you would rather not install a JDK, you can build inside a container; you only need
-Docker. Clone with submodules as above, then run the launcher from the repository root:
+Build a single output — pass the format and language (and optionally a variant):
 
 [source,shell]
 ----
-./build-docker.sh           # buildDocs — all languages and formats
-./build-docker.sh pdfDE     # a single output
+./curriculum-build.sh pdf DE          # Linux / macOS
+./curriculum-build.sh html EN
+./curriculum-build.sh pdf DE REMARKS
 ----
 
-The toolchain is downloaded once into a gitignored `.gradle-docker/` cache, so repeat
-builds are fast. Output appears in `build/` exactly as with a local build.
+[source,bat]
+----
+curriculum-build.bat pdf DE           rem Windows
+curriculum-build.bat html EN
+curriculum-build.bat pdf DE REMARKS
+----
+
+Output is written to `build/`, named `<CURRICULUM_FILE>-<lang>.pdf` / `.html`, together
+with an `index.html` overview page. The launcher pulls the builder image on first run and
+reuses it afterwards.
+
+=== Build configuration
+
+`build.config` in the repository root holds the per-curriculum settings:
+
+[cols="1,3a",options="header"]
+|===
+|Key |Meaning
+
+|`CURRICULUM_FILE` |AsciiDoc root in `docs/` (without `.adoc`); also the output file name.
+|`LANGUAGES`       |Space-separated languages to build. Default `DE EN`; drop one for a single-language curriculum.
+|`SUFFIX_TAGS`     |Space-separated extra build variants, exposed as the `{suffix}` attribute. Empty = single build.
+|`PREPRESS`        |PDF print/book layout (recto chapter starts + binding margins). `true` / `false`.
+|===
+
+Any key can be overridden for a single run via an environment variable, e.g.
+`LANGUAGES="DE" ./curriculum-build.sh`.
 
 == How to contribute or participate
 
