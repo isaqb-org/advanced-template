@@ -12,7 +12,7 @@
 = <FULL MODULE NAME> – iSAQB Advanced Level Curriculum (<MODULE-SHORT>)
 
 == Status
-image:https://github.com/isaqb-org/REPO-NAME/workflows/CI%20-%20Releases%20and%20Main/badge.svg?branch=main["CI – Releases and Main"]
+image:https://github.com/isaqb-org/REPO-NAME/actions/workflows/build_main.yml/badge.svg?branch=main["CI – Releases and Main"]
 image:https://img.shields.io/github/last-commit/isaqb-org/REPO-NAME/main.svg["Last commit"]
 image:https://img.shields.io/github/contributors/isaqb-org/REPO-NAME.svg["Contributors",link="https://github.com/isaqb-org/REPO-NAME/graphs/contributors"]
 image:https://img.shields.io/github/issues/isaqb-org/REPO-NAME.svg["Issues",link="https://github.com/isaqb-org/REPO-NAME/issues"]

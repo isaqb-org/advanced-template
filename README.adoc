@@ -1,7 +1,7 @@
 = Template for https://isaqb.org[iSAQB] Advanced Level Curricula
 
 == Status
-image:https://github.com/isaqb-org/advanced-template/workflows/CI%20-%20Releases%20and%20Main/badge.svg?branch=main["CI – Releases and Main"]
+image:https://github.com/isaqb-org/advanced-template/actions/workflows/build_main.yml/badge.svg?branch=main["CI – Releases and Main"]
 image:https://img.shields.io/github/last-commit/isaqb-org/advanced-template/main.svg["Last commit"]
 image:https://img.shields.io/github/contributors/isaqb-org/advanced-template.svg["Contributors",link="https://github.com/isaqb-org/advanced-template/graphs/contributors"]
 image:https://img.shields.io/github/issues/isaqb-org/advanced-template.svg["Issues",link="https://github.com/isaqb-org/advanced-template/issues"]
