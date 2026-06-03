@@ -1,17 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>isaqb-org/renovate-config"],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "description": "Pin the curriculum builder image (tag + digest) in curriculum-build.sh / .bat.",
-      "managerFilePatterns": ["/(^|/)curriculum-build\\.(sh|bat)$/"],
-      "matchStrings": [
-        "IMAGE=\"(?<depName>[^:\"]+):(?<currentValue>[^\"@]+)\"\\s+DIGEST=\"(?<currentDigest>sha256:[a-f0-9]+)\"",
-        "IMAGE=(?<depName>[^:\"]+):(?<currentValue>[^\"@]+)\"\\s+set \"DIGEST=(?<currentDigest>sha256:[a-f0-9]+)\""
-      ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "regex:^(?<major>\\d{4})\\.(?<minor>\\d+)-rev(?<patch>\\d+)$"
-    }
-  ]
+  "extends": ["local>isaqb-org/renovate-config"]
 }
