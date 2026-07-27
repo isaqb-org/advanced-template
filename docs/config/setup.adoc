@@ -27,3 +27,15 @@ ifeval::["{language}" == "EN"]
 :curriculum-name: FULL NAME OF MODULE
 :curriculum-header-title: iSAQB® Curriculum for Advanced Level: {curriculum-short}
 endif::[]
+
+// title definitions for proper formatting in PDF and HTML – DO NOT TOUCH
+ifdef::backend-pdf[]
+:title-break: :{sp}
+:toc: macro
+:toc-placement: macro
+endif::[]
+ifndef::backend-pdf[]
+:title-break: pass:q[<br>]
+:toc: left
+endif::[]
+
