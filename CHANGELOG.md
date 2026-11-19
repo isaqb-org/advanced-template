@@ -1,6 +1,12 @@
 # iSAQB® Advanced Level Curriculum Template
+## New in 2026.2
+- Create Markdown version of the curriculum so that AI agents can consume them
+- Create llms.txt file for agents
+- Fix title formatting for both PDF and HTML
+- Support dark mode
 
-## New in 2026.1
+## Older releases
+### New in 2026.1
 - Remove gradle-tools and Gradle/JDK dependencies and replace the build toolchain with docker-based ruby tools
 - Remove html and pdf theme submodules, they're part of the docker file of the ruby tools now
 - Add README for new curricula which is supposed to replace the README of this repository when used as template
@@ -8,9 +14,6 @@
 - Add roman numbers for front matter
 - Add support for prepress builds (new chapters always start on the "right" side of a book)
 - Add support for additional tags (=suffix) when building files
-
-## Older releases
-
 ### New in 2025.1
 - Extract gradle-tools into separate submodule
 - Increase speed of extracted build.gradle
