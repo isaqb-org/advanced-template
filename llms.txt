@@ -1,0 +1,15 @@
+# Curriculum for Certified Professional for Software Architecture (CPSA)® Advanced Level MODULKUERZEL – FULL NAME OF MODULE
+
+> Release 2026.2-rev0 of this iSAQB curriculum. Each Markdown file contains the complete curriculum in one language.
+
+## Curriculum
+
+- [DE](curriculum-template-de.md)
+- [EN](curriculum-template-en.md)
+
+## Optional
+
+- [curriculum-template-de.pdf](curriculum-template-de.pdf)
+- [curriculum-template-en.pdf](curriculum-template-en.pdf)
+- [curriculum-template-de.html](curriculum-template-de.html)
+- [curriculum-template-en.html](curriculum-template-en.html)
